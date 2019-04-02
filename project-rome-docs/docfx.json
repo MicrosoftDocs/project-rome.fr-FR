@@ -1,0 +1,58 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "Android/api-reference/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/toc.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "rome_bread"
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/project-rome",
+      "uhfHeaderId": "MSDocsHeader-ProjectRome",
+      "breadcrumb_path": "~/breadcrumb/toc.yml",
+      "extendBreadcrumb": true,
+      "titleSuffix": "Project Rome",
+      "ms.topic": "article",
+      "ms.prod": "connected-devices",
+      "ms.date": "01/29/2019",
+      "ms.author": "nichola",
+      "author": "knicholasa"
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "project-rome",
+    "markdownEngineName": "markdig"
+  }
+}
