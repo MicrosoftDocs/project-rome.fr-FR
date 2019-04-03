@@ -1,11 +1,11 @@
-> **Note:** The contents of this repository are published on the [Docs.Microsoft.com site](https://docs.microsoft.com/windows/project-rome/) for Project Rome.
+> **Remarque :** Le contenu de ce dépôt est publié sur le [site Docs.Microsoft.com](https://docs.microsoft.com/windows/project-rome/) pour Project Rome.
 
-## What is this?
-[Project Rome](https://developer.microsoft.com/windows/project-rome) provides a set of cross-device and cross-platform features that developers can use to increase engagement in their apps and create experiences that center around people and their tasks rather than devices. The programming model comes in the form of API sets for Windows, Android, iOS, and Microsoft Graph. Both client and server-side applications can utilize Project Rome capabilities.
+## <a name="what-is-this"></a>Qu'est-ce que c est ?
+[Project Rome](https://developer.microsoft.com/windows/project-rome) fournit un ensemble de fonctionnalités entre les périphériques et multiplateforme qui permet aux développeurs pour accroître l’engagement dans leurs applications et créer des expériences qui se concentrent autour des personnes et leurs tâches et non les appareils. Le modèle de programmation est fourni sous la forme d’ensembles d’API pour Windows, Android, iOS et Microsoft Graph. Les applications client et côté serveur peuvent utiliser les fonctionnalités de Project Rome.
 
-## Privacy
-See [Microsoft's privacy statement](https://privacy.microsoft.com/en-us/privacystatement/) for more information. 
+## <a name="privacy"></a>Confidentialité
+Consultez [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/en-us/privacystatement/) pour plus d’informations. 
 
-## Microsoft Open Source Code of Conduct
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+## <a name="microsoft-open-source-code-of-conduct"></a>Code de conduite de Microsoft Open Source
+Ce projet a adopté le [Microsoft Code de conduite Open Source](https://opensource.microsoft.com/codeofconduct/).
+Pour plus d’informations, consultez le [Code de conduite Forum aux questions](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [ opencode@microsoft.com ](mailto:opencode@microsoft.com) avec des questions ou commentaires supplémentaires.

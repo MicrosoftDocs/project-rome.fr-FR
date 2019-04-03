@@ -1,0 +1,13 @@
+### <a name="associate-the-connected-devices-platform-with-the-native-push-notification-for-each-platform"></a>Associer la plateforme d’appareils connectés à la notification push native pour chaque plateforme. 
+
+Comme mentionné précédemment, les clients d’application doivent apportent des informations sur le pipeline de notification push natif utilisé pour chaque plateforme pour le Kit de développement côté client et la plateforme d’appareils connectés pendant le processus d’inscription, afin de permettre le graphique service de notification pour les notifications de sortance pour chaque point de terminaison du client d’application lorsque votre serveur d’applications publie une notification utilisateur de multi-ciblage via MS Graph API.
+Dans les étapes ci-dessus, vous avez initialisé la plateforme sans **NotificationProvider** paramètre. Ici, vous devez construire et passez un objet qui implémente **NotificationProvider**. Consultez **GraphNotificationProvider.cs** à partir de l’exemple pour plus d’informations. 
+
+
+
+Fournir cette inscription dans votre implémentation de **NotificationProvider**. Ensuite, le **plateforme** appel d’initialisation doit fournir local **plateforme** avec un accès au service de notifications push, ce qui permet de votre application à recevoir des données à partir de MS Graph Notifications côté serveur. 
+
+### <a name="pass-incoming-push-notifications-to-the-client-sdk"></a>Transmettre des notifications push entrantes pour le SDK du client
+Maintenant, vous pouvez gérer la charge utile UserNotification entrante à l’intérieur de la tâche en arrière-plan natif inscrit avec PushNotificationTrigger ou dans votre d’écoute de Windows le [PushNotificationReceived événement](https://docs.microsoft.com/en-us/uwp/api/windows.networking.pushnotifications.pushnotificationchannel.pushnotificationreceived). 
+
+Pour des raisons, y compris la conformité, la sécurité et les optimisations potentielles, la notification brutes WNS entrante en provenance de Notifications de graphique côté serveur peut souvent être un drainage épaule qui ne contient pas toutes les données qui sont initialement publiées par le serveur d’application. La récupération de la notification de contenu réelle publiée par le serveur d’applications est masquée derrière les API du Kit de développement logiciel côté client. Dans ce cas, le SDK demande toujours le client d’application pour passer la charge utile de notification brute WNS entrante pour le Kit de développement. Ainsi, le Kit de développement logiciel déterminer s’il s’agit d’une notification pour les scénarios de Notifications de graphique ou pas (au cas où push brutes WNS peut également être utilisé par le client app à d’autres fins). 

@@ -1,0 +1,1 @@
+Pour toutes les fonctionnalités d’appareils connectés, vous devez un IDE de développement application Android et un appareil Android avec une des architectures prises en charge (**armeabi-v7a**, **arm64-v8a**, **x86**, ou **x86_64**) ou un émulateur. Le système doit être en cours d’exécution Android 4.4.2 ou une version ultérieure.

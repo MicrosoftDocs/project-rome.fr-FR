@@ -1,0 +1,23 @@
+---
+title: MCDUserNotificationReaderStartPosition
+description: Contient des valeurs qui déterminent la position où commence à toute nouvelle modification dans le lecteur – nouvelle notification utilisateur entrantes ou les nouvelles mises à jour entrantes d’état.
+keywords: Microsoft, windows, les Notifications de graphique, iOS procédures, procédures iPhone
+ms.openlocfilehash: c1fdf113614d496a2da49072f089f7e6a9f0ca68
+ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58908981"
+---
+# <a name="enum-mcdusernotificationreaderstartposition"></a>Enum `MCDUserNotificationReaderStartPosition`
+
+```
+typedef NS_ENUM(NSInteger, MCDUserNotificationReaderStartPosition)
+```
+
+Contient des valeurs qui déterminent la position où commence à toute nouvelle modification dans le lecteur – nouvelle notification utilisateur entrantes ou les nouvelles mises à jour entrantes d’état. 
+
+|Nom | Value | Description |
+|:-- |:-- |:-- |
+|   MCDUserNotificationReaderStartPositionBeginning |0| Position de départ au début de la banque de notification. |
+|   MCDUserNotificationReaderStartPositionEnd | 1| Position à la fin de la banque de notification de début. |
