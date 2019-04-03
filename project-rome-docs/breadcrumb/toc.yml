@@ -1,0 +1,14 @@
+items:
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Windows
+    tocHref: /windows/
+    topicHref: /windows/
+ms.openlocfilehash: 1bb606f07472bcf0ae1d169026728d2913755ca3
+ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58906661"

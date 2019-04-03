@@ -1,0 +1,7 @@
+# <a name="implementing-user-activities-for-windows"></a><span data-ttu-id="477ab-101">Implémentation d’activités de l’utilisateur pour Windows</span><span class="sxs-lookup"><span data-stu-id="477ab-101">Implementing User Activities for Windows</span></span>
+
+<span data-ttu-id="477ab-102">Les procédures associées de Windows et les pages d’API pour Project Rome sont inclus dans la section UWP du site docs Microsoft.</span><span class="sxs-lookup"><span data-stu-id="477ab-102">The Windows related how-to and API pages for Project Rome are included in the UWP section of the Microsoft docs site.</span></span> <span data-ttu-id="477ab-103">Consultez les articles suivants pour apprendre à implémenter des applications de l’utilisateur les activités pour Windows :</span><span class="sxs-lookup"><span data-stu-id="477ab-103">Check out the following articles to learn how to implement User Activities for Windows apps:</span></span>
+
+[<span data-ttu-id="477ab-104">Procédures pour Windows</span><span class="sxs-lookup"><span data-stu-id="477ab-104">How to guide for Windows</span></span>](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities)
+
+[<span data-ttu-id="477ab-105">Référence des API pour Windows</span><span class="sxs-lookup"><span data-stu-id="477ab-105">API reference for Windows</span></span>](https://docs.microsoft.com/uwp/api/windows.applicationmodel.useractivities)
