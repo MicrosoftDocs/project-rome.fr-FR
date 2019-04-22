@@ -5,11 +5,11 @@ ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: 60a4e282fc5446e38a80e72979e12daad51b2026
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907211"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59803975"
 ---
 ### <a name="create-an-instance-of-the-platform"></a>Créez une instance de la plateforme
 

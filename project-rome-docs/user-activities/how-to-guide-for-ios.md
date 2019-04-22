@@ -6,11 +6,11 @@ keywords: Microsoft, windows, project rome, d’activités des utilisateurs, d�
 ms.assetid: 445f1dd4-f3c7-46e4-a7cd-42a1fb411172
 ms.localizationpriority: medium
 ms.openlocfilehash: 3cc19463a5e036ab76288760aa70d86f1861675b
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58909431"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801671"
 ---
 # <a name="implementing-user-activities-for-ios"></a>Implémentation d’activités des utilisateurs pour iOS
 

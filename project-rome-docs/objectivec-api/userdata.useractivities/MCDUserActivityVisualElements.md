@@ -3,11 +3,11 @@ title: MCDUserActivityVisualElements
 description: Cette classe contient les informations visuelles, telles que la description et l’icône, ce qui peut être affichée dans la vignette « details » pour un MCDUserActivity.
 keywords: Microsoft, windows, activités des utilisateurs, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: c969b8a52bc6d2a22fd0a00808f9bb374c63cd8a
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907411"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801061"
 ---
 # <a name="class-mcduseractivityvisualelements"></a>Classe `MCDUserActivityVisualElements`
 

@@ -3,11 +3,11 @@ title: MCDRemoteSystemLocalVisibilityKindFilter
 description: Une classe utilisée pour définir la préférence de visibilité application (appelant) local lors de la découverte des systèmes distants.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: b54614c1ee0a820e605df05768c164d07a5a9464
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58909571"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800671"
 ---
 # <a name="class-mcdremotesystemlocalvisibilitykindfilter"></a>Classe `MCDRemoteSystemLocalVisibilityKindFilter` 
 

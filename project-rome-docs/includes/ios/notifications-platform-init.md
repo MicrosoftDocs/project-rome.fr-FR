@@ -5,11 +5,11 @@ ms.topic: include
 ms.assetid: cf4bc236-1a9c-4192-b3fe-2d78331316c0
 ms.localizationpriority: medium
 ms.openlocfilehash: 6de00cdfd4595f67a655a672dc46fea75806a51f
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58908921"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801601"
 ---
 ### <a name="add-the-sdk"></a>Ajoutez le kit SDK
 

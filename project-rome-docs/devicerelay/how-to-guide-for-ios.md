@@ -6,10 +6,10 @@ keywords: Microsoft, windows, project rome, exécution des commandes, ios
 ms.assetid: b5d426db-a0ca-4888-b2cb-cb7fdb1c6c0d
 ms.localizationpriority: medium
 ms.openlocfilehash: 11596720d9363f0ef29fd9c7bf0ccc5b4db62fae
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58907731"
 ---
 # <a name="implementing-device-relay-for-ios"></a>Implémentation de relais d’appareil pour iOS

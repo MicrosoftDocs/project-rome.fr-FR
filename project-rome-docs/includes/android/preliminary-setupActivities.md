@@ -5,11 +5,11 @@ ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: 45aa2364c2b1f7a30e94e2b720a0e4b14d4bff27
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907791"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801661"
 ---
 ## <a name="preliminary-setup-for-the-connected-devices-platform"></a>Programme d’installation préliminaire pour la plateforme d’appareils connectés
 

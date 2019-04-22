@@ -3,11 +3,11 @@ title: MCDRemoteSystemKinds
 description: Contient des champs de chaîne qui représentent des types d’appareils système distant.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: 701bc4662fc8d46009889645bab6e4ee83fdb959
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58909561"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801271"
 ---
 # <a name="class-mcdremotesystemkinds"></a>Classe `MCDRemoteSystemKinds` 
 

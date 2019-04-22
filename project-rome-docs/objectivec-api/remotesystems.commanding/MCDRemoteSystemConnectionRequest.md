@@ -3,10 +3,10 @@ title: MCDRemoteSystemConnectionRequest
 description: Une classe qui représente une tentative de communication avec un périphérique distant spécifique ou une application.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: 54ed7deb1fa2b1c87a3195e61c2ce031d6e0cea9
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58907131"
 ---
 # <a name="class-mcdremotesystemconnectionrequest"></a>Classe `MCDRemoteSystemConnectionRequest` 

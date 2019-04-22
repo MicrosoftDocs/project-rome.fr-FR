@@ -5,11 +5,11 @@ ms.topic: include
 ms.assetid: 30df8538-1c1f-498f-af25-0be0aed687c8
 ms.localizationpriority: medium
 ms.openlocfilehash: 95b6dd68706a1582a91718a48ba7961cd8d07ddf
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907431"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801501"
 ---
 ### <a name="todo-configure-your-app-to-be-apns-notification-compatible"></a>TODO configurer votre application à être APNs compatible avec notification
 

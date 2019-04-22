@@ -3,11 +3,11 @@ title: MCDUserNotificationReadState
 description: Contient des valeurs qui décrivent l’état de lecture d’une notification.
 keywords: Microsoft, windows, les Notifications de graphique, iOS procédures, procédures iPhone
 ms.openlocfilehash: cdadac58bad0f642d9c1b482cf5aa5cbab15ee1b
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58909081"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801281"
 ---
 # <a name="enum-mcdusernotificationreadstate"></a>Enum `MCDUserNotificationReadState`
 

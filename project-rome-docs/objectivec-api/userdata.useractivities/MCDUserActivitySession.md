@@ -3,11 +3,11 @@ title: MCDUserActivitySession
 description: Cette classe effectue le suivi d’une activité de l’utilisateur ([MCDUserActivity](MCDUserActivity.md) instance) pendant que l’utilisateur est engagé dans cette activité.
 keywords: Microsoft, windows, activités des utilisateurs, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: 2ae85e637bb059e811a60e5bde5f33ea767c8314
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58909631"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800661"
 ---
 # <a name="class-mcduseractivitysession"></a>Classe `MCDUserActivitySession`
 

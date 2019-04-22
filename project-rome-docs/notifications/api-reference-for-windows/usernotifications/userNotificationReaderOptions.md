@@ -3,11 +3,11 @@ title: UserNotificationReaderOptions
 description: Cette classe permet à l’application fournir des options sur le lecteur de notification, par exemple recevoir uniquement des nouvelles notifications d’utilisateur et les mises à jour de notification n’existent pas.
 keywords: Microsoft, windows, les Notifications de graphique, les procédures relatives à Windows
 ms.openlocfilehash: dda9187dccd013f719d564f62b51fd9ac7be8444
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58909681"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801381"
 ---
 # <a name="class-usernotificationreaderoptions"></a>Classe `UserNotificationReaderOptions`
 

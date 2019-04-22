@@ -3,11 +3,11 @@ title: MCDRemoteSystemPlatformFilter
 description: Une classe utilisée pour filtrer les systèmes distants en fonction de la plateforme du système d’exploitation qu’ils sont en cours d’exécution.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: 1b82d7b3a1626489a83196bf949567b3ce7b94f0
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58908751"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801217"
 ---
 # <a name="class-mcdremotesystemplatformfilter"></a>Classe `MCDRemoteSystemPlatformFilter` 
 

@@ -3,11 +3,11 @@ title: MCDUserActivityAttribution
 description: Cette classe gère les éléments graphiques d’une activité de l’utilisateur.
 keywords: Microsoft, windows, activités des utilisateurs, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: 94ae2f5afef24a1f4e320014ac930d67b657b0d7
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58909251"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801541"
 ---
 # <a name="class-mcduseractivityattribution"></a>Classe `MCDUserActivityAttribution`
 

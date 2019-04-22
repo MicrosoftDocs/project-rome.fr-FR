@@ -5,11 +5,11 @@ ms.topic: include
 ms.assetid: 9fb27596-e9a3-443a-9c12-9e02a893e32c
 ms.localizationpriority: medium
 ms.openlocfilehash: 27ff12ef8b0773f1bd0e1960c285012f7e62fdc9
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907221"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801801"
 ---
 ### <a name="associate-the-connected-devices-platform-with-the-native-push-notification-for-each-mobile-platform"></a>Associer la plateforme d’appareils connectés à la notification push native pour chaque plateforme mobile. 
 

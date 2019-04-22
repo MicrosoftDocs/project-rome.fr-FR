@@ -3,11 +3,11 @@ title: MCDAppServiceInfo
 description: Cette classe décrit un service d’application qui appartient à une application ou un périphérique distant.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: 5cb01d664a07653387b523eeec68ebd50bbc2798
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907111"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801161"
 ---
 # <a name="class-mcdappserviceinfo"></a>Classe `MCDAppServiceInfo` 
 

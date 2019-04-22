@@ -3,11 +3,11 @@ title: MCDRemoteSystemAccountFilter
 description: Filtre pour les comptes découvrir des systèmes distants avec.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: 34721c2dee89adc380b721a027382f81c2ecb751
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907321"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801551"
 ---
 # <a name="class-mcdremotesystemaccountfilter"></a>Classe `MCDRemoteSystemAccountFilter` 
 

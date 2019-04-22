@@ -3,10 +3,10 @@ title: MCDLaunchUriProvider
 description: ''
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: 4cbfaa9fd1e88345f4ce35987508b061e479854e
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58907461"
 ---
 # <a name="protocol-mcdlaunchuriprovider"></a>Protocole `MCDLaunchUriProvider`

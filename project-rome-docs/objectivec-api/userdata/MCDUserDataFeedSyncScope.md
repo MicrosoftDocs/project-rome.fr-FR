@@ -3,11 +3,11 @@ title: MCDUserDataFeedSyncScope
 description: Cette classe représente les données utilisateur qui sont synchronisées avec le backend de la plateforme de périphériques connectés lorsque l’application utilise certaines fonctionnalités de périphériques spécifiques à l’utilisateur.
 keywords: Microsoft, windows, activités des utilisateurs, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: 941381a61c9b17c837c25b089f7c7073d581c4a8
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907171"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801001"
 ---
 # <a name="class-mcduserdatafeedsyncscope"></a>Classe `MCDUserDataFeedSyncScope`
 

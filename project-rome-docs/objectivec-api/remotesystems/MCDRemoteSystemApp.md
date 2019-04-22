@@ -3,11 +3,11 @@ title: MCDRemoteSystemApp
 description: Représente une application sur un système distant qui est disponible pour la connectivité.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: 28ec3fbe03150cb45c0a554a0499f1a6b657e50d
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907651"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801581"
 ---
 # <a name="class-mcdremotesystemapp"></a>Classe `MCDRemoteSystemApp` 
 

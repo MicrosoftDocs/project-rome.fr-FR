@@ -3,11 +3,11 @@ title: MCDRemoteSystemAppRegistrationPublishStatus
 description: Contient des valeurs qui décrivent l’état d’un lancement des applications à distance à l’aide d’un URI.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: 32c3e473938925f12838bf6dc5ccc3e98a3394a6
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907541"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800581"
 ---
 # <a name="enum-mcdremotesystemappregistrationpublishstatus"></a>Enum `MCDRemoteSystemAppRegistrationPublishStatus`
 

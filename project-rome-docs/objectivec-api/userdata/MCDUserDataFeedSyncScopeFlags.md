@@ -3,11 +3,11 @@ title: MCDUserDataFeedSyncScopeFlags
 description: Cette classe
 keywords: Microsoft, windows, activités des utilisateurs, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: c2edbe5c45472807217c005086dfa1d9728d40b6
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907661"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800991"
 ---
 # <a name="class-mcduserdatafeedsyncscopeflags"></a>Classe `MCDUserDataFeedSyncScopeFlags`
 

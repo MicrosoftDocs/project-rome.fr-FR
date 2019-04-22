@@ -3,10 +3,10 @@ title: MCDUserActivity
 description: Cette classe représente une instance d’activité utilisateur unique.
 keywords: Microsoft, windows, activités des utilisateurs, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: f01889f5e41c761fe359ed1fa90befee4a8aca46
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58907421"
 ---
 # <a name="class-mcduseractivity"></a>Classe `MCDUserActivity`

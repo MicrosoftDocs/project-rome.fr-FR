@@ -3,11 +3,11 @@ title: UserNotificationReader
 description: Cette classe fournit les nouvelles notifications utilisateur entrantes et notification utilisateur mises à jour. Il donne également accès à la collection de l’utilisateur notifications conservées dans la plateforme d’appareils connectés.
 keywords: Microsoft, windows, la notification utilisateur, et conseils pour windows
 ms.openlocfilehash: 3a929939be7e2dd9ecd9db65322efadaea3013d5
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907371"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801421"
 ---
 # <a name="class-usernotificationreader"></a>Classe `UserNotificationReader`
 

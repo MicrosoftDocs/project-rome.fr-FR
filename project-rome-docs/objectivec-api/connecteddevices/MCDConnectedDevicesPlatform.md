@@ -3,11 +3,11 @@ title: MCDConnectedDevicesPlatform
 description: Une classe pour représenter la plateforme d’appareils connectés et de gérer la connexion de l’application à celui-ci.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: 33fdb6f7dfd7d11831da1f7710215e35306d79d1
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58909741"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801781"
 ---
 # <a name="class-mcdconnecteddevicesplatform"></a>Classe `MCDConnectedDevicesPlatform` 
 

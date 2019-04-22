@@ -5,11 +5,11 @@ ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: d498d192b6ac909e8b3978b54e6996eef98d2814
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907501"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59803972"
 ---
 ### <a name="create-the-platform"></a>Créer la plateforme
 

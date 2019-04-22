@@ -3,11 +3,11 @@ title: MCDConnectedDevicesAccountAddedStatus
 description: Contient les valeurs qui décrivent l’état de l’opération Ajouter compte.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: d7fadec0c3e69eedab23df18d803ee85fd37644b
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907201"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801561"
 ---
 # <a name="enum-mcdconnecteddevicesaccountaddedstatus"></a>Enum `MCDConnectedDevicesAccountAddedStatus`
 

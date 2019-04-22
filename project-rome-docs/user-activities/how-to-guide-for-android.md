@@ -6,11 +6,11 @@ keywords: Microsoft, windows, project rome, d’activités des utilisateurs, d�
 ms.assetid: 8cfb7544-913c-48c0-8528-52b93ba8b0c6
 ms.localizationpriority: medium
 ms.openlocfilehash: 67f793341a108853d5b36e062fd04f441efff473
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58909611"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801531"
 ---
 # <a name="implementing-user-activities-for-android"></a>Implémentation d’activités de l’utilisateur pour Android
 

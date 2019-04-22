@@ -5,11 +5,11 @@ ms.topic: include
 ms.assetid: 195e419e-ac8d-4e96-8faa-c3659570fa27
 ms.localizationpriority: medium
 ms.openlocfilehash: 1780fa768475015946b5e33add55ac0f9f247f86
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58909661"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801151"
 ---
 ## <a name="preliminary-setup-for-push-notifications"></a>Programme d’installation préliminaire pour les notifications push
 

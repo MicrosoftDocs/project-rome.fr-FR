@@ -5,10 +5,10 @@ ms.topic: include
 ms.assetid: 0741073e-62de-4e31-8e3b-cd1a55027c1c
 ms.localizationpriority: medium
 ms.openlocfilehash: f302fa886cf342e5116b88f9b7474c0b3660ab18
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58909291"
 ---
 ### <a name="register-your-app-for-push-notifications"></a>Inscrire votre application pour les notifications push

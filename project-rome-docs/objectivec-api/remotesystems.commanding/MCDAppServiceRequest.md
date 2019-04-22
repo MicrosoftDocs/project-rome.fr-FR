@@ -3,11 +3,11 @@ title: MCDAppServiceRequest
 description: Représente un message entrant à partir d’une application / l’appareil distant à cette connexion de service d’application.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: 553403ab57b594294072dc082f5646eb1646e55b
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907571"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800531"
 ---
 # <a name="class-mcdappservicerequest"></a>Classe `MCDAppServiceRequest`
 

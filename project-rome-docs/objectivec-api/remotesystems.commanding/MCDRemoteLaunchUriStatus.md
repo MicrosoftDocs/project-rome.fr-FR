@@ -3,11 +3,11 @@ title: MCDRemoteLaunchUriStatus
 description: Contient des valeurs qui décrivent l’état d’un lancement des applications à distance à l’aide d’un URI.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
 ms.openlocfilehash: 1a0302cd570b8cb25476a8188e3bcb1667707461
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907141"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801081"
 ---
 # <a name="enum-mcdremotelaunchuristatus"></a>Enum `MCDRemoteLaunchUriStatus`
 

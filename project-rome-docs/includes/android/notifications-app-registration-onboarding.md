@@ -5,10 +5,10 @@ ms.topic: include
 ms.assetid: bbef84bf-a6b7-44be-879d-0fa6065e37b1
 ms.localizationpriority: medium
 ms.openlocfilehash: 598807ac37079456ac28948a9f5bc419e65095a3
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58907511"
 ---
 ### <a name="msa-and-aad-authentication-registration"></a>Compte de service administré et l’inscription de l’authentification AAD
