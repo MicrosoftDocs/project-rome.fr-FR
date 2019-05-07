@@ -5,11 +5,11 @@ ms.localizationpriority: medium
 ms.topic: overview
 ms.custom: seodec2018
 ms.openlocfilehash: 47a2a6caea457c1c552817f219899d2805b52eb4
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58906701"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800821"
 ---
 # <a name="remote-sessions"></a>Sessions à distance
 

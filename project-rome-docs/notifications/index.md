@@ -5,10 +5,10 @@ ms.localizationpriority: medium
 ms.topic: overview
 ms.custom: seodec2018
 ms.openlocfilehash: 23aefb0e9f75721977e3ab9f1002bebf264a5b09
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58906761"
 ---
 # <a name="microsoft-graph-notifications"></a>Notifications Microsoft Graph
