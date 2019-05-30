@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: efd862261f2d1a6cce52214b56135d2c40f632c6
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58907441"
+---
 # <a name="contributing-to-the-project-rome-documentation"></a>Contribution à la documentation de Project Rome
 
 Nous vous remercions de votre intérêt dans notre documentation. Nous apprécions vos commentaires, modifications, ajouts et les aider à améliorer notre documentation. Cette page traite les étapes de base et les instructions pour votre contribution.

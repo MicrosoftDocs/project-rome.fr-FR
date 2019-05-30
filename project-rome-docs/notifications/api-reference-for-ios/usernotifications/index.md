@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 801fbe58296bece5a374ca05c11ddb2d914914d1
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58906921"
+---
 # <a name="usernotifications-namespace"></a>Espace de noms UserNotifications
 ```
 ConnectedDevicesUserDataUserNotifications.h

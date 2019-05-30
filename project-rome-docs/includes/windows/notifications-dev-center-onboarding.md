@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 6c87f1a68699de7852af56d7536f08b1a5f9bc14
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58907561"
+---
 ### <a name="register-your-app-in-microsoft-windows-dev-center-for-cross-device-experiences"></a>Inscrire votre application dans Microsoft Windows Dev Center pour des expériences entre les périphériques
 Ensuite, vous devez inscrire votre application pour le [fonctionnalité inter-périphériques expériences du tableau de bord du développeur Microsoft](https://developer.microsoft.com/dashboard/crossplatform/web). Il s’agit d’une autre procédure à partir du compte de service administré et AAD inscription de l’application, qui a été abordée dans les étapes ci-dessus. L’objectif principal de ce processus consiste à mapper les identités d’application spécifique de plateforme avec une identité d’application multiplateforme qui est reconnu par la plateforme de périphériques connectés et en même temps autorise Microsoft Graph Notifications pour envoyer des notifications à l’aide de natif services de notifications Push correspondant à chaque plate-forme de système d’exploitation. Dans ce cas, il active les Notifications de graphique envoyer des notifications aux points de terminaison Windows UWP application via WNS – Service de Notification Windows. Accédez au tableau de bord de centre de développement, accédez à des expériences entre les périphériques à partir du volet de navigation de gauche et sélectionnez la configuration d’une nouvelle application entre les périphériques, indiquée comme suit.
 ![Tableau de bord de centre de développement, des expériences entre les périphériques](../../notifications/media/dev_center_portal/dev_center_portal_1_overview.png)

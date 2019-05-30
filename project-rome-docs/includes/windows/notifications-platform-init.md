@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: dfe29b92cbab51382f4440b4929c2082cfb9b062
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58909691"
+---
 ### <a name="add-the-sdk"></a>Ajoutez le kit SDK
 
 Pour Windows, SDK de Notification de graphique est mis à disposition pour les développeurs via un package NuGet au lieu du SDK de Windows du système d’exploitation intégrés afin d’avoir mieux bas niveau prise en charge et planification de mise en production plus flexible. Le package NuGet est publié par msgraphsdkteam sur nuget.org et vous pouvez trouver [ici](https://www.nuget.org/profiles/msgraphsdkteam). 
