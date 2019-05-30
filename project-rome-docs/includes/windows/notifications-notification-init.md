@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f81fbbffb2ec54f8d9a252a00fc3822f1f3f9582
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800851"
+---
 ### <a name="associate-the-connected-devices-platform-with-the-native-push-notification-for-each-platform"></a><span data-ttu-id="3a87a-101">Associer la plateforme d’appareils connectés à la notification push native pour chaque plateforme.</span><span class="sxs-lookup"><span data-stu-id="3a87a-101">Associate the Connected Devices Platform with the native push notification for each platform.</span></span> 
 
 <span data-ttu-id="3a87a-102">Comme mentionné précédemment, les clients d’application doivent apportent des informations sur le pipeline de notification push natif utilisé pour chaque plateforme pour le Kit de développement côté client et la plateforme d’appareils connectés pendant le processus d’inscription, afin de permettre le graphique service de notification pour les notifications de sortance pour chaque point de terminaison du client d’application lorsque votre serveur d’applications publie une notification utilisateur de multi-ciblage via MS Graph API.</span><span class="sxs-lookup"><span data-stu-id="3a87a-102">Like previously mentioned, the app clients need to provide knowledge about the native push notification pipeline being used for each platform to the client-side SDK and the Connected Devices Platform during the registration process, in order to allow Graph notification service to fan-out notifications to each app client endpoint when your app server publishes a user-targeting notification via MS Graph APIs.</span></span>

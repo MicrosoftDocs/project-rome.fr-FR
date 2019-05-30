@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: efd862261f2d1a6cce52214b56135d2c40f632c6
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58907441"
+---
 # <a name="contributing-to-the-project-rome-documentation"></a><span data-ttu-id="41c6f-101">Contribution à la documentation de Project Rome</span><span class="sxs-lookup"><span data-stu-id="41c6f-101">Contributing to the Project Rome documentation</span></span>
 
 <span data-ttu-id="41c6f-102">Nous vous remercions de votre intérêt dans notre documentation.</span><span class="sxs-lookup"><span data-stu-id="41c6f-102">Thank you for your interest in our documentation.</span></span> <span data-ttu-id="41c6f-103">Nous apprécions vos commentaires, modifications, ajouts et les aider à améliorer notre documentation. Cette page traite les étapes de base et les instructions pour votre contribution.</span><span class="sxs-lookup"><span data-stu-id="41c6f-103">We appreciate your feedback, edits, additions and help with improving our docs. This page covers the basic steps and guidelines for contributing.</span></span>

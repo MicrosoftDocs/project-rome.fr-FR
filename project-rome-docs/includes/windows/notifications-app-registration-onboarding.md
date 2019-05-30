@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8e259cf4bd303a51165868fe0aa6d2a062f52c76
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58907391"
+---
 ### <a name="msa-and-aad-authentication-registration"></a><span data-ttu-id="caecf-101">Compte de service administré et l’inscription de l’authentification AAD</span><span class="sxs-lookup"><span data-stu-id="caecf-101">MSA and AAD Authentication Registration</span></span>
 
 <span data-ttu-id="caecf-102">Inscription de l’authentification de compte Microsoft (MSA) ou Azure Active Directory (AAD) est requise pour toutes les fonctionnalités du Kit de développement, y compris les Notifications, à l’exception de partage de Nearby API.</span><span class="sxs-lookup"><span data-stu-id="caecf-102">Microsoft Account (MSA) or Azure Active Directory (AAD) authentication registration is required for all features of the SDK including Notifications, except for the Nearby sharing APIs.</span></span> 

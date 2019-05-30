@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b1d31543a0e39ac6af0188c00d072fe7d41560dd
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800351"
+---
 > <span data-ttu-id="a350c-101">**Remarque :** Le contenu de ce dépôt est publié sur le [site Docs.Microsoft.com](https://docs.microsoft.com/windows/project-rome/) pour Project Rome.</span><span class="sxs-lookup"><span data-stu-id="a350c-101">**Note:** The contents of this repository are published on the [Docs.Microsoft.com site](https://docs.microsoft.com/windows/project-rome/) for Project Rome.</span></span>
 
 ## <a name="what-is-this"></a><span data-ttu-id="a350c-102">Qu'est-ce que c est ?</span><span class="sxs-lookup"><span data-stu-id="a350c-102">What is this?</span></span>

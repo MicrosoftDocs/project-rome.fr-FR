@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 5133c07ff487b5c437da1ca77e02a2906a856131
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58906651"
+---
 # <a name="remotesystemscommanding-namespace"></a><span data-ttu-id="647f5-101">Espace de noms RemoteSystems.Commanding</span><span class="sxs-lookup"><span data-stu-id="647f5-101">RemoteSystems.Commanding namespace</span></span>
 ```
 ConnectedDevicesRemoteSystemsCommanding.h

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8fd5cb9176bbde99598a95b51c1f2bba513ae187
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801111"
+---
 # <a name="using-microsoft-graphs-user-activities-rest-apis"></a><span data-ttu-id="3925d-101">À l’aide d’activités des utilisateurs de Microsoft Graph API REST</span><span class="sxs-lookup"><span data-stu-id="3925d-101">Using Microsoft Graph's User Activities REST APIs</span></span>
 
 <span data-ttu-id="3925d-102">La fonctionnalité d’activités des utilisateurs peut être implémentée via des appels d’API REST avec Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="3925d-102">The User Activities feature can be implemented through REST API calls with Microsoft Graph.</span></span> <span data-ttu-id="3925d-103">Vous trouverez plus d’informations et documentation de référence des API dans le [section Project Rome de la documentation de Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview#activities).</span><span class="sxs-lookup"><span data-stu-id="3925d-103">You can find more information and API reference documentation in the [Project Rome section of the Microsoft Graph docs](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview#activities).</span></span>

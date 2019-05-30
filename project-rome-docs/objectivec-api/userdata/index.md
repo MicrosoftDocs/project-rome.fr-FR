@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 2b3821f8bf4f5b6e3dfd9cc1a6689a51562d90ac
+ms.sourcegitcommit: b0e8013c526b04f4a5667fc7fc744475b7706e12
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64982009"
+---
 # <a name="userdata-namespace"></a><span data-ttu-id="59788-101">Espace de noms UserData</span><span class="sxs-lookup"><span data-stu-id="59788-101">UserData namespace</span></span>
 
 ```
