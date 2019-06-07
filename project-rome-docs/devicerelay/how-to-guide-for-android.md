@@ -5,12 +5,12 @@ ms.topic: article
 keywords: Microsoft, windows, project rome, exécution des commandes, android
 ms.assetid: 2fd14dd0-0f1f-49ee-83e3-468737810c81
 ms.localizationpriority: medium
-ms.openlocfilehash: 78cb712d3b1cbbd3d613a45cd42af491eaa33afc
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: 9ca9caf60c59c619d1f7ec4e7b3af529acbb2ffc
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58907761"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755751"
 ---
 # <a name="implementing-device-relay-for-android"></a>Implémentation de relais d’appareil pour Android
 
@@ -216,7 +216,7 @@ Selon votre cas d’utilisation, vous devrez peut-être couvrir les cas dans leq
 Votre application Android peut utiliser le portail de périphériques connectés interagir avec les services d’application sur d’autres appareils. Cela fournit de nombreuses façons de communiquer avec d’autres appareils&mdash;tout cela sans avoir besoin de migrer une application au premier plan de l’appareil hôte. 
 
 #### <a name="set-up-the-app-service-on-the-target-device"></a>Configurer le service d’application sur l’appareil cible
-Ce guide utilise les [Roman application Test pour Windows](http://aka.ms/romeapp) en tant que son service d’application cible. Par conséquent, le code ci-dessous génère une application Android pour rechercher ce service d’application spécifique sur le système distant donné. Si vous souhaitez tester ce scénario, téléchargez l’application de Test Roman sur un appareil Windows et assurez-vous que vous êtes connecté avec le même compte de service administré ou AAD que vous avez utilisé dans les étapes préliminaires ci-dessus. 
+Ce guide utilise les [Roman application Test pour Windows](http://aka.ms/romeapp) en tant que son service d’application cible. Par conséquent, le code ci-dessous génère une application Android pour rechercher ce service d’application spécifique sur le système distant donné. Si vous souhaitez tester ce scénario, téléchargez l’application de Test Roman sur un appareil Windows et vérifiez que vous êtes connecté avec le même MSA que vous avez utilisé dans les étapes préliminaires ci-dessus. 
 
 Pour obtenir des instructions sur la façon d’écrire votre propre service d’application UWP, consultez [créer et consommer un service d’application (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). Vous devrez apporter quelques modifications afin que le service compatible avec les appareils connectés. Consultez le [guide UWP pour les services d’application à distance](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service) pour obtenir des instructions sur la procédure à suivre. 
 

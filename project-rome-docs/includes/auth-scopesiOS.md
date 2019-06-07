@@ -3,12 +3,12 @@ title: Fichier Include
 description: Fichier Include
 ms.assetid: 93f45482-14e4-4aec-8185-ee05b592215f
 ms.localizationpriority: medium
-ms.openlocfilehash: 1aa6b0d971feb7d2f9f8d31708fda31d05b5aca9
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: b8a0de450431adce084919290d49f6326d23d51b
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59803977"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755766"
 ---
 ### <a name="set-up-authentication-and-account-management"></a>Configurer l’authentification et gestion des comptes
 
@@ -17,6 +17,9 @@ La plateforme d’appareils connectés requiert un jeton OAuth valide à utilise
 Si vous n’utilisez pas le code fourni, vous devez implémenter le **[MCDConnectedDevicesAccountManager](../objectivec-api/connecteddevices/MCDConnectedDevicesAccountManager.md)** interface vous-même.
 
 Si vous utilisez un compte de service administré, inclure les étendues suivantes dans votre demande de connexion : `"wl.offline_access"`, `"ccs.ReadWrite"`, `"dds.read"`, `"dds.register"`, `"wns.connect"`, `"asimovrome.telemetry"`, et `"https://activity.windows.com/UserActivity.ReadWrite.CreatedByApp"`.
+
+> [!NOTE]
+> Les comptes Azure Active Directory (AAD) ne sont pas pris en charge avec les API de relais d’appareil.
 
 Si vous utilisez un compte AAD, vous devrez demander aux publics suivants : `"https://cdpcs.access.microsoft.com"`, `"https://cs.dds.microsoft.com"`, `"https://wns.windows.com/"`, et `"https://activity.microsoft.com"`.
 

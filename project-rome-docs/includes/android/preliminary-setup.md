@@ -4,12 +4,12 @@ description: Fichier Include
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: e2a3dcbff4594a7886a14f90058bb814e85ff39d
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: b2d1d764c4aae562a1fcafdb490db5a14522cda6
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59803971"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755811"
 ---
 ## <a name="preliminary-setup-for-the-connected-devices-platform-and-notifications"></a>Programme d’installation préliminaire pour la plateforme de périphériques connectés et les Notifications
 
@@ -18,6 +18,9 @@ Avant d’implémenter la connectivité à distance, il existe quelques étapes,
 ### <a name="register-your-app"></a>Inscrire votre application
 
 Authentification de compte Microsoft (MSA) ou Azure Active Directory (AAD) est requise pour presque toutes les fonctionnalités de Project Rome SDK (l’exception en cours de l’API de partage à proximité). Si vous ne pas déjà un compte de service administré et souhaiter utiliser une, inscrire sur [account.microsoft.com](https://account.microsoft.com/account).
+
+> [!NOTE]
+> Les comptes Azure Active Directory (AAD) ne sont pas pris en charge avec les API de relais d’appareil.
 
 À l’aide de votre méthode d’authentification choisi, vous devez inscrire votre application auprès de Microsoft en suivant les instructions la [portail d’inscription des applications](https://apps.dev.microsoft.com/). Si vous n’avez pas un compte de développeur Microsoft, vous devrez créer un.
 

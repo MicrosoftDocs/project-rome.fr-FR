@@ -4,14 +4,17 @@ description: Fichier Include
 ms.topic: include
 ms.assetid: 771ceeb1-638f-4fba-8c34-953870b5d855
 ms.localizationpriority: medium
-ms.openlocfilehash: 49538cfee916d048160bdd8cd1e82a7490b979d6
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: 57a5f2a1e7c40ace95656f9b08994f861b8cc9af
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58908931"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755712"
 ---
 ### <a name="msa-and-aad-authentication-registration"></a>Compte de service administré et l’inscription de l’authentification AAD
+
+> [!NOTE]
+> Les comptes Azure Active Directory (AAD) ne sont pas pris en charge avec les API de relais d’appareil.
 
 Si vous ne pas déjà un compte de service administré et souhaiter utiliser une, inscrire sur [account.microsoft.com](https://account.microsoft.com/account).
 

@@ -4,16 +4,19 @@ description: Fichier Include
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 53cbe2ec68785c257341caf110439d535b8f83be
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: b979c0b7891aaa6ce5c422d8349809b429a47201
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59803974"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755748"
 ---
 ### <a name="register-your-app"></a>Inscrire votre application
 
 Authentification de compte Microsoft (MSA) ou Azure Active Directory (AAD) est requise pour presque toutes les fonctionnalités de Project Rome SDK (l’exception en cours de l’API de partage à proximité). Si vous ne pas déjà un compte de service administré et souhaiter utiliser une, inscrire sur [account.microsoft.com](https://account.microsoft.com/account).
+
+> [!NOTE]
+> Les comptes Azure Active Directory (AAD) ne sont pas pris en charge avec les API de relais d’appareil.
 
 À l’aide de votre méthode d’authentification choisi, vous devez inscrire votre application auprès de Microsoft en suivant les instructions la [portail d’inscription des applications](https://apps.dev.microsoft.com/). Si vous n’avez pas un compte de développeur Microsoft, vous devrez créer un.
 

@@ -4,12 +4,12 @@ description: Fichier Include
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: d498d192b6ac909e8b3978b54e6996eef98d2814
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: 0ac6a543cc63be9154e40482e587a8f373f56798
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59803972"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755795"
 ---
 ### <a name="create-the-platform"></a>Créer la plateforme
 
@@ -26,7 +26,6 @@ La plateforme nécessite un utilisateur authentifié accéder à la plateforme. 
  ConnectedDevicesPlatform sPlatform.getAccountManager().accessTokenRequested().subscribe((accountManager, args) -> {
 
     // Get access token
-                 
 }
 ```
 

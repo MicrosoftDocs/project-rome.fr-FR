@@ -4,16 +4,19 @@ description: Fichier Include
 ms.topic: include
 ms.assetid: bbef84bf-a6b7-44be-879d-0fa6065e37b1
 ms.localizationpriority: medium
-ms.openlocfilehash: 598807ac37079456ac28948a9f5bc419e65095a3
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: ea97fbf5fad21b342300a283136a642c5a16672e
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58907511"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755724"
 ---
 ### <a name="msa-and-aad-authentication-registration"></a>Compte de service administré et l’inscription de l’authentification AAD
 
 Inscription de l’authentification de compte Microsoft (MSA) ou Azure Active Directory (AAD) est requise pour toutes les fonctionnalités du Kit de développement, y compris les Notifications, à l’exception de partage de Nearby API. 
+
+> [!NOTE]
+> Les comptes Azure Active Directory (AAD) ne sont pas pris en charge avec les API de relais d’appareil.
 
 Si vous ne pas déjà un compte de service administré et souhaiter utiliser une, inscrire sur [account.microsoft.com](https://account.microsoft.com/account).
 

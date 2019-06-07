@@ -3,12 +3,12 @@ title: Fichier Include
 description: Fichier Include
 ms.assetid: 93f45482-14e4-4aec-8185-ee05b592215f
 ms.localizationpriority: medium
-ms.openlocfilehash: d94808ae1e97d12649f24ed89ad17a7962665d5e
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: a6e92df6114443827b22dc85cf877d631e5fcfdf
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59803973"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755781"
 ---
 ### <a name="set-up-authentication-and-account-management"></a>Configurer l’authentification et gestion des comptes
 
@@ -19,6 +19,9 @@ Si vous souhaitez implémenter le **[ConnectedDevicesAccountManager](https://doc
 Si vous utilisez un compte de service administré, vous devez inclure les étendues suivantes dans votre demande de connexion : `"wl.offline_access"`, `"ccs.ReadWrite"`, `"dds.read"`, `"dds.register"`, `"wns.connect"`, `"asimovrome.telemetry"`, et `"https://activity.windows.com/UserActivity.ReadWrite.CreatedByApp"`. 
 
 Si vous utilisez un compte AAD, vous devrez demander aux publics suivants : `"https://cdpcs.access.microsoft.com"`, `"https://cs.dds.microsoft.com"`, `"https://wns.windows.com/"`, et `"https://activity.microsoft.com"`.
+
+> [!NOTE]
+> Les comptes Azure Active Directory (AAD) ne sont pas pris en charge avec les API de relais d’appareil.
 
 Si vous utilisez fourni **ConnectedDevicesAccountManager** implémentation ou non, si vous utilisez AAD, vous devez spécifier les autorisations suivantes dans l’inscription de votre application sur le portail Azure (portal.azure.com > Azure Active Directory > inscriptions d’application) : 
 * Activité de Microsoft Service de flux 
