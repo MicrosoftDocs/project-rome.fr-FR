@@ -50,7 +50,7 @@
     },
     "fileMetadata": {
        "open_to_public_contributors": {
-	    "./*.md": true,
+	    "/*.md": true,
             "devicerelay/**.md": true,
             "user-activities/**.md": true,
             "nearby-sharing/**.md": true,
