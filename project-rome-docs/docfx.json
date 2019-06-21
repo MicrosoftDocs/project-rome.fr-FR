@@ -49,13 +49,13 @@
       "author": "knicholasa"
     },
     "fileMetadata": {
-    		"open_to_public_contributors": {
-		        "./*.md": true,
+       "open_to_public_contributors": {
+	    "./*.md": true,
             "devicerelay/**.md": true,
             "user-activities/**.md": true,
             "nearby-sharing/**.md": true,
             "remote-sessions/**.md": true
-        }
+       }
     },
     "template": [],
     "dest": "project-rome",
