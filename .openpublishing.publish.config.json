@@ -19,6 +19,7 @@
     }
   ],
   "notification_subscribers": [],
+  "sync_notification_subscribers": [],
   "branches_to_filter": [
     "master",
     "live"
@@ -26,6 +27,11 @@
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
+	"git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/project-rome.fr-fr",
+  "git_repository_branch_open_to_public_contributors": "live",
+  "contribution_branch_mappings": {
+    "live-sxs": "live"
+  },
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -43,7 +49,9 @@
       }
     }
   ],
+  "branch_target_mapping": {},
   "need_generate_pdf_url_template": false,
+  "targets": {},
   "need_generate_pdf": false,
   "need_generate_intellisense": false
 }
