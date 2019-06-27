@@ -1,28 +1,28 @@
 ---
-title: Fichier Include
-description: Fichier Include
+title: Fichier include
+description: Fichier include
 ms.topic: include
 ms.assetid: 30df8538-1c1f-498f-af25-0be0aed687c8
 ms.localizationpriority: medium
 ms.openlocfilehash: 95b6dd68706a1582a91718a48ba7961cd8d07ddf
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59801501"
 ---
-### <a name="todo-configure-your-app-to-be-apns-notification-compatible"></a>TODO configurer votre application à être APNs compatible avec notification
+### <a name="todo-configure-your-app-to-be-apns-notification-compatible"></a>TODO Configurer votre application pour la rendre compatible avec les notifications d’APNs
 
-Après avoir terminé le flux de travail sur le tableau de bord du développeur, vous devez modifier le code réel de votre application pour vérifier capable de recevoir des notifications push. Tout d’abord, veillez à ajouter « à distance-notifications » **UIBackgroundMode** à votre application _Info.plist_ pour permettre à l’application recevoir des notifications lors de l’exécution en arrière-plan. 
+Après avoir terminé le workflow dans le tableau de bord Développeur, vous devez modifier le code réel de votre application pour lui permettre de recevoir des notifications Push. Tout d’abord, veillez à ajouter la valeur « remote-notifications » à **UIBackgroundMode** dans le fichier _Info.plist_ de votre application pour permettre à celle-ci de recevoir des notifications pendant qu’elle s’exécute en arrière-plan. 
 
-En second lieu, au démarrage de votre application, vous devez demander l’autorisation pour afficher les notifications d’alerte. Cela est effectué en appelant soit `-[UIApplication registerUsernotificationSettings:categories:]` ou `-[UNUserNotificationCenter requestAuthorizationWithOptions:completionHandler:]`, selon quelle version d’e/s que vous ciblez. Une fois que votre application a acquis l’autorisation, vous pouvez inscrire pour recevoir des notifications à distance en appelant `-[UIApplication registerForRemoteNotifications]`. 
+Ensuite, au démarrage de votre application, vous devez demander l’autorisation d’afficher les notifications d’alerte. Pour cela, appelez `-[UIApplication registerUsernotificationSettings:categories:]` ou `-[UNUserNotificationCenter requestAuthorizationWithOptions:completionHandler:]`, selon la version d’iOS que vous ciblez. Une fois que votre application a acquis l’autorisation, vous pouvez l’inscrire pour recevoir des notifications à distance en appelant `-[UIApplication registerForRemoteNotifications]`. 
 
-### <a name="associate-the-connected-devices-platform-with-apns-native-push-notification-for-ios"></a>Associer la plateforme d’appareils connectés à une notification push native APNs pour iOS. 
-Comme mentionné précédemment, les clients d’application doivent apportent des informations sur le pipeline de notification push natif utilisé pour chaque plateforme mobile pour le Kit de développement côté client et la plateforme d’appareils connectés pendant le processus d’inscription, pour permettre à Graph service de notification pour les notifications de sortance pour chaque point de terminaison du client d’application lorsque votre serveur d’applications publie une notification utilisateur de multi-ciblage via MS Graph API.
+### <a name="associate-the-connected-devices-platform-with-apns-native-push-notification-for-ios"></a>Associez la Plateforme d’appareils connectés à une notification Push native d’APNs pour iOS. 
+Comme nous l’avons vu précédemment, les clients d’application doivent faire connaître au kit SDK côté client et à la Plateforme d’appareils connectés pendant le processus d’inscription le pipeline de notification Push natif qui est utilisé pour chaque plateforme mobile, ceci pour permettre au service de notification Graph de distribuer les notifications à chaque point de terminaison client d’application quand votre serveur d’applications publie une notification ciblant l’utilisateur via les API MS Graph.
 
-Dans les étapes ci-dessus, vous avez initialisé la plateforme sans définir le *notificationProvider* paramètre. Ici, vous devez construire et passez un objet qui implémente  **[MCDNotificationProvider](../../objectivec-api/core/MCDNotificationProvider.md)**. La principale chose à noter est la `getNotificationRegistrationAsync:` (méthode), qui doit retourner un **[MCDNotificationRegistration](../../objectivec-api/core/MCDNotificationRegistration.md)** instance. Le **MCDNotificationRegistration** est responsable de la fourniture de la plateforme d’appareils connectés avec un jeton d’accès (et des informations connexes) pour le service de notification.
+Dans les étapes précédentes, vous avez initialisé la plateforme sans définir le paramètre *notificationProvider*. Ici, vous devez construire et transmettre un objet qui implémente **[MCDNotificationProvider](../../objectivec-api/core/MCDNotificationProvider.md)** . La principale chose à noter est la méthode `getNotificationRegistrationAsync:`, qui doit retourner une instance de **[MCDNotificationRegistration](../../objectivec-api/core/MCDNotificationRegistration.md)** . **MCDNotificationRegistration** est chargé de fournir à la Plateforme d’appareils connectés un jeton d’accès (et les informations associées) pour le service de notification.
 
-Fournir cette inscription dans votre implémentation de **MCDNotificationProvider**. Ensuite, l’appel de l’initialisation de plate-forme doit fournir la plateforme locale avec accès au service de notifications push, ce qui permet de votre application à recevoir des données à partir de la plateforme des appareils connectés de côté serveur, qui relaie les demandes de lancement et les messages de service à partir de l’application d’autres périphériques. 
+Transmettez cette inscription dans votre implémentation de **MCDNotificationProvider**. Ensuite, l’appel d’initialisation de la Plateforme doit fournir à la Plateforme locale un accès au service de notification Push, permettant ainsi à votre application de recevoir des données de la Plateforme d’appareils connectés côté serveur, qui relaie les demandes de lancement et les messages de service d’application d’autres appareils. 
 
 Voici une implémentation de **MCDNotificationProvider** à partir de l’exemple d’application.
 
@@ -76,7 +76,7 @@ Voici une implémentation de **MCDNotificationProvider** à partir de l’exempl
 @end
 ```
 
-L’exemple de code suivant met à jour cet **MCDNotificationProvider** avec un renseignés **MCDNotificationRegistration**.
+L’exemple de code suivant met à jour ce **MCDNotificationProvider** avec un **MCDNotificationRegistration** complété.
 
 ```ObjectiveC
 /*

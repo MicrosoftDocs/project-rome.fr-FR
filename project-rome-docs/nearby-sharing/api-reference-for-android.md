@@ -1,14 +1,14 @@
 ---
 ms.openlocfilehash: 98d67ce5642de99474d237c32a66817d1ee3eabb
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "58909601"
 ---
-# <a name="android-nearby-sharing-api-reference"></a>Référence d’API de partage Android à proximité
+# <a name="android-nearby-sharing-api-reference"></a>Informations de référence sur les API de partage de proximité Android
 
-Espaces de noms suivants contiennent des API qui permettent à une application Android pour implémenter le Windows basé à proximité de la fonctionnalité de partage.
+Les espaces de noms suivants contiennent des API qui permettent à une application Android d’implémenter la fonctionnalité de partage de proximité basée sur Windows.
 
 ## <a name="namespaces"></a>Namespaces
 

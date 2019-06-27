@@ -1,21 +1,21 @@
 ---
-title: Fichier Include
-description: Fichier Include
+title: Fichier include
+description: Fichier include
 ms.topic: include
 ms.assetid: 9fb27596-e9a3-443a-9c12-9e02a893e32c
 ms.localizationpriority: medium
 ms.openlocfilehash: 27ff12ef8b0773f1bd0e1960c285012f7e62fdc9
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59801801"
 ---
-### <a name="associate-the-connected-devices-platform-with-the-native-push-notification-for-each-mobile-platform"></a>Associer la plateforme d’appareils connectés à la notification push native pour chaque plateforme mobile. 
+### <a name="associate-the-connected-devices-platform-with-the-native-push-notification-for-each-mobile-platform"></a>Associez la Plateforme d’appareils connectés à une notification Push native pour chaque plateforme mobile. 
 
-Comme mentionné précédemment, les clients d’application doivent apportent des informations sur le pipeline de notification push natif utilisé pour chaque plateforme mobile pour le Kit de développement côté client et la plateforme d’appareils connectés pendant le processus d’inscription, pour permettre à Graph service de notification pour les notifications de sortance pour chaque point de terminaison du client d’application lors de votre serveur d’applications publie une notification de multi-ciblage utilisateur via l’API Microsoft Graph.
+Comme nous l’avons vu précédemment, les clients d’application doivent faire connaître au kit SDK côté client et à la Plateforme d’appareils connectés pendant le processus d’inscription le pipeline de notification Push natif qui est utilisé pour chaque plateforme mobile, ceci pour permettre au service de notification Graph de distribuer les notifications à chaque point de terminaison client d’application quand votre serveur d’applications publie une notification ciblant l’utilisateur via les API Microsoft Graph.
 
-Dans les étapes ci-dessus, vous avez initialisé la plateforme avec un `null` *notificationProvider* paramètre. Ici, vous devez construire et passez un objet qui implémente  **[NotificationProvider](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._notification_provider)**. La principale chose à noter est la `getNotificationRegistrationAsync` (méthode), qui doit retourner un **[NotificationRegistration](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._notification_registration)** instance. Le **NotificationRegistration** est responsable de la fourniture de la plateforme d’appareils connectés avec un jeton d’accès (et des informations connexes) pour le service de notification.
+Dans les étapes précédentes, vous avez initialisé la Plateforme avec un paramètre `null` *notificationProvider*. Ici, vous devez construire et transmettre un objet qui implémente **[NotificationProvider](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._notification_provider)** . La principale chose à noter est que la méthode `getNotificationRegistrationAsync` doit retourner une instance de **[NotificationRegistration](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._notification_registration)** . **NotificationRegistration** est chargé de fournir à la Plateforme d’appareils connectés un jeton d’accès (et les informations associées) pour le service de notification.
 
 ```java
 private NotificationRegistration mNotificationRegistration;
@@ -32,12 +32,12 @@ private NotificationRegistration mNotificationRegistration;
 mNotificationRegistration = new NotificationRegistration(NotificationType.FCM, token, FCM_SENDER_ID, "MyAppName");
 ```
 
-Fournir cette inscription dans votre implémentation de **NotificationProvider**. Ensuite, le **plateforme** appel d’initialisation doit fournir local **plateforme** avec un accès au service de notifications push, ce qui permet de votre application à recevoir des données à partir de Notifications Microsoft Graph côté serveur. 
+Transmettez cette inscription dans votre implémentation de **NotificationProvider**. Ensuite, l’appel d’initialisation de la **Plateforme** doit fournir à la **Plateforme** locale un accès au service de notifications Push, permettant ainsi à votre application de recevoir des données de notifications Microsoft Graph côté serveur. 
 
-### <a name="pass-incoming-push-notifications-to-the-client-sdk"></a>Transmettre des notifications push entrantes pour le SDK du client
-À présent, étendre votre écouteur natif classe de service ([FirebaseMessagingService](https://firebase.google.com/docs/reference/android/com/google/firebase/messaging/FirebaseMessagingService) dans ce cas, étant donné que ce didacticiel utilise Firebase Cloud Messaging) avec une surcharge particulière de la `onMessageReceived` (méthode) (la notification-gestion méthode).
+### <a name="pass-incoming-push-notifications-to-the-client-sdk"></a>Transmettre les notifications Push entrantes au SDK client
+À présent, étendez la classe de votre service d’écoute natif (dans ce cas, [FirebaseMessagingService](https://firebase.google.com/docs/reference/android/com/google/firebase/messaging/FirebaseMessagingService), puisque ce tutoriel a utilisé Firebase Cloud Messaging) avec une surcharge spéciale de la méthode `onMessageReceived` (méthode de gestion des notifications).
 
-En raison de la conformité, la sécurité et les optimisations potentielles, la notification de Google Cloud Messaging entrante en provenance de Notifications de graphique côté serveur peut être un drainage de l’épaule, qui ne contient pas toutes les données qui sont initialement publiées par le serveur d’application. La récupération de la notification de contenu réelle publiée par le serveur d’applications est masquée derrière les API du Kit de développement logiciel côté client. Pour cette raison, le Kit de développement peut fournir un modèle de programmation cohérent dans lequel le client de l’application transmet toujours la charge utile entrante de Google Cloud Messaging au kit SDK. Ainsi, le Kit de développement logiciel déterminer s’il s’agit d’une notification pour les scénarios de plateforme d’appareils connectés ou pas (en cas de Android natif Google Cloud Messaging canal est utilisé par le client d’application à d’autres fins) et quelle entrants de ce scénario/fonctionnalité notification correspond à (Notifications de Graph, l’activité des utilisateurs, etc.). Logiques spécifiques sur un type différent de scénarios de gestion peuvent ensuite être exécutées par le client app après cela. 
+Pour des raisons de conformité, de sécurité et d’optimisations potentielles, la notification entrante de Google Cloud Messaging en provenance des notifications Graph côté serveur peut être une simple indication, qui ne contient aucune des données initialement publiées par le serveur d’applications. La récupération du contenu de notification effectif publié par le serveur d’applications est occultée par les API du SDK côté client. De ce fait, le SDK peut fournir un modèle de programmation cohérent dans lequel le client d’application transmet toujours la charge utile entrante de Google Cloud Messaging au SDK. Cela permet au SDK de déterminer s’il s’agit d’une notification pour des scénarios de la Plateforme d’appareils connectés ou pas (dans le cas où le canal Google Cloud Messaging natif d’Android est utilisé par le client d’application à d’autres fins) et à quel scénario/fonctionnalité cette notification entrante correspond (notifications Graph, activité utilisateur, etc.). Après cela, des logiques spécifiques peuvent être exécutées par le client d’application pour gérer différents types de scénarios. 
 
 ```java
 /**
@@ -61,5 +61,5 @@ public void onMessageReceived(String from, Bundle data) {
 }
 ```
 
-Votre application peut désormais gérer les notifications à partir de la plateforme d’appareils connectés.
+Votre application peut maintenant gérer les notifications de la Plateforme d’appareils connectés.
 

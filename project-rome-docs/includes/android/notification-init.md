@@ -1,35 +1,35 @@
 ---
-title: Fichier Include
-description: Fichier Include
+title: Fichier include
+description: Fichier include
 ms.topic: include
 ms.assetid: fcbcfd8f-6eea-421a-97bb-31ea3c987728
 ms.localizationpriority: medium
 ms.openlocfilehash: 57115d59657d91200d969e2bb05154c3d2499dc7
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59801571"
 ---
-## <a name="preliminary-setup-for-push-notifications"></a>Programme d’installation préliminaire pour les notifications push
+## <a name="preliminary-setup-for-push-notifications"></a>Configuration préliminaire pour les notifications Push
 
-### <a name="register-your-app-for-push-notifications"></a>Inscrire votre application pour les notifications push
+### <a name="register-your-app-for-push-notifications"></a>Inscrire votre application aux notifications Push
 
-Inscrire votre application avec Google pour la prise en charge de la notification. Veillez à prenez note de l’expéditeur clé ID et le serveur que vous recevez ; vous en aurez besoin plus tard. 
+Pour assurer une prise en charge des notifications, inscrivez votre application auprès de Google. Veillez à noter l’ID d’expéditeur et la clé serveur que vous recevez ; vous en aurez besoin par la suite. 
 
-### <a name="register-your-app-for-cross-device-connected-devices-platform-access"></a>Inscrire votre application pour l’accès entre les périphériques connectés la plateforme de périphériques
+### <a name="register-your-app-for-cross-device-connected-devices-platform-access"></a>Inscrire votre application pour l’accès à la Plateforme d’appareils connectés inter-appareils
 
-Ensuite, enregistrez votre application pour le [fonctionnalité inter-périphériques expériences du tableau de bord du développeur Microsoft](https://developer.microsoft.com/dashboard/crossplatform/web). Il s’agit d’une autre procédure de s’inscrire sur le centre de développement Windows, qui a été abordé dans les étapes préliminaires ci-dessus. Elle autorise la plateforme d’appareils connectés pour envoyer des notifications à l’aide du service de notifications push natif. Le centre de développement nécessitera des processus d’intégration :
-* ID de client. de votre application
-* La clé Google Cloud Messaging. Cela est nécessaire pour fournir des données et des commandes à l’application (sur un appareil qui peut être verrouillé ou en veille) sous la forme de notifications push. 
+Inscrivez ensuite votre application pour la [fonctionnalité Expériences inter-appareils du tableau de bord Développeur Microsoft](https://developer.microsoft.com/dashboard/crossplatform/web). Il s’agit d’une procédure différente de celle qui consiste à s’inscrire sur le Centre de développement Windows, qui a été abordée précédemment dans les étapes préliminaires. Elle autorise la Plateforme d’appareils connectés à envoyer des notifications à l’aide du service de notification Push natif. Le processus d’intégration du Centre de développement nécessite les éléments suivants :
+* L’ID client de votre application.
+* La clé Google Cloud Messaging. Ces informations sont nécessaires pour remettre les données et les commandes à l’application (sur un appareil qui est peut-être verrouillé ou en veille) sous forme de notifications Push. 
 
-### <a name="configure-your-app-to-be-notification-compatible"></a>Configurer votre application pour être compatible avec notification
+### <a name="configure-your-app-to-be-notification-compatible"></a>Configurer votre application pour la rendre compatible avec les notifications
 
-Après avoir terminé le flux de travail sur le tableau de bord du développeur, vous devez modifier le code réel de votre application pour le rendre capable de recevoir des notifications push. Consultez [défini d’un Firebase Cloud Messaging Application cliente sur Android](https://firebase.google.com/docs/cloud-messaging/android/client) si vous ne savez pas comment procéder.
+Après avoir terminé le workflow dans le tableau de bord Développeur, vous devez modifier le code réel de votre application pour le rendre apte à recevoir des notifications Push. Si vous avez des doutes quant à la façon de procéder, consultez [Set up a Firebase Cloud Messaging client app on Android](https://firebase.google.com/docs/cloud-messaging/android/client).
 
-### <a name="associate-the-notification-service-with-the-local-platform"></a>Associer le service de notification de la plateforme locale
+### <a name="associate-the-notification-service-with-the-local-platform"></a>Associer le service de notification à la Plateforme locale
 
-Enfin, vous devez associer les fonctionnalités de notification push avec la plateforme d’appareils connectés dans votre application. Dans les étapes ci-dessus, vous avez initialisé la plateforme avec un `null` *notificationProvider* paramètre. Ici, vous devez construire et passez un objet qui implémente  **[NotificationProvider](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._notification_provider)**. La principale chose à noter est la `getNotificationRegistrationAsync` (méthode), qui doit retourner un **[NotificationRegistration](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._notification_registration)** instance. Le **NotificationRegistration** est responsable de la fourniture de la plateforme d’appareils connectés avec un jeton d’accès (et des informations connexes) pour le service de notification.
+Enfin, vous devez associer la fonctionnalité de notification Push à la Plateforme d’appareils connectés dans votre application. Dans les étapes précédentes, vous avez initialisé la Plateforme avec un paramètre `null` *notificationProvider*. Ici, vous devez construire et transmettre un objet qui implémente **[NotificationProvider](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._notification_provider)** . La principale chose à noter est que la méthode `getNotificationRegistrationAsync` doit retourner une instance de **[NotificationRegistration](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._notification_registration)** . **NotificationRegistration** est chargé de fournir à la Plateforme d’appareils connectés un jeton d’accès (et les informations associées) pour le service de notification.
 
 
 ```Java
@@ -47,9 +47,9 @@ private NotificationRegistration mNotificationRegistration;
 mNotificationRegistration = new NotificationRegistration(NotificationType.FCM, token, FCM_SENDER_ID, "MyAppName");
 ```
 
-Fournir cette inscription dans votre implémentation de **NotificationProvider**. Ensuite, le **plateforme** appel d’initialisation doit fournir local **plateforme** avec un accès au service de notifications push, ce qui permet de votre application à recevoir des données à partir des appareils connectés côté serveur Plateforme, qui relaie les demandes de lancement et les messages de service d’application à partir d’autres appareils. 
+Transmettez cette inscription dans votre implémentation de **NotificationProvider**. Ensuite, l’appel d’initialisation de la **Plateforme** doit fournir à la **Plateforme** locale un accès au service de notification Push, permettant ainsi à votre application de recevoir des données de la Plateforme d’appareils connectés côté serveur, qui relaie les demandes de lancement et les messages de service d’application d’autres appareils. 
 
-Il vous suffit maintenant est d’étendre votre écouteur natif classe de service ([FirebaseMessagingService](https://firebase.google.com/docs/reference/android/com/google/firebase/messaging/FirebaseMessagingService) dans ce cas, étant donné que ce guide utilisé Firebase Cloud Messaging) avec une surcharge particulière de la `onMessageReceived` (méthode) (le méthode de gestion de la notification).
+Il ne vous reste plus maintenant qu’à étendre la classe de votre service d’écoute natif (dans ce cas, [FirebaseMessagingService](https://firebase.google.com/docs/reference/android/com/google/firebase/messaging/FirebaseMessagingService), puisque ce guide a utilisé Firebase Cloud Messaging) avec une surcharge spéciale de la méthode `onMessageReceived` (méthode de gestion des notifications).
 
 ```Java
 /**
@@ -73,4 +73,4 @@ public void onMessageReceived(String from, Bundle data) {
 }
 ```
 
-Votre application est maintenant en mesure de gérer les notifications à partir de la plateforme d’appareils connectés.
+Votre application est désormais capable de gérer les notifications à partir de la Plateforme d’appareils connectés.

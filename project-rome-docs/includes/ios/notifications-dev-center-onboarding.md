@@ -1,21 +1,21 @@
 ---
-title: Fichier Include
-description: Fichier Include
+title: Fichier include
+description: Fichier include
 ms.topic: include
 ms.assetid: 0741073e-62de-4e31-8e3b-cd1a55027c1c
 ms.localizationpriority: medium
 ms.openlocfilehash: f302fa886cf342e5116b88f9b7474c0b3660ab18
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "58909291"
 ---
-### <a name="register-your-app-for-push-notifications"></a>Inscrire votre application pour les notifications push
+### <a name="register-your-app-for-push-notifications"></a>Inscrire votre application aux notifications Push
 
-Inscrire votre application auprès d’Apple pour [Apns](https://developer.apple.com/notifications/) prennent en charge. Veillez à prenez note de l’expéditeur clé ID et le serveur que vous recevez comme vous en aurez besoin plus tard.
+Pour assurer une prise en charge d’[Apple Push Notification](https://developer.apple.com/notifications/), inscrivez votre application auprès d’Apple. Veillez à noter l’ID d’expéditeur et la clé serveur que vous recevez, car vous en aurez besoin par la suite.
 
-Une fois inscrit, vous devez associer les fonctionnalités de notification push avec la plateforme d’appareils connectés dans votre application.
+Une fois l’inscription effectuée, vous devez associer la fonctionnalité de notification Push à la Plateforme d’appareils connectés dans votre application.
 
 ```ObjectiveC
 self.notificationRegistration = [[MCDConnectedDevicesNotificationRegistration alloc] init];
@@ -33,24 +33,24 @@ self.notificationRegistration = [[MCDConnectedDevicesNotificationRegistration al
     self.isRegisteredWithToken = YES;
 ```
 
-### <a name="register-your-app-in-microsoft-windows-dev-center-for-cross-device-experiences"></a>Inscrire votre application dans Microsoft Windows Dev Center pour des expériences entre les périphériques
+### <a name="register-your-app-in-microsoft-windows-dev-center-for-cross-device-experiences"></a>Inscrire votre application dans le Centre de développement Microsoft pour des expériences inter-appareils
 
 > [!WARNING]
-> Cette étape est uniquement nécessaire si vous souhaitez utiliser les fonctionnalités de Project Rome pour accéder aux données à partir d’ou effectuer des demandes des appareils non Windows. Si vous ciblez uniquement les appareils Windows, il est inutile d’effectuer cette étape.
+> Cette étape n’est nécessaire que si vous souhaitez utiliser les fonctionnalités du projet Rome pour accéder à des données ou effectuer des demandes à partir d’appareils non Windows. Si vous ciblez uniquement des appareils Windows, vous n’avez pas besoin d’effectuer cette étape.
 
-Inscrire votre application pour le [fonctionnalité inter-périphériques expériences du tableau de bord du développeur Microsoft](https://developer.microsoft.com/dashboard/crossplatform/web). Il s’agit d’une autre procédure à partir du compte de service administré et AAD inscription d’application ci-dessus. L’objectif principal de ce processus consiste à mapper les identités d’application spécifiques de plateforme avec une identité d’application multiplateforme qui est reconnu par la plateforme de périphériques connectés. Cette étape active également l’envoi de notifications à l’aide de correspondant pour les plateformes mobiles que votre application utilise les services de notification push natif. Pour iOS, il active les notifications à envoyer aux points de terminaison iOS app via APNS, Apple Push Notification Service.
+Inscrivez votre application pour la [fonctionnalité Expériences inter-appareils du tableau de bord Développeur Microsoft](https://developer.microsoft.com/dashboard/crossplatform/web). Il s’agit d’une procédure différente de celle visant à inscrire une application MSA et AAD décrite plus haut. L’objectif principal de ce processus est de mapper les identités d’application d’une plateforme spécifique à une identité d’application multiplateforme qui est reconnue par la Plateforme d’appareils connectés. Cette étape permettra aussi l’envoi de notifications à l’aide des services de notification Push natifs correspondant aux plateformes mobiles utilises par votre application. Dans le cas d’iOS, elle permet l’envoi de notifications aux points de terminaison d’application iOS via APNS (Apple Push Notification Service).
 
-Accédez au tableau de bord de centre de développement, accédez à des expériences entre les périphériques à partir du volet de navigation de gauche et sélectionnez la configuration d’une nouvelle application entre les périphériques.
-![Tableau de bord de centre de développement, des expériences entre les périphériques](../../notifications/media/dev_center_portal/dev_center_portal_1_overview.png)
+Dans le tableau de bord du Centre de développement, accédez à Expériences inter-appareils dans le volet de navigation de gauche, puis choisissez de configurer une nouvelle application inter-appareils.
+![Tableau de bord du Centre de développement – Expériences inter-appareils](../../notifications/media/dev_center_portal/dev_center_portal_1_overview.png)
 
-Le processus d’intégration de centre de développement requièrent les étapes suivantes :
+Le processus d’intégration du Centre de développement comprend les étapes suivantes :
 
-* Sélectionnez les plateformes prises en charge : sélectionnez les plateformes où votre application aura une présence et être activée pour des expériences entre les périphériques. Dans le cas d’intégration de Notifications de graphique, vous pouvez sélectionner à partir de Windows, Android ou iOS, en fonction des plateformes que vous utilisez. ![Expériences inter-périphériques – plateformes prises en charge](../../notifications/media/dev_center_portal/dev_center_portal_2_supported_platforms.png)
+* Sélectionnez les plateformes prises en charge, à savoir celles sur lesquelles votre application sera présente et compatible avec les expériences inter-appareils. Dans le cas de l’intégration des notifications Graph, vous pouvez sélectionner Windows, Android et/ou iOS, selon les plateformes que vous utilisez. ![Expériences inter-appareils – Plateformes prises en charge](../../notifications/media/dev_center_portal/dev_center_portal_2_supported_platforms.png)
 
-* Fournir l’ID d’application – permet de fournir des ID d’application pour chaque plateforme que vous utilisez. Pour les applications iOS, ceci est le nom du package affecté à votre application lorsque vous avez créé le projet. Notez que vous pouvez ajouter des ID différents (jusqu'à dix) par plateforme, c'est-à-dire au cas où vous avez plusieurs versions de la même application, ou même différentes applications, que vous souhaitez être en mesure de recevoir les mêmes notifications envoyées par votre serveur d’applications ciblant le même utilisateur. ![Expériences inter-périphériques – ID d’application](../../notifications/media/dev_center_portal/dev_center_portal_3_app_ids.png)
+* Fournissez des ID d’application pour chaque plateforme utilisée. Pour les applications iOS, il s’agit du nom de package que vous avez attribué à votre application au moment de créer le projet. Notez que vous pouvez ajouter des ID différents (jusqu’à dix) par plateforme. Cela peut être utile si vous disposez de plusieurs versions d’une même application, voire différentes applications, et que vous souhaitez qu’elles puissent recevoir les mêmes notifications envoyées par votre serveur d’applications ciblant le même utilisateur. ![Expériences inter-appareils – ID d’application](../../notifications/media/dev_center_portal/dev_center_portal_3_app_ids.png)
 
-* Fournir ou sélectionnez l’ID d’application à partir des inscriptions d’application MSA et/ou AAD obtenues dans les cours MSA/AAD application d’enregistrement des étapes ci-dessus. ![Expériences inter-périphériques – MSA et les inscriptions d’application AAD](../../notifications/media/dev_center_portal/dev_center_portal_4_msa_aad_connections.png)
+* Fournissez ou sélectionnez les ID d’application des inscriptions d’application MSA et/ou AAD obtenus aux étapes d’inscription d’application MSA/AAD précédentes. ![Expériences inter-périphériques – Inscriptions d’application MSA et AAD](../../notifications/media/dev_center_portal/dev_center_portal_4_msa_aad_connections.png)
 
-* Fournissez vos informations d’identification pour les plateformes de notification native pertinentes pour votre application (WNS pour Windows, FCM pour Android ou APNS pour iOS) pour activer la remise des notifications à partir de votre serveur d’applications lorsque vous publiez des notifications ciblées de l’utilisateur. ![Expériences inter-périphériques – informations d’identification Push](../../notifications/media/dev_center_portal/dev_center_portal_5_push_credentials.png)
+* Fournissez vos informations d’identification pour les plateformes de notification natives correspondant à votre application (c’est-à-dire, WNS pour Windows, FCM pour Android et/ou APNS pour iOS) pour permettre à votre serveur d’applications de transmettre les notifications ciblant l’utilisateur, dans le cas où vous en publiez. ![Expériences inter-périphériques – Informations d’identification Push](../../notifications/media/dev_center_portal/dev_center_portal_5_push_credentials.png)
 
-* Enfin, vérifiez votre domaine d’application d’entre les périphériques pour vous assurer que votre application est propriétaire du domaine et pouvez l’utiliser comme une identité entre les périphériques pour votre application. ![Expériences inter-périphériques – vérification du domaine](../../notifications/media/dev_center_portal/dev_center_portal_6_domain_verification.png)
+* Enfin, vérifiez votre domaine d’application inter-appareils pour être certain que votre application en est propriétaire et que vous pouvez l’utiliser comme identité inter-appareils pour votre application. ![Expériences inter-appareils – Vérification de domaine](../../notifications/media/dev_center_portal/dev_center_portal_6_domain_verification.png)

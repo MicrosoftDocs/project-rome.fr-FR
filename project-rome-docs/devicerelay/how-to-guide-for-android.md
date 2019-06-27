@@ -1,28 +1,28 @@
 ---
-title: Commandes appareils distants et les applications (Android)
-description: Ce guide explique comment découvrir des applications et des appareils à distance et lancer des applications ou interagir avec les services d’application.
+title: Commander des appareils et des applications distants (Android)
+description: Ce guide vous explique comment découvrir des appareils et des applications distants et comment lancer ensuite des applications ou interagir avec des services d’application.
 ms.topic: article
-keywords: Microsoft, windows, project rome, exécution des commandes, android
+keywords: microsoft, windows, projet rome, commandes, android
 ms.assetid: 2fd14dd0-0f1f-49ee-83e3-468737810c81
 ms.localizationpriority: medium
 ms.openlocfilehash: 9ca9caf60c59c619d1f7ec4e7b3af529acbb2ffc
-ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "66755751"
 ---
-# <a name="implementing-device-relay-for-android"></a>Implémentation de relais d’appareil pour Android
+# <a name="implementing-device-relay-for-android"></a>Implémentation de relais d’appareils pour Android
 
-La fonctionnalité de relais de l’appareil de Project Rome se compose d’un ensemble d’API qui prennent en charge les deux fonctionnalités principales : lancement à distance (également appelés commandes) et les services d’application.
+La fonctionnalité Relais d’appareils du projet Rome se compose d’un ensemble d’API qui prennent en charge les deux principales fonctionnalités : le lancement à distance (aussi appelé commandes) et les services d’application distants.
 
-API de lancement à distance prennent en charge les scénarios où un processus sur un appareil distant est démarré à partir d’un périphérique local. Par exemple, un utilisateur peut écouter la radio sur leur téléphone dans la voiture, mais quand ils obtiennent accueil ils utilisent leur téléphone pour transférer la lecture à leur Xbox qui est relié à la chaîne stéréo.
+Les API de lancement à distance prennent en charge les scénarios dans lesquels un processus est démarré sur un appareil distant à partir d’un appareil local. Par exemple, un utilisateur écoute la radio sur son téléphone en voiture, mais une fois à la maison, il bascule la lecture de son téléphone vers sa Xbox qui est raccordée à sa chaîne stéréo.
 
-API de Services d’application permettent à une application établir un pipeline persistant entre les deux appareils par le biais duquel les messages contenant n’importe quel contenu arbitraire peuvent être envoyés. Par exemple, une application qui s’exécute sur un appareil mobile de partage de photos peut établir une connexion avec des PC de l’utilisateur afin de récupérer les photos.
+Les API App Services permettent à une application d’établir un pipeline persistant entre deux appareils qui permet l’envoi de messages comportant du contenu arbitraire. Par exemple, l’utilisateur pourrait établir une connexion entre l’application de partage de photos qui s’exécute sur son appareil mobile et son PC en vue de récupérer des photos.
 
-Les fonctionnalités de Project Rome sont pris en charge par une plateforme sous-jacente, appelée la plateforme d’appareils connectés. Ce guide décrit les étapes nécessaires pour commencer à utiliser la plateforme d’appareils connectés, puis explique comment utiliser la plateforme pour implémenter le périphérique relais fonctionnalités associées.
+Les fonctionnalités du projet Rome sont prises en charge par une plateforme sous-jacente appelée Plateforme d’appareils connectés. Ce guide décrit les étapes nécessaires pour commencer à utiliser la Plateforme d’appareils connectés, puis explique comment implémenter les fonctionnalités liées au relais d’appareils à l’aide de la plateforme.
 
-Présente les étapes ci-dessous référencera le code à partir de la [exemple d’application Android de Project Rome](https://github.com/Microsoft/project-rome/tree/master/Android/samples).
+Les étapes ci-dessous font référence à du code tiré de l’[exemple d’application Android du projet Rome](https://github.com/Microsoft/project-rome/tree/master/Android/samples).
 
 [!INCLUDE [android/dev-reqs](../includes/android/dev-reqs.md)]
 
@@ -32,19 +32,19 @@ Présente les étapes ci-dessous référencera le code à partir de la [exemple 
 
 [!INCLUDE [android/dev-center-onboarding](../includes/android/notifications-dev-center-onboarding.md)]
 
-## <a name="using-the-platform"></a>À l’aide de la plateforme
+## <a name="using-the-platform"></a>Utilisation de la plateforme
 
 [!INCLUDE [android/create-setup-events-start-platform](../includes/android/create-setup-events-start-platform.md)]
 
-### <a name="discover-remote-devices-and-apps"></a>Découvrir les applications et des périphériques distants
+### <a name="discover-remote-devices-and-apps"></a>Découvrir les appareils et les applications distants
 
-Un **RemoteSystemWatcher** instance gère la fonctionnalité principale de cette section. Déclarez-le dans la classe qui consiste à découvrir des systèmes distants.
+Une instance de **RemoteSystemWatcher** gérera la principale fonctionnalité de cette section. Déclarez-la dans la classe qui doit découvrir les systèmes distants.
 
 ```Java
 private RemoteSystemWatcher mWatcher = null;
 ```
 
-Avant de créer un observateur et démarrer la découverte des périphériques, vous pouvez souhaiter ajouter des filtres de détection pour déterminer quels types de périphériques de votre application ciblera. Ils peuvent être déterminés par l’utilisateur d’entrée ou codé en dur dans l’application, en fonction de votre cas d’utilisation.
+Avant de créer un observateur et de lancer la découverte d’appareils, vous pouvez souhaiter ajouter des filtres de découverte pour déterminer les types d’appareil que votre application doit cibler. Ils peuvent être déterminés par entrée utilisateur ou codés en dur dans l’application, selon votre cas d’utilisation.
 
 ```Java
 private void onStartWatcherClicked() {
@@ -96,7 +96,7 @@ private void onStartWatcherClicked() {
     // ...
 ```
 
-À ce stade, l’application peut initialiser l’objet de l’Observateur qui déterminent comment votre application allez-vous analyser et interagir avec les appareils qui sont détectées.
+À ce stade, l’application peut initialiser l’objet observateur qui détermine la façon dont votre application analyse et interagit avec les appareils découverts.
 
 ```Java
     // ...
@@ -108,9 +108,9 @@ private void onStartWatcherClicked() {
     // ...
 ```
 
-Il est recommandé que votre application conserver un ensemble de périphériques détectés (représenté par **RemoteSystem** instances) et afficher des informations sur les appareils disponibles et leurs applications (par exemple, de type nom et le périphérique d’affichage) sur l’interface utilisateur. 
+De préférence, votre application doit tenir à jour un ensemble d’appareils découverts (représentés par des instances de **RemoteSystem**) et afficher des informations sur les appareils disponibles et leurs applications (par exemple, le nom d’affichage et le type d’appareil) dans l’interface utilisateur. 
 
-Les stubs de classe suivante peuvent servir d’écouteurs d’événements pour l’instance de l’Observateur.
+Les stubs de classe suivants peuvent servir d’écouteurs d’événements pour l’instance d’observateur.
 
 ```Java
 private class RemoteSystemAddedListener implements EventListener<RemoteSystemWatcher, RemoteSystem> {
@@ -142,7 +142,7 @@ private class RemoteSystemWatcherErrorOccurredListener implements EventListener<
 }
 ```
 
-Une fois `mWatcher.start` est appelée, elle commencera surveille l’activité du système distant et déclenche des événements lorsque les appareils sont détectés, mis à jour ou la suppression de l’ensemble des périphériques détectés. Il analyse en continu en arrière-plan, il est recommandé d’arrêter l’Observateur lorsque vous n’avez plus besoin afin d’éviter de drainage de communication et de la batterie inutiles sur le réseau.
+Une fois `mWatcher.start` appelé, il se met à observer l’activité du système distant et déclenche des événements quand des appareils sont découverts, mis à jour ou supprimés de l’ensemble d’appareils découverts. Sachant que l’observateur poursuit son analyse en arrière-plan, il est recommandé de l’arrêter dès que cela n’est plus nécessaire pour éviter de consommer des ressources de communication réseau et de batterie.
 
 ```Java
 // if you call this from the activity's onPause method, you ensure that
@@ -154,17 +154,17 @@ public void stopWatcher() {
     mWatcher.stop();
 }
 ```
-## <a name="example-use-case-implementing-remote-launching-and-remote-app-services"></a>Exemple de cas d’usage : implémentation de lancement à distance et les services d’application à distance
+## <a name="example-use-case-implementing-remote-launching-and-remote-app-services"></a>Exemple de cas d’utilisation : implémentation du lancement à distance et de services d’application distants
 
-À ce stade dans votre code, vous devez avoir une liste de travail de **RemoteSystem** les objets qui font référence à des appareils disponibles. Ce que vous faire avec ces périphériques dépendra de la fonction de votre application. Les principaux types d’interaction sont lancement à distance et les services d’application à distance. Ils sont expliqués dans les sections suivantes.
+À ce stade, votre code doit comporter une liste opérationnelle d’objets **RemoteSystem** qui font référence aux appareils disponibles. Ce à quoi vont vous servir ces appareils dépend de la fonction de votre application. Les principaux types d’interaction sont le lancement à distance et les services d’application distants. Ils vous sont expliqués dans les sections suivantes.
 
-### <a name="a-remote-launching"></a>A) le lancement à distance
+### <a name="a-remote-launching"></a>A) Lancement à distance
 
-Le code suivant montre comment sélectionner un de ces appareils (dans l’idéal, ceci s’effectue via un contrôle d’interface utilisateur), puis utilisez **RemoteLauncher** pour lancer une application dessus en transmettant une URI d’application compatible. 
+Le code suivant montre comment sélectionner un de ces appareils (dans l’idéal, via un contrôle d’interface utilisateur) et utilise ensuite **RemoteLauncher** pour lancer une application sur cet appareil en lui transmettant un URI compatible avec l’application. 
 
-Il est important de noter qu’un lancement à distance peut cibler un appareil distant (auquel cas l’appareil hôte lancera l’URI donné avec son application par défaut pour ce modèle d’URI) _ou_ une application spécifique à distance sur cet appareil. 
+Il est important de noter qu’un lancement à distance peut cibler un appareil distant (auquel cas l’appareil hôte lance l’URI donné avec son application par défaut pour ce schéma d’URI) _ou_ une application distante spécifique sur cet appareil. 
 
-Comme la section précédente décrivait, détection se produit au niveau du périphérique tout d’abord (un **RemoteSystem** représente un périphérique), mais vous pouvez appeler la `getApplications` méthode sur un **RemoteSystem** instance pour obtenir une tableau de **RemoteSystemApp** objets qui représentent des applications sur l’appareil à distance qui ont été inscrits pour utiliser la plateforme d’appareils connectés (comme vous avez inscrit votre propre application dans les étapes préliminaires ci-dessus). Les deux **RemoteSystem** et **RemoteSystemApp** peut être utilisé pour construire un **RemoteSystemConnectionRequest**, qui est ce qui est nécessaire pour lancer un URI.
+Comme nous l’avons vu dans la section précédente, la découverte se produit d’abord au niveau de l’appareil (un objet **RemoteSystem** représente un appareil), mais vous pouvez appeler la méthode `getApplications` sur une instance de **RemoteSystem** pour obtenir un tableau d’objets **RemoteSystemApp**, qui représentent les applications de l’appareil distant qui ont été inscrites pour utiliser la Plateforme d’appareils connectés (de la même façon que vous avez inscrit votre propre application dans les étapes préliminaires décrites plus haut). Les objets **RemoteSystem** et **RemoteSystemApp** peuvent servir à construire un **RemoteSystemConnectionRequest**, qui est nécessaire au lancement d’un URI.
 
 ```java
 // this could be a RemoteSystemApp instead. Either way, it 
@@ -187,7 +187,7 @@ private void launchUri(final String uri, final RemoteSystem target, final long m
     AsyncOperation<RemoteLaunchUriStatus> resultOperation = remoteLauncher.launchUriAsync(new RemoteSystemConnectionRequest(target), uri);
     // ...
 ```
-Utilisez retourné **AsyncOperation** pour gérer le résultat de la tentative de lancement.
+Utilisez l’**AsyncOperation** retourné pour traiter le résultat de la tentative de lancement.
 
 ```Java
     // ...
@@ -207,21 +207,21 @@ Utilisez retourné **AsyncOperation** pour gérer le résultat de la tentative d
     });
 }
 ```
-En fonction de l’URI qui est envoyé, vous pouvez lancer une application dans un état spécifique ou la configuration sur un périphérique distant. Cela permet la capacité à poursuivre une tâche de l’utilisateur, telles que regarder un film, sur un autre appareil sans interruption. 
+Selon l’URI qui est envoyé, vous pouvez lancer une application dans un état ou une configuration spécifiques sur un appareil distant. Cela donne la possibilité de poursuivre une tâche d’utilisateur, comme regarder un film, sur un autre appareil sans interruption. 
 
-Selon votre cas d’utilisation, vous devrez peut-être couvrir les cas dans lequel aucune application sur le système cible ne peut gérer l’URI, ou plusieurs applications peuvent le gérer. Le **[RemoteLauncher](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.commanding._remote_launcher)** classe et **[RemoteLauncherOptions](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.commanding._remote_launcher_options)** classe décrivent comment effectuer cette opération.
+Selon votre cas d’utilisation, vous devrez peut-être prévoir les cas où aucune application du système ciblé ne peut gérer l’URI et ceux où plusieurs applications peuvent le gérer. Les classes **[RemoteLauncher](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.commanding._remote_launcher)** et **[RemoteLauncherOptions](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.commanding._remote_launcher_options)** décrivent comment faire.
 
-### <a name="b-remote-app-services"></a>B) services d’application à distance
+### <a name="b-remote-app-services"></a>B) Services d’application distants
 
-Votre application Android peut utiliser le portail de périphériques connectés interagir avec les services d’application sur d’autres appareils. Cela fournit de nombreuses façons de communiquer avec d’autres appareils&mdash;tout cela sans avoir besoin de migrer une application au premier plan de l’appareil hôte. 
+Votre application Android peut utiliser le portail Appareils connectés pour interagir avec des services d’application sur d’autres appareils. Cela donne la possibilité de communiquer de diverses façons avec d’autres appareils, tout cela sans qu’il soit nécessaire de placer une application au premier plan de l’appareil hôte. 
 
 #### <a name="set-up-the-app-service-on-the-target-device"></a>Configurer le service d’application sur l’appareil cible
-Ce guide utilise les [Roman application Test pour Windows](http://aka.ms/romeapp) en tant que son service d’application cible. Par conséquent, le code ci-dessous génère une application Android pour rechercher ce service d’application spécifique sur le système distant donné. Si vous souhaitez tester ce scénario, téléchargez l’application de Test Roman sur un appareil Windows et vérifiez que vous êtes connecté avec le même MSA que vous avez utilisé dans les étapes préliminaires ci-dessus. 
+Ce guide utilise l’[application de test Roman pour Windows](http://aka.ms/romeapp) comme service d’application cible. Par conséquent, le code ci-dessous conduit une application Android à rechercher ce service d’application spécifique sur le système distant donné. Si vous souhaitez tester ce scénario, téléchargez l’application de test Roman sur un appareil Windows et veillez à vous connecter avec le compte MSA que vous avez utilisé dans les étapes préliminaires décrites plus haut. 
 
-Pour obtenir des instructions sur la façon d’écrire votre propre service d’application UWP, consultez [créer et consommer un service d’application (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). Vous devrez apporter quelques modifications afin que le service compatible avec les appareils connectés. Consultez le [guide UWP pour les services d’application à distance](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service) pour obtenir des instructions sur la procédure à suivre. 
+Pour savoir comment écrire votre propre service d’application UWP, consultez [Créer et utiliser un service d’application (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). Vous devrez apporter quelques modifications pour rendre le service compatible avec Appareils connectés. Consultez le [Guide UWP pour les services d’application distants](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service) pour savoir comment procéder. 
 
-#### <a name="open-an-app-service-connection-on-the-client-device"></a>Ouvrir une connexion de service d’application sur le périphérique client
-Votre application Android doit acquérir une référence à un périphérique distant ou une application. Comme la section de lancement, ce scénario requiert l’utilisation d’un **RemoteSystemConnectionRequest**, ce qui peut être construit à partir de l’un **RemoteSystem** ou un **RemoteSystemApp**représentant une application disponible sur le système.
+#### <a name="open-an-app-service-connection-on-the-client-device"></a>Ouvrir une connexion de service d’application sur l’appareil client
+Votre application Android doit acquérir une référence à un appareil ou une application distants. Comme dans la section relative au lancement, ce scénario nécessite l’utilisation d’un objet **RemoteSystemConnectionRequest**, qui peut être construit à partir d’un objet **RemoteSystem** ou **RemoteSystemApp** représentant une application disponible sur le système.
 
 
 ```Java
@@ -230,7 +230,7 @@ Votre application Android doit acquérir une référence à un périphérique di
 // connection is opened.
 private RemoteSystem target = null;
 ```
-En outre, votre application a besoin identifier son service d’application ciblée à l’aide de deux chaînes : le *nom app service* et *identificateur de package*. Ceux-ci sont trouvent dans le code source du fournisseur de services d’application (consultez [créer et consommer un service d’application (UWP)](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) pour plus d’informations sur la façon d’obtenir ce chaînes pour les services d’application Windows). Ces chaînes créent le **AppServiceDescription**, qui est chargé dans un **AppServiceConnection** instance.
+De plus, votre application devra identifier son service d’application cible avec deux chaînes : le *nom du service d’application* et l’*identificateur de package*. Celles-ci se trouvent dans le code source du fournisseur de service d’application (consultez [Créer et utiliser un service d’application (UWP)](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) pour savoir comment obtenir ces chaînes pour les services d’application Windows). Ensemble, ces chaînes constituent **AppServiceDescription**, qui est chargé dans une instance de **AppServiceConnection**.
 
 ```Java
 // this is defined below
@@ -296,15 +296,15 @@ private void openAppServiceConnection()
 
 #### <a name="create-a-message-to-send-to-the-app-service"></a>Créer un message à envoyer au service d’application
 
-Déclarez une variable pour stocker le message à envoyer. Sur Android, les messages que vous envoyez aux services d’application à distance sera de la **carte** type.
+Déclarez une variable pour y stocker le message à envoyer. Sur Android, les messages que vous envoyez à des services d’application distants sont de type **Map**.
 
 ```Java
 private Map<String, Object> mMessagePayload = null;
 ```
 > [!NOTE]
-> Lorsque votre application communique avec les services d’application sur d’autres plateformes, la plateforme d’appareils connectés traduit la **carte** dans la construction de correspondance sur la plateforme de réception. Par exemple, un **[carte](https://developer.android.com/reference/java/util/Map)** envoyé à partir de cette application à un Windows service d’application est alors traduite en une [ **ValueSet** ](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.valueset) objet (du .NET Framework), qui peut ensuite être interprété par le service d’application. Informations passées dans l’autre sens subit la traduction inverse.
+> Quand votre application communique avec les services d’application d’autres plateformes, la Plateforme d’appareils connectés traduit l’objet **Map** en construction correspondante sur la plateforme de réception. Par exemple, un objet **[Map](https://developer.android.com/reference/java/util/Map)** envoyé à un service d’application Windows à partir de cette application est traduit en objet [**ValueSet**](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.valueset) (du .NET Framework), qui peut ensuite être interprété par le service d’application. Les informations transmises dans l’autre direction font l’objet de la traduction inverse.
 
-La méthode suivante compose un message qui peut être interprété par app service l’application Test Roman pour Windows.
+La méthode suivante compose un message qui peut être interprété par le service d’application de l’application de test Roman pour Windows.
 
 ```Java
 /**
@@ -326,11 +326,11 @@ private void onMessageButtonClicked()
 ```
 
 > [!IMPORTANT]
-> Le **carte**s qui sont passés entre les applications et services dans le scénario de services d’application à distance doit respecter le format suivant : Les clés doivent être des chaînes et les valeurs peuvent être : Converti (boxed) des boxed de types numériques (entiers ou points flottante), chaînes, valeurs booléennes, android.graphics.Point, android.graphics.Rect, java.util.Date, java.util.UUID, tableaux homogènes d’une de ces types, ou d’autres **carte** objets répondre à cette spécification.
+> Les objets **Map** qui sont transmis entre les applications et les services dans le scénario de services d’application distants doivent respecter le format suivant : Les clés doivent être des chaînes (Strings) et les valeurs peuvent être les suivantes : chaînes (Strings), types numériques convertis (boxed) (entiers ou virgules flottantes), valeurs booléennes converties (boxed), android.graphics.Point, android.graphics.Rect, java.util.Date, java.util.UUID, tableaux homogènes d’un de ces types ou autres objets **Map** respectant cette spécification.
 
-#### <a name="send-message-to-the-app-service"></a>Envoyer un message au service d’application
+#### <a name="send-message-to-the-app-service"></a>Envoyer le message au service d’application
 
-Une fois la connexion de service d’application est établie et que le message est créé, envoyer vers le service d’application est simple et peut être effectuée depuis n’importe où dans l’application qui a une référence à l’instance de connexion app service et le message.
+Une fois que la connexion au service d’application est établie et que le message est créé, il est facile de l’envoyer au service d’application n’importe où dans l’application où figure une référence à l’instance de connexion au service d’application et le message.
 
 
 ```java
@@ -375,7 +375,7 @@ private void sendMessage(final AppServiceConnection connection, Map<String, Obje
 }
 ```
 
-Réponse du service de l’application sera reçue et interprétée par la méthode suivante.
+La réponse du service d’application est reçue et interprétée par la méthode suivante.
 
 ```Java
 private void handleAppServiceResponse(AppServiceResponse appServiceResponse, long messageId)
@@ -402,13 +402,13 @@ private void handleAppServiceResponse(AppServiceResponse appServiceResponse, lon
     }
 }
 ```
-Dans le cas de Roman application, la réponse contient la date de que sa création, donc dans ce cas d’usage très simple, nous pouvons comparer les dates pour obtenir l’heure de transit totale de la réponse du message.
+Dans le cas de l’application Roman, la réponse contient la date de sa création. S’agissant d’un cas d’utilisation très simple, nous pouvons comparer les dates pour obtenir la durée totale de transit de la réponse au message.
 
-Ceci conclut un échange de messages unique avec un service d’application à distance.
+Cela met fin à un échange de messages unique avec un service d’application distant.
 
-#### <a name="finish-app-service-communication"></a>Terminer la communication de service d’application
+#### <a name="finish-app-service-communication"></a>Terminer la communication du service d’application
 
-Lorsque votre application est terminée interaction avec le service d’application de l’appareil cible, fermez la connexion entre les deux appareils.
+Une fois que votre application a achevé son interaction avec le service d’application de l’appareil cible, fermez la connexion entre les deux appareils.
 
 ```java
 // Close the given AppService connection
@@ -420,6 +420,6 @@ private void closeAppServiceConnection()
 
 ### <a name="related-topics"></a>Rubriques connexes
 * [Page de référence des API](api-reference-for-android.md) 
-* [Exemple Android d’application](https://github.com/Microsoft/project-rome/tree/master/Android/samples) 
-* [Communiquer avec un service d’application à distance (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
-* [Créer et consommer un service d’application (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).
+* [Exemple d’application Android](https://github.com/Microsoft/project-rome/tree/master/Android/samples) 
+* [Communiquer avec un service d’application distant (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
+* [Créer et utiliser un service d’application (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service)

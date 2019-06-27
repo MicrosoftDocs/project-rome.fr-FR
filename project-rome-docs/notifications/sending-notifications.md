@@ -1,20 +1,20 @@
 ---
-title: Envoi de notifications à l’aide des API Microsoft Graph
-description: Intégrez vos applications grâce aux notifications de Microsoft Graph dans quelques étapes simples.
+title: Envoi de notifications avec les API Microsoft Graph
+description: Intégrez vos applications à des notifications Microsoft Graph en quelques étapes simples.
 ms.assetid: 8ff9cd93-a48e-4198-927f-3d7bd4b65f29
 ms.localizationpriority: medium
 ms.custom: seodec18
 ms.openlocfilehash: 9c823d4428289cee8e52e37925603aefe8b62b25
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "58908871"
 ---
-# <a name="sending-notifications-using-microsoft-graph-apis"></a>Envoi de notifications à l’aide des API Microsoft Graph
+# <a name="sending-notifications-using-microsoft-graph-apis"></a>Envoi de notifications avec les API Microsoft Graph
 
-Vous pouvez intégrer vos applications avec les notifications de Microsoft Graph en quelques étapes simples : intégrer votre application via le centre de développement Windows, utilisez la méthode de notification de création pour publier des notifications et utiliser le Kit de développement logiciel Project Rome pour recevoir et gérer les notifications sur votre application clients.
+Vous pouvez intégrer vos applications à des notifications Microsoft Graph en quelques étapes simples : intégrez votre application à l’aide du Centre de développement Windows, utilisez la méthode de création de notification pour publier des notifications, puis utilisez le SDK Projet Rome pour recevoir et gérer des notifications sur vos clients d’application.
 
-Pour en savoir plus sur la façon de publier des notifications à l’utilisateur via Microsoft Graph, consultez le [référence de l’API des notifications](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/notifications-api-overview).
+Pour en savoir plus sur la façon de publier des notifications utilisateur à l’aide de Microsoft Graph, consultez les [informations de référence sur les API de notification](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/notifications-api-overview).
 
-* [Vue d’ensemble des API de MS Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/notifications-concept-overview)
+* [Vue d’ensemble des API MS Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/notifications-concept-overview)

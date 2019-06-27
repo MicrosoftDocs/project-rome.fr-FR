@@ -1,19 +1,19 @@
 ---
-title: Fichier Include
-description: Fichier Include
+title: Fichier include
+description: Fichier include
 ms.topic: include
 ms.assetid: 9f679e13-b1b3-40f8-bd44-679e4dffc0d4
 ms.localizationpriority: medium
 ms.openlocfilehash: eafd435f0cd9eabc5aa121cdb5288bd0b522df60
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59801794"
 ---
-### <a name="add-the-sdk"></a>Ajoutez le kit SDK
+### <a name="add-the-sdk"></a>Ajouter le kit SDK
 
-Insérer les références de référentiel suivantes dans le *build.gradle* fichier à la racine de votre projet.
+Insérez les références de référentiel ci-dessous dans le fichier *build.gradle* à la racine de votre projet.
 
 ```java
 allprojects {
@@ -24,7 +24,7 @@ allprojects {
     }
 }
 ```
-Puis, insérez la dépendance suivante dans le _build.gradle_ fichier qui se trouve dans votre dossier de projet.
+Insérez ensuite la dépendance suivante dans le fichier _build.gradle_ qui se trouve dans le dossier de votre projet.
 
 ```java
 dependencies { 
@@ -33,9 +33,9 @@ dependencies {
 }
 ```
 
-Si vous souhaitez utiliser ProGuard dans votre application, ajoutez les règles ProGuard pour ces nouvelles API. Créez un fichier appelé *proguard rules.txt* dans le *application* dossier de votre projet, puis collez le contenu de [ProGuard_Rules_for_Android_Rome_SDK.txt](https://github.com/Microsoft/project-rome/blob/master/Android/ProGuard_Rules_for_Android_Rome_SDK.txt).
+Si vous souhaitez utiliser ProGuard dans votre application, ajoutez les règles ProGuard pour ces nouvelles API. Créez un fichier appelé *proguard-rules.txt* dans le dossier *App* de votre projet, puis collez-y le contenu de [ProGuard_Rules_for_Android_Rome_SDK.txt](https://github.com/Microsoft/project-rome/blob/master/Android/ProGuard_Rules_for_Android_Rome_SDK.txt).
 
-Dans votre projet *AndroidManifest.xml* , ajoutez les autorisations suivantes à l’intérieur de la `<manifest>` (s’ils ne figurent pas déjà). Ainsi, votre application l’autorisation pour se connecter à Internet et pour activer la découverte de Bluetooth sur votre appareil.
+Dans le fichier *AndroidManifest.xml* de votre projet, ajoutez les autorisations suivantes à l’intérieur de l’élément `<manifest>` (si elles ne s’y trouvent pas déjà). Cela donne à votre application l’autorisation de se connecter à Internet et d’activer la découverte Bluetooth sur votre appareil.
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -46,31 +46,31 @@ Dans votre projet *AndroidManifest.xml* , ajoutez les autorisations suivantes à
 ```
 
 > [!NOTE]
-> Les autorisations liées à Bluetooth sont uniquement nécessaires pour à l’aide de la découverte de Bluetooth ; ils ne sont pas nécessaires pour les autres fonctionnalités de la plateforme d’appareils connectés. En outre, `ACCESS_COARSE_LOCATION` est uniquement requis sur Android SDK 21 et versions ultérieures. Sur Android SDK 23 et versions ultérieures, le développeur doit également l’utilisateur pour accorder l’accès à l’emplacement lors de l’exécution.
+> Les autorisations liées à Bluetooth servent uniquement à la découverte Bluetooth ; elles n’ont pas d’utilité pour les autres fonctionnalités de la Plateforme d’appareils connectés. Par ailleurs, `ACCESS_COARSE_LOCATION` est nécessaire uniquement pour les SDK Android version 21 et ultérieures. Sur les SDK Android version 23 et ultérieures, le développeur doit aussi demander à l’utilisateur d’accorder l’accès à l’emplacement au moment de l’exécution.
 
-Ensuite, accédez à l’ou les classes activité où vous souhaitez ajouter les fonctionnalités des appareils connectés. Importer le **connecteddevices** espaces de noms.
+Ensuite, accédez aux classes d’activité dans lesquelles vous voulez activer la fonctionnalité Appareils connectés. Importez les espaces de noms **connecteddevices**.
 
 ```java
 import com.microsoft.connecteddevices.*;
 ```
 
-Selon les scénarios que vous implémentez, vous nombreuses pas besoin de tous les espaces de noms. Vous devez également ajouter d’autres espaces de noms Android natives en tant que vous progressez.
+Selon les scénarios que vous implémentez, vous n’avez peut-être pas besoin de tous les espaces de noms. Vous pouvez être aussi amené à ajouter d’autres espaces natifs Android à mesure que vous progressez.
 
-### <a name="initialize-the-connected-devices-platform"></a>Initialiser la plateforme d’appareils connectés
+### <a name="initialize-the-connected-devices-platform"></a>Initialiser la Plateforme d’appareils connectés
 
-Avant de pouvoir utiliser les fonctionnalités des appareils connectés, la plateforme doit être initialisée au sein de votre application. Les étapes d’initialisation doivent se produire dans votre classe principale **onCreate** ou **onResume** (méthode), car ils sont requis avant d’autres scénarios d’appareils connectés peuvent avoir lieu. 
+Avant de pouvoir utiliser les fonctionnalités d’Appareils connectés, la plateforme doit être initialisée au sein de votre application. Les étapes d’initialisation doivent se produire dans la méthode **OnCreate** ou **onResume** de votre classe principale, car elles constituent une condition préalable pour que d’autres scénarios Appareils connectés puissent se dérouler. 
 
-Vous devez instancier le **plateforme** classe. Le **plateforme** constructeur accepte trois paramètres : le **contexte** pour l’application, un **NotificationProvider**et un **UserAccountProvider**.
+Vous devez instancier la classe **Platform**. Le constructeur **Platform** accepte trois paramètres : **Context** pour l’application, **NotificationProvider** et **UserAccountProvider**.
 
-Le **NotificationProvider** paramètre est uniquement nécessaire pour certains scénarios. En cas d’utilisation de notification Microsoft Graph, il est nécessaire. Laissez ce champ `null` pour l’instant et découvrez comment activer le logiciel (SDK) pour gérer les notifications entrantes centrés sur l’utilisateur via des canaux de push natif dans la section suivante.
+Le paramètre **NotificationProvider** est nécessaire uniquement pour certains scénarios. Il est obligatoire dans le cas d’une utilisation des notifications Microsoft Graph. Laissez-le défini sur `null` pour l’instant et découvrez comment permettre au SDK client de gérer les notifications entrantes centrées sur l’utilisateur via des canaux Push natifs dans la section suivante.
 
-Le **UserAccountProvider** est nécessaire pour fournir un jeton d’accès OAuth 2.0 pour l’accès de l’utilisateur actuel à la plateforme d’appareils connectés. Elle sera appelée la première fois que l’application est exécutée et le jeton d’actualisation lors de l’expiration d’une plateforme gérée. 
+Le paramètre **UserAccountProvider** est nécessaire pour remettre un jeton d’accès OAuth 2.0 permettant à l’utilisateur actif d’accéder à la Plateforme d’appareils connectés. Il est appelé à la première exécution de l’application et à l’expiration d’un jeton d’actualisation géré par la plateforme. 
 
-Afin d’aider les développeurs à intégrer avec la plateforme plus facilement, nous avons fourni des implémentations de fournisseur pour Android et iOS de compte. Ces implémentations, trouvé dans le [exemple de fournisseur d’authentification](https://github.com/Microsoft/project-rome/tree/master/Android/samples/account-provider-sample), peut être utilisé pour obtenir le jeton d’accès OAuth 2.0 et actualiser le jeton pour votre application.
+Pour faciliter l’intégration des développeurs dans la plateforme, nous avons fourni des implémentations de fournisseur de compte pour Android et iOS. Ces implémentations, qui se trouvent dans l’[exemple de fournisseur d’authentification](https://github.com/Microsoft/project-rome/tree/master/Android/samples/account-provider-sample), permettent d’obtenir le jeton d’accès OAuth 2.0 et le jeton d’actualisation pour votre application.
 
 [!INCLUDE [auth-scopes](../auth-scopes.md)]
 
-Dans le code ci-dessous, `mSignInHelper` références un **MSAAccountProvider**, il est également initialisée ci-dessous. Cette classe implémente condition fournie le **UserAccountProvider** interface.
+Dans le code ci-dessous, `mSignInHelper` référence un **MSAAccountProvider**, également initialisé plus bas. Cette classe fournie implémente l’interface **UserAccountProvider**.
 
 ```java
 private MSAAccountProvider mSignInHelper;
@@ -96,7 +96,7 @@ mSignInHelper.addUserAccountChangedListener(new EventListener<UserAccountProvide
 });
 ```
 
-Maintenant que vous pouvez construire un **plateforme** instance. Vous pouvez souhaiter placer le code suivant dans une classe d’assistance distincte. 
+À présent, vous pouvez construire une instance de **Platform**. Si vous le souhaitez, vous pouvez placer le code suivant dans une classe d’assistance distincte. 
 
 ```java
 // Platform helper class:
@@ -138,7 +138,7 @@ private Platform mPlatform;
 mPlatform = PlatformHelperClass.getOrCreatePlatform(this, mSignInHelper, null);
 ```
 
-Vous devez arrêter la plateforme quand votre application s’arrête au premier plan.
+Nous vous recommandons d’arrêter la plateforme quand votre application quitte le premier plan.
 
 ```Java
 mPlatform.shutdownAsync();

@@ -1,25 +1,25 @@
 ---
-title: Fichier Include
-description: Fichier Include
+title: Fichier include
+description: Fichier include
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: 559752038bb8d73c95d853dcc39be061e64b322f
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59800291"
 ---
 ### <a name="create-the-platform"></a>Créer la plateforme
 
-Pour commencer simplement instancier la plateforme.
+Pour commencer, instanciez simplement la plateforme.
 
 `ConnectedDevicesPlatform sPlatform = new ConnectedDevicesPlatform(context);`
 
 ## <a name="subscribe-to-connecteddevicesaccountmanager-events-to-handle-the-user-account"></a>S’abonner aux événements ConnectedDevicesAccountManager pour gérer le compte d’utilisateur 
 
-La plateforme nécessite un utilisateur authentifié accéder à la plateforme.  Vous devrez vous abonner à **ConnectedDevicesAccountManager** événements afin d’assurer un compte valide est utilisé. 
+Pour pouvoir accéder à la plateforme, l’utilisateur doit être authentifié.  Vous devrez vous abonner aux événements **ConnectedDevicesAccountManager** pour être certain qu’un compte valide est utilisé. 
 
 ```Java
  ConnectedDevicesPlatform sPlatform.getAccountManager().accessTokenRequested().subscribe((accountManager, args) -> {
@@ -38,9 +38,9 @@ La plateforme nécessite un utilisateur authentifié accéder à la plateforme. 
 ```
 
 
-### <a name="subscribe-to-connecteddevicesnotificationregistrationmanager-events"></a>S’abonner aux événements de ConnectedDevicesNotificationRegistrationManager
+### <a name="subscribe-to-connecteddevicesnotificationregistrationmanager-events"></a>S’abonner aux événements ConnectedDevicesNotificationRegistrationManager
 
-De même, la plateforme utilise des notifications pour fournir des commandes entre les appareils.  Par conséquent, vous devez vous abonner à la **ConnectedDevicesNotificationRegistrationManager** événements afin d’assurer les États de l’inscription du cloud sont valides pour le compte utilisé.  Vérifier l’état à l’aide **ConnectedDevicesNotificationRegistrationState**
+De la même manière, la plateforme utilise des notifications pour la transmission de commandes entre les appareils.  Par conséquent, vous devez vous abonner aux événements **ConnectedDevicesNotificationRegistrationManager** pour faire en sorte que les états d’inscription cloud soient valides pour le compte utilisé.  Vérifiez l’état à l’aide de **ConnectedDevicesNotificationRegistrationState**
 
 ```Java
 ConnectedDevicesPlatform sPlatform.getNotificationRegistrationManager().notificationRegistrationStateChanged().subscribe((notificationRegistrationManager, args) -> {

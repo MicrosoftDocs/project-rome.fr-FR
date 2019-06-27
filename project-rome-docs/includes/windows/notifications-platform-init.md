@@ -1,23 +1,23 @@
 ---
 ms.openlocfilehash: dfe29b92cbab51382f4440b4929c2082cfb9b062
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "58909691"
 ---
-### <a name="add-the-sdk"></a>Ajoutez le kit SDK
+### <a name="add-the-sdk"></a>Ajouter le kit SDK
 
-Pour Windows, SDK de Notification de graphique est mis à disposition pour les développeurs via un package NuGet au lieu du SDK de Windows du système d’exploitation intégrés afin d’avoir mieux bas niveau prise en charge et planification de mise en production plus flexible. Le package NuGet est publié par msgraphsdkteam sur nuget.org et vous pouvez trouver [ici](https://www.nuget.org/profiles/msgraphsdkteam). 
+Pour Windows, le kit SDK de notification Graph est mis à la disposition des développeurs via un package NuGet et non un SDK intégré au système d’exploitation Windows, le but étant d’offrir un support de bas niveau de meilleure qualité et une planification de mise en production plus flexible. Le package NuGet est publié par msgraphsdkteam sur nuget.org et vous pouvez le trouver [ici](https://www.nuget.org/profiles/msgraphsdkteam). 
 
-Pour plus d’informations, y compris et consommer des packages NuGet à partir de votre application UWP, consultez ces liens. 
-* [Utiliser les packages de nuget.org](https://docs.microsoft.com/en-us/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
+Pour plus d’informations sur l’inclusion et l’utilisation de packages NuGet à partir de votre application UWP, consultez ces liens. 
+* [Utiliser des packages de nuget.org](https://docs.microsoft.com/en-us/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
 * [Démarrage rapide : Installer et utiliser un package dans Visual Studio](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 
 
 
-Selon les scénarios que vous implémentez, vous nombreuses pas besoin de tous les espaces de noms. Pour les Notifications de graphique plus précisément, vous devez les espaces de noms comme indiqué ci-dessous.
+Selon les scénarios que vous implémentez, vous n’avez peut-être pas besoin de tous les espaces de noms. Pour les notifications Graph en particulier, vous aurez besoin des espaces de noms présentés ci-dessous.
 
 
 ```C#
@@ -28,19 +28,19 @@ using Microsoft.ConnectedDevices.UserNotifications;
 ```
 
 
-### <a name="initialize-the-connected-devices-platform"></a>Initialiser la plateforme d’appareils connectés
+### <a name="initialize-the-connected-devices-platform"></a>Initialiser la Plateforme d’appareils connectés
 
-Avant de pouvoir utiliser les fonctionnalités des appareils connectés, la plateforme doit être initialisée au sein de votre application. Les étapes d’initialisation doivent se produire dans votre classe principale **OnLaunched** ou **onActivated** (méthode), car ils sont requis avant d’autres scénarios d’appareils connectés peuvent avoir lieu. 
+Avant de pouvoir utiliser les fonctionnalités d’Appareils connectés, la plateforme doit être initialisée au sein de votre application. Les étapes d’initialisation doivent se produire dans la méthode **OnLaunched** ou **onActivated** de votre classe principale, car elles constituent une condition préalable à l’exécution d’autres scénarios Appareils connectés. 
 
-Vous devez instancier le **ConnectedDevicesPlatform** classe. Le **ConnectedDevicesPlatform** constructeur accepte trois paramètres : le **contexte** pour l’application, un **NotificationProvider**et un  **UserAccountProvider**.
+Vous devez instancier la classe **ConnectedDevicesPlatform**. Le constructeur **ConnectedDevicesPlatform** accepte trois paramètres : **Context** pour l’application, **NotificationProvider** et **UserAccountProvider**.
 
-Le **NotificationProvider** paramètre est uniquement nécessaire pour certains scénarios. En cas d’utilisation de notification Microsoft Graph, il est nécessaire. Laissez ce champ vide pour l’instant et découvrir dans la section suivante pour activer le logiciel (SDK) pour gérer les notifications entrantes centrés sur l’utilisateur via des canaux de push natif.
+Le paramètre **NotificationProvider** est nécessaire uniquement pour certains scénarios. Il est obligatoire dans le cas d’une utilisation des notifications Microsoft Graph. Laissez-le vide pour l’instant et découvrez dans la section suivante comment permettre au SDK client de gérer les notifications entrantes centrées sur l’utilisateur via des canaux Push natifs.
 
-Le **UserAccountProvider** est nécessaire pour fournir un jeton d’accès OAuth 2.0 pour l’accès de l’utilisateur actuel à la plateforme d’appareils connectés. Elle sera appelée la première fois que l’application est exécutée et le jeton d’actualisation lors de l’expiration d’une plateforme gérée. 
+Le paramètre **UserAccountProvider** est nécessaire pour remettre un jeton d’accès OAuth 2.0 permettant à l’utilisateur actif d’accéder à la Plateforme d’appareils connectés. Il est appelé à la première exécution de l’application et à l’expiration d’un jeton d’actualisation géré par la plateforme. 
 
-Afin d’aider les développeurs à intégrer avec la plateforme plus facilement, nous vous proposons compte implémentations du fournisseur pour Windows dans l’exemple de code, veillez à vérifier **MicrosoftAccountProvider.cs** pour plus d’informations. 
+Pour faciliter l’intégration des développeurs dans la plateforme, nous avons fourni des implémentations de fournisseur de compte pour Windows dans du code d’exemple. Pour plus d’informations, consultez **MicrosoftAccountProvider.cs**. 
 
-Puis vous pouvez construire un **plateforme** instance. 
+Vous pouvez ensuite construire une instance de **Platform**. 
 
 ```C#
 
@@ -67,7 +67,7 @@ public async Task InstantiatePlatform()
 
 ```
 
-Vous devez arrêter la plateforme quand votre application s’arrête au premier plan.
+Nous vous recommandons d’arrêter la plateforme quand votre application quitte le premier plan.
 
 ```C#
 

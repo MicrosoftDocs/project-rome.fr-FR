@@ -1,30 +1,30 @@
 ---
-title: Fichier Include
-description: Fichier Include
+title: Fichier include
+description: Fichier include
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: b979c0b7891aaa6ce5c422d8349809b429a47201
-ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "66755748"
 ---
 ### <a name="register-your-app"></a>Inscrire votre application
 
-Authentification de compte Microsoft (MSA) ou Azure Active Directory (AAD) est requise pour presque toutes les fonctionnalités de Project Rome SDK (l’exception en cours de l’API de partage à proximité). Si vous ne pas déjà un compte de service administré et souhaiter utiliser une, inscrire sur [account.microsoft.com](https://account.microsoft.com/account).
+L’authentification de compte Microsoft (MSA) ou Azure Active Directory (AAD) est nécessaire pour pratiquement toutes les fonctionnalités du SDK du projet Rome (les API de partage de proximité étant l’exception). Si vous ne disposez pas déjà d’un compte MSA et que souhaitez en utiliser un, inscrivez-vous sur [account.microsoft.com](https://account.microsoft.com/account).
 
 > [!NOTE]
-> Les comptes Azure Active Directory (AAD) ne sont pas pris en charge avec les API de relais d’appareil.
+> Les comptes Azure Active Directory (AAD) ne sont pas pris en charge avec les API de relais d’appareils.
 
-À l’aide de votre méthode d’authentification choisi, vous devez inscrire votre application auprès de Microsoft en suivant les instructions la [portail d’inscription des applications](https://apps.dev.microsoft.com/). Si vous n’avez pas un compte de développeur Microsoft, vous devrez créer un.
+En utilisant la méthode d’authentification de votre choix, vous devez inscrire votre application auprès de Microsoft en suivant les instructions qui se trouvent sur le [portail d’inscription des applications](https://apps.dev.microsoft.com/). Si vous n’avez pas de compte de développeur Microsoft, vous devrez en créer un.
 
-Lorsque vous inscrivez une application à l’aide d’un compte de service administré, vous devez recevoir une chaîne d’ID de client. Enregistrer ce paramètre pour une utilisation ultérieure. Cela permettra à votre application d’accéder aux ressources de la plate-forme de périphériques connectés de Microsoft. Si vous utilisez AAD, consultez [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) pour obtenir des instructions sur l’obtention de chaîne d’ID du client.
+Quand vous inscrivez une application à l’aide d’un compte MSA, vous devez recevoir une chaîne d’ID client. Enregistrez-la pour plus tard. Elle permettra à votre application d’accéder aux ressources de la Plateforme d’appareils connectés de Microsoft. Si vous utilisez AAD, consultez [Bibliothèques d’authentification d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) pour savoir comment obtenir la chaîne d’ID client.
 
-### <a name="add-the-sdk"></a>Ajoutez le kit SDK
+### <a name="add-the-sdk"></a>Ajouter le kit SDK
 
-Le plus simple pour ajouter la plateforme d’appareils connectés à votre application iOS consiste à l’aide de la [CocoaPods](https://cocoapods.org/) Gestionnaire de dépendances. Accédez à votre projet iOS *Podfile* et insérez l’entrée suivante :
+Le moyen le plus simple d’ajouter la Plateforme d’appareils connectés à votre application iOS est d’utiliser le gestionnaire de dépendances [CocoaPods](https://cocoapods.org/). Accédez au fichier *Podfile* de votre projet iOS et insérez l’entrée suivante :
 
 ```ObjectiveC
 platform :ios, "10.0"
@@ -40,4 +40,4 @@ target 'iOSSample' do
 ```
 
 > [!NOTE]
-> Afin de consommer CocoaPod, vous devez utiliser le _.xcworkspace_ fichier dans votre projet.
+> Pour utiliser CocoaPod, vous devez utiliser le fichier _.xcworkspace_ dans votre projet.

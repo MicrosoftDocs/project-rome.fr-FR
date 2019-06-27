@@ -1,34 +1,34 @@
 ---
-title: Fichier Include
-description: Fichier Include
+title: Fichier include
+description: Fichier include
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: b2d1d764c4aae562a1fcafdb490db5a14522cda6
-ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "66755811"
 ---
-## <a name="preliminary-setup-for-the-connected-devices-platform-and-notifications"></a>Programme d’installation préliminaire pour la plateforme de périphériques connectés et les Notifications
+## <a name="preliminary-setup-for-the-connected-devices-platform-and-notifications"></a>Configuration préliminaire pour la Plateforme d’appareils connectés et les notifications
 
-Avant d’implémenter la connectivité à distance, il existe quelques étapes, que vous devrez suivre pour permettre à votre application Android à connecter des appareils à distance, ainsi que d’envoyer et recevoir des notifications.
+Avant d’implémenter la connectivité à distance, vous devez effectuer plusieurs étapes pour permettre à votre application Android de se connecter à des appareils distants mais aussi d’envoyer et recevoir des notifications.
 
 ### <a name="register-your-app"></a>Inscrire votre application
 
-Authentification de compte Microsoft (MSA) ou Azure Active Directory (AAD) est requise pour presque toutes les fonctionnalités de Project Rome SDK (l’exception en cours de l’API de partage à proximité). Si vous ne pas déjà un compte de service administré et souhaiter utiliser une, inscrire sur [account.microsoft.com](https://account.microsoft.com/account).
+L’authentification de compte Microsoft (MSA) ou Azure Active Directory (AAD) est nécessaire pour pratiquement toutes les fonctionnalités du SDK du projet Rome (les API de partage de proximité étant l’exception). Si vous ne disposez pas déjà d’un compte MSA et que souhaitez en utiliser un, inscrivez-vous sur [account.microsoft.com](https://account.microsoft.com/account).
 
 > [!NOTE]
-> Les comptes Azure Active Directory (AAD) ne sont pas pris en charge avec les API de relais d’appareil.
+> Les comptes Azure Active Directory (AAD) ne sont pas pris en charge avec les API de relais d’appareils.
 
-À l’aide de votre méthode d’authentification choisi, vous devez inscrire votre application auprès de Microsoft en suivant les instructions la [portail d’inscription des applications](https://apps.dev.microsoft.com/). Si vous n’avez pas un compte de développeur Microsoft, vous devrez créer un.
+En utilisant la méthode d’authentification de votre choix, vous devez inscrire votre application auprès de Microsoft en suivant les instructions qui se trouvent sur le [portail d’inscription des applications](https://apps.dev.microsoft.com/). Si vous n’avez pas de compte de développeur Microsoft, vous devrez en créer un.
 
-Lorsque vous inscrivez une application à l’aide d’un compte de service administré, vous devez recevoir une chaîne d’ID de client. Enregistrer ce paramètre pour une utilisation ultérieure. Cela permettra à votre application d’accéder aux ressources de la plate-forme de périphériques connectés de Microsoft. Si vous utilisez AAD, consultez [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) pour obtenir des instructions sur l’obtention de chaîne d’ID du client.
+Quand vous inscrivez une application à l’aide d’un compte MSA, vous devez recevoir une chaîne d’ID client. Enregistrez-la pour plus tard. Elle permettra à votre application d’accéder aux ressources de la Plateforme d’appareils connectés de Microsoft. Si vous utilisez AAD, consultez [Bibliothèques d’authentification d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) pour savoir comment obtenir la chaîne d’ID client.
 
-### <a name="add-the-sdk"></a>Ajoutez le kit SDK
+### <a name="add-the-sdk"></a>Ajouter le kit SDK
 
-Insérer les références de référentiel suivantes dans le *build.gradle* fichier à la racine de votre projet.
+Insérez les références de référentiel ci-dessous dans le fichier *build.gradle* à la racine de votre projet.
 
 ```Java
 allprojects {
@@ -37,7 +37,7 @@ allprojects {
     }
 }
 ```
-Puis, insérez la dépendance suivante dans le _build.gradle_ fichier qui se trouve dans votre dossier de projet.
+Insérez ensuite la dépendance suivante dans le fichier _build.gradle_ qui se trouve dans le dossier de votre projet.
 
 ```Java
 dependencies { 
@@ -46,9 +46,9 @@ dependencies {
 }
 ```
 
-Dans votre projet *AndroidManifest.xml* , ajoutez les autorisations suivantes à l’intérieur de la `<manifest>` (s’ils ne figurent pas déjà). Ainsi, votre application l’autorisation pour se connecter à Internet et pour activer la découverte de Bluetooth sur votre appareil.
+Dans le fichier *AndroidManifest.xml* de votre projet, ajoutez les autorisations suivantes à l’intérieur de l’élément `<manifest>` (si elles ne s’y trouvent pas déjà). Cela donne à votre application l’autorisation de se connecter à Internet et d’activer la découverte Bluetooth sur votre appareil.
 
-Notez que les autorisations liées à Bluetooth sont uniquement nécessaires pour l’utilisation de découverte de Bluetooth ; ils ne sont pas nécessaires pour les autres fonctionnalités de la plateforme d’appareils connectés. En outre, `ACCESS_COARSE_LOCATION` est uniquement requis sur Android SDK 21 et versions ultérieures. Sur Android SDK 23 et versions ultérieures, le développeur doit également l’utilisateur pour accorder l’accès à l’emplacement lors de l’exécution.
+Notez que les autorisations liées à Bluetooth servent uniquement à la découverte Bluetooth ; elles n’ont pas d’utilité pour les autres fonctionnalités de la Plateforme d’appareils connectés. Par ailleurs, `ACCESS_COARSE_LOCATION` est nécessaire uniquement pour les SDK Android version 21 et ultérieure. Sur les kits SDK Android version 23 et ultérieure, le développeur doit aussi demander à l’utilisateur d’accorder l’accès à l’emplacement au moment de l’exécution.
 
 
 ```xml
@@ -59,7 +59,7 @@ Notez que les autorisations liées à Bluetooth sont uniquement nécessaires pou
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
-Ensuite, accédez à l’ou les classes activité où vous souhaitez que les fonctionnalités d’appareils connectés à live. Importer les packages suivants.
+Ensuite, accédez aux classes d’activité dans lesquelles vous voulez activer la fonctionnalité Appareils connectés. Importez les packages suivants.
 
 ```java
 import com.microsoft.connecteddevices;

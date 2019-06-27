@@ -1,30 +1,30 @@
 ---
-title: Publication et la lecture des activités de l’utilisateur (iOS)
-description: Ce guide montre comment créer, publier et lire des activités des utilisateurs dans votre application iOS basée sur Windows.
+title: Publication et lecture d’activités de l’utilisateur (iOS)
+description: Ce guide montre comment créer, publier et lire des activités de l’utilisateur Windows dans votre application iOS.
 ms.topic: article
-keywords: Microsoft, windows, project rome, d’activités des utilisateurs, d’ios
+keywords: microsoft, windows, projet rome, activités de l’utilisateur, ios
 ms.assetid: 445f1dd4-f3c7-46e4-a7cd-42a1fb411172
 ms.localizationpriority: medium
 ms.openlocfilehash: 3cc19463a5e036ab76288760aa70d86f1861675b
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59801671"
 ---
-# <a name="implementing-user-activities-for-ios"></a>Implémentation d’activités des utilisateurs pour iOS
+# <a name="implementing-user-activities-for-ios"></a>Implémentation d’activités de l’utilisateur pour iOS
 
-Activités de l’utilisateur sont des constructions de données qui représentent les tâches d’un utilisateur dans une application. Ils permettent d’enregistrer un instantané d’une tâche en cours de se poursuivre ultérieurement. Le [Windows chronologie](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) fonctionnalité offre aux utilisateurs Windows une liste déroulante de toutes leurs activités récentes, représenté sous forme de cartes avec le texte et les graphiques. Pour plus d’informations sur les activités des utilisateurs en général, consultez [continuer les activités des utilisateurs, même sur les appareils](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities). Pour obtenir des recommandations concernant créer ou mettre à jour des activités, consultez le [les activités utilisateur meilleures pratiques](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide.
+Les activités de l’utilisateur sont des constructions de données qui représentent les tâches d’un utilisateur dans une application. Elles permettent d’enregistrer une capture instantanée d’une tâche en cours à poursuivre ultérieurement. La fonctionnalité [Chronologie Windows](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) offre aux utilisateurs Windows une liste déroulante de toutes leurs activités récentes, représentées sous forme de cartes comportant du texte et des graphiques. Pour plus d’informations sur les activités de l’utilisateur en général, consultez [Poursuivre l’activité utilisateur, même sur différents appareils](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities). Pour savoir quand créer ou mettre à jour des activités, consultez le guide [Bonnes pratiques concernant les activités de l’utilisateur](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices).
 
-Avec le Kit de développement Project Rome, votre application iOS peut publier pas uniquement les activités de l’utilisateur pour une utilisation dans les fonctionnalités de Windows telles que la chronologie, mais il peut également agir comme un point de terminaison et lire des activités à l’utilisateur comme le fait de chronologie. Cela permet aux applications d’inter-périphériques transcender complètement les leurs plateformes et des expériences présentes qui suivent les utilisateurs plutôt que des appareils.
+Avec le SDK Projet Rome, votre application iOS peut non seulement publier des activités de l’utilisateur pour une utilisation dans des fonctionnalités Windows telles que la Chronologie, mais elle peut également agir comme point de terminaison et relire des activités à l’utilisateur comme le fait la Chronologie. Cela permet aux applications inter-appareils de transcender totalement leurs plateformes et de proposer des expériences qui suivent les utilisateurs plutôt que les appareils.
 
-Les fonctionnalités de Project Rome sont pris en charge par une plateforme sous-jacente, appelée la plateforme d’appareils connectés. Ce guide décrit les étapes nécessaires pour commencer à utiliser la plateforme d’appareils connectés, puis explique comment utiliser la plateforme pour implémenter des fonctionnalités connexes d’activités utilisateur.
+Les fonctionnalités du projet Rome sont prises en charge par une plateforme sous-jacente appelée Plateforme d’appareils connectés. Ce guide décrit les étapes nécessaires pour commencer à utiliser la Plateforme d’appareils connectés, puis explique comment implémenter les fonctionnalités liées aux activités de l’utilisateur à l’aide de cette plateforme.
 
-Présente les étapes ci-dessous référencera le code à partir de la [exemple d’application de Project Rome iOS](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) qui est disponible sur GitHub.  
+Les étapes ci-dessous font référence à du code tiré de l’[exemple d’application iOS du projet Rome](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) qui est disponible sur GitHub.  
 
-Consultez le [référence de l’API](api-reference-for-ios.md) page pour des liens vers la documentation de référence relatives à ces scénarios.
+Consultez la page [Informations de référence sur les API](api-reference-for-ios.md) pour obtenir des liens vers la documentation de référence pertinente pour ces scénarios.
 
-## <a name="setting-up-the-connected-devices-platform-and-notifications"></a>Configuration de la plateforme de périphériques connectés et les Notifications
+## <a name="setting-up-the-connected-devices-platform-and-notifications"></a>Configuration de la Plateforme d’appareils connectés et des notifications
 
 [!INCLUDE [ios/preliminary-setup](../includes/ios/preliminary-setup.md)]
 
@@ -32,18 +32,18 @@ Consultez le [référence de l’API](api-reference-for-ios.md) page pour des li
 
 [!INCLUDE [ios/dev-center-onboarding](../includes/ios/notifications-dev-center-onboarding.md)]
 
-## <a name="using-the-platform"></a>À l’aide de la plateforme
+## <a name="using-the-platform"></a>Utilisation de la plateforme
 
 [!INCLUDE [ios/create-setup-events-start-platform](../includes/ios/create-setup-events-start-platform.md)]
 
-### <a name="initialize-a-user-activity-channel"></a>Initialiser un canal de l’activité des utilisateurs
+### <a name="initialize-a-user-activity-channel"></a>Initialiser un canal des activités de l’utilisateur
 
-Pour implémenter les fonctionnalités de l’activité des utilisateurs dans votre application, vous devez d’abord initialiser le flux en créant un MCDUserActivityChannel d’activité utilisateur. Vous devez le considérer comme l’étape d’initialisation de plateforme ci-dessus : il doit être vérifié et éventuellement restauré chaque fois que l’application s’affiche au premier plan (mais pas avant l’initialisation de plateforme).
+Pour implémenter les fonctionnalités Activité de l’utilisateur dans votre application, vous devez d’abord initialiser le flux des activités de l’utilisateur en créant un MCDUserActivityChannel. Vous devez considérer cette opération comme l’étape d’initialisation de la plateforme ci-dessus : elle doit être vérifiée et éventuellement refaite chaque fois que l’application s’affiche au premier plan (mais pas avant l’initialisation de la plateforme).
 
-Vous devez un compte d’utilisateur connecté pour cette étape. Comme ci-dessus, vous pouvez utiliser une classe à partir de l’exemple de fournisseur d’authentification pour acquérir facilement le MCDUserAccount(s). Vous devez également votre ID d’application multiplateforme, qui a été récupérée via l’inscription de tableau de bord de développement Microsoft.
-La méthode suivante à partir de l’exemple d’application initialise un MCDUserActivityChannel.
+Pour cette étape, vous devez disposer d’un compte d’utilisateur connecté. Comme ci-dessus, vous pouvez utiliser une classe de l’exemple de fournisseur d’authentification pour acquérir facilement le ou les MCDUserAccounts. Vous aurez aussi besoin de votre ID d’application multiplateforme, qui a été récupéré par le biais de l’inscription au tableau de bord du développeur Microsoft.
+La méthode suivante de l’exemple d’application initialise un MCDUserActivityChannel.
 
-La méthode suivante à partir de l’exemple d’application initialise un MCDUserActivityChannel.
+La méthode suivante de l’exemple d’application initialise un MCDUserActivityChannel.
 
 ```ObjectiveC
 
@@ -63,11 +63,11 @@ else
     self.createActivityStatusField.text = @"Need to be logged in!";
 }
 ```
-À ce stade, vous devez avoir une référence MCDUserActivityChannel dans le canal.
+À ce stade, vous devez avoir une référence à MCDUserActivityChannel dans le canal.
 
-### <a name="create-and-publish-a-user-activity"></a>Créer et publier une activité utilisateur
+### <a name="create-and-publish-a-user-activity"></a>Créer et publier une activité de l’utilisateur
 
-L’exemple suivant de code montre comment un nouveau **MCDUserActivity** instance est créée.
+L’exemple de code suivant montre comment une nouvelle instance de **MCDUserActivity** est créée.
 
 ```ObjectiveC
 - (IBAction)createActivityButton:(id)sender
@@ -101,7 +101,7 @@ L’exemple suivant de code montre comment un nouveau **MCDUserActivity** instan
 }
 ```
 
-Dans la méthode suivante, les données visuelles de la **MCDUserActivity** est définie avant la publication de l’activité. L’URI de l’activation déterminent quelle action est effectuée lorsque l’activité est activée (lorsqu’il est sélectionné dans la chronologie, par exemple). Le texte d’affichage s’affichera sur d’autres appareils lorsqu’ils les consultent l’activité (dans la chronologie de Windows, par exemple). L’iconUri est un lien web vers une image d’icône.
+Dans la méthode suivante, les données visuelles de **MCDUserActivity** sont définies avant la publication de l’activité. L’URI d’activation détermine l’action qui est effectuée quand l’activité est activée (quand elle est sélectionnée dans la Chronologie, par exemple). Le texte d’affichage s’affiche sur d’autres appareils quand ils consultent l’activité (dans la Chronologie Windows, par exemple). L’iconUri est un lien web vers une image d’icône.
 
 
 ```ObjectiveC
@@ -116,7 +116,7 @@ Dans la méthode suivante, les données visuelles de la **MCDUserActivity** est 
     // ...
 ```
 
-Une fois le **MCDUserActivity** est rempli avec ces données, l’opération de publication a lieu.
+Une fois le **MCDUserActivity** rempli avec ces données, l’opération de publication a lieu.
 
 ```ObjectiveC
     // ...
@@ -143,15 +143,15 @@ mDisplayText = "Created by OneSDK Sample App";
 mActivationUri = "http://contoso.com");
 ```
 > [!TIP] 
-> Outre les propriétés ci-dessus, il existe de nombreuses autres fonctionnalités qui peuvent être configurées. Pour une présentation plus détaillée sur les différentes façons qu’un UserActivity peut être personnalisé, consultez le  **[MCDUserActivity](../objectivec-api/userdata.useractivities/MCDUserActivity.md)**, **[MCDUserActivityVisualElements](../objectivec-api/userdata.useractivities/MCDUserActivityVisualElements.md)**, et **[MCDUserActivityAttribution](../objectivec-api/userdata.useractivities/MCDUserActivityAttribution.md)** classes. Consultez le [les activités utilisateur meilleures pratiques](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide pour obtenir des recommandations détaillées quant à la conception d’activités des utilisateurs.
+> Outre les propriétés ci-dessus, il existe de nombreuses autres fonctionnalités qui peuvent être configurées. Pour obtenir une étude complète des différentes façons de personnaliser un UserActivity, consultez les classes **[MCDUserActivity](../objectivec-api/userdata.useractivities/MCDUserActivity.md)** , **[MCDUserActivityVisualElements](../objectivec-api/userdata.useractivities/MCDUserActivityVisualElements.md)** et **[MCDUserActivityAttribution](../objectivec-api/userdata.useractivities/MCDUserActivityAttribution.md)** . Consultez le guide [Bonnes pratiques concernant les activités de l’utilisateur](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) pour obtenir des recommandations détaillées sur la façon de concevoir des activités de l’utilisateur.
 
-## <a name="update-an-existing-user-activity"></a>Mettre à jour d’une activité utilisateur existant
+## <a name="update-an-existing-user-activity"></a>Mettre à jour une activité d’utilisateur existante
 
-Si vous disposez d’une activité existante et que vous souhaitez mettre à jour ses informations (en cas d’un engagement nouvelle page modifiée et ainsi de suite), vous pouvez le faire en utilisant un **MCDUserActivitySession**. 
+Si vous disposez d’une activité existante et que vous souhaitez mettre à jour ses informations (en cas de nouvel engagement, de page modifiée, etc.), vous pouvez le faire en utilisant un **MCDUserActivitySession**. 
 
-Une fois que vous avez créé une session, votre application peut effectuer les modifications souhaitées aux propriétés de la **UserActivity**. Lorsque vous avez terminé d’apporter des modifications, fermez la session. 
+Une fois que vous avez créé une session, votre application peut apporter les changements souhaités aux propriétés de **UserActivity**. Quand vous avez terminé d’apporter les changements, fermez la session. 
 
-La méthode suivante à partir de l’exemple d’application active ou désactive une session sur Active et inactive.
+La méthode suivante de l’exemple d’application active ou désactive une session.
 
 ```ObjectiveC
 - (IBAction)manageSessionButton:(id)sender
@@ -181,11 +181,11 @@ La méthode suivante à partir de l’exemple d’application active ou désacti
 ```
 
 
-Un **MCDUserActivitySession** peut être considéré comme un moyen de créer un **MCDUserActivitySessionHistoryItem** (présenté dans la section suivante). Au lieu de créer un nouveau **MCDUserActivity** chaque fois qu’un utilisateur accède à une nouvelle page, vous pouvez simplement créer une nouvelle session pour chaque page. Vous serez ainsi pour une activité plus intuitive et organisée expérience de lecture.
+Un **MCDUserActivitySession** peut être considéré comme un moyen de créer un **MCDUserActivitySessionHistoryItem** (décrit dans la section suivante). Au lieu de créer un **MCDUserActivity** chaque fois qu’un utilisateur accède à une nouvelle page, vous pouvez simplement créer une session pour chaque page. Cela constitue une expérience de lecture d’activité plus intuitive et plus organisée.
 
-## <a name="read-user-activities"></a>Activités de l’utilisateur en lecture
+## <a name="read-user-activities"></a>Lire des activités de l’utilisateur
 
-Votre application peut lire les activités des utilisateurs et les présenter à l’utilisateur comme le fait de la fonctionnalité de montage de Windows. Pour configurer la lecture de l’activité des utilisateurs, vous utilisez le même **MCDUserActivityChannel** instance indiquée précédemment. Cette instance peut exposer **MCDUserActivitySessionHistoryItem** instances, qui représentent l’engagement d’un utilisateur dans une activité particulière pendant une période spécifique.
+Votre application peut lire les activités de l’utilisateur et les présenter à l’utilisateur exactement comme le fait la fonctionnalité Chronologie Windows. Pour configurer la lecture des activités de l’utilisateur, vous utilisez la même instance de **MCDUserActivityChannel** que précédemment. Cette instance peut exposer des instances de **MCDUserActivitySessionHistoryItem**, qui représentent l’engagement d’un utilisateur dans une activité particulière pendant une période spécifique.
 
 ```ObjectiveC
 - (IBAction)readActivityButton:(id)sender
@@ -215,4 +215,4 @@ Votre application peut lire les activités des utilisateurs et les présenter à
 }
 ```
 
-Maintenant votre application doit disposer d’une liste de **MCDUserActivitySessionHistoryItem**s. Chacun d'entre eux peut fournir sous-jacent **MCDUserActivity** (consultez **[MCDUserActivitySessionHistoryItem](../objectivec-api/userdata.useractivities/MCDUserActivitySessionHistoryItem.md)** pour plus d’informations), que vous pouvez ensuite afficher à l’utilisateur.
+Votre application doit maintenant disposer d’une liste d’éléments **MCDUserActivitySessionHistoryItem**. Chacun d’entre eux peut fournir le **MCDUserActivity** sous-jacent (consultez **[MCDUserActivitySessionHistoryItem](../objectivec-api/userdata.useractivities/MCDUserActivitySessionHistoryItem.md)** pour plus d’informations), que vous pouvez ensuite afficher à l’utilisateur.

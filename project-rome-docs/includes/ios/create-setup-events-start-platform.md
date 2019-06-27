@@ -1,25 +1,25 @@
 ---
-title: Fichier Include
-description: Fichier Include
+title: Fichier include
+description: Fichier include
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: 60a4e282fc5446e38a80e72979e12daad51b2026
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59803975"
 ---
-### <a name="create-an-instance-of-the-platform"></a>Créez une instance de la plateforme
+### <a name="create-an-instance-of-the-platform"></a>Créer une instance de la plateforme
 
-Pour commencer simplement instancier la plateforme.
+Pour commencer, instanciez simplement la plateforme.
 
 `MCDConnectedDevicesPlatform* platform = [MCDConnectedDevicesPlatform new];`
 
 ### <a name="subscribe-to-mcdconnecteddevicesaccountmanager"></a>S’abonner à MCDConnectedDevicesAccountManager
 
-La plateforme nécessite un utilisateur authentifié accéder à la plateforme.  Vous devrez vous abonner à **MCDConnectedDevicesAccountManager** événements afin d’assurer un compte valide est utilisé.
+Pour pouvoir accéder à la plateforme, l’utilisateur doit être authentifié.  Vous devrez vous abonner aux événements **MCDConnectedDevicesAccountManager** pour être certain qu’un compte valide est utilisé.
 
 ```ObjectiveC
 [MCDConnectedDevicesPlatform* platform.accountManager.accessTokenRequested
@@ -43,7 +43,7 @@ La plateforme nécessite un utilisateur authentifié accéder à la plateforme. 
 
 ### <a name="subscribe-to-mcdconnecteddevicesnotificationregistrationmanager"></a>S’abonner à MCDConnectedDevicesNotificationRegistrationManager
 
-De même, la plateforme utilise des notifications pour fournir des commandes entre les appareils.  Par conséquent, vous devez vous abonner à la **MCDConnectedDevicesNotificationRegistrationManager** événements afin d’assurer les États de l’inscription du cloud sont valides pour le compte utilisé.  Vérifier l’état à l’aide **MCDConnectedDevicesNotificationRegistrationState**
+De la même manière, la plateforme utilise des notifications pour la transmission de commandes entre les appareils.  Par conséquent, vous devez vous abonner aux événements **MCDConnectedDevicesNotificationRegistrationManager** pour faire en sorte que les états d’inscription cloud sont valides pour le compte utilisé.  Vérifiez l’état à l’aide de **MCDConnectedDevicesNotificationRegistrationState**
 
 ```ObjectiveC
 [MCDConnectedDevicesPlatform* platform.notificationRegistrationManager.notificationRegistrationStateChanged
@@ -57,13 +57,13 @@ De même, la plateforme utilise des notifications pour fournir des commandes ent
 ```
 
 ### <a name="start-the-platform"></a>Démarrer la plateforme
-Maintenant que la plateforme est initialisée et gestionnaires d’événements sont en place, vous êtes prêt à démarrer la découverte des périphériques système à distance.  
+Maintenant que la plateforme est initialisée et que les gestionnaires d’événements sont en place, vous êtes prêt à démarrer la découverte de périphériques système distants.  
 
 `[MCDConnectedDevicesPlatform* platform start];`
 
-### <a name="retrieve-user-accounts-known-to-the-app"></a>Récupérer les comptes d’utilisateur connus pour l’application
+### <a name="retrieve-user-accounts-known-to-the-app"></a>Récupérer les comptes d’utilisateurs connus de l’application
 
-Il est important de s’assurer que la liste des comptes d’utilisateur connu à l’application sont correctement synchronisées avec le **MCDConnectedDevicesAccountManager**.
+Il est important de vérifier que la liste des comptes d’utilisateurs connus de l’application est correctement synchronisée avec **MCDConnectedDevicesAccountManager**.
 
 Utilisez **MCDConnectedDevicesAccountManager.addAccountAsync** pour ajouter un nouveau compte d’utilisateur.
 

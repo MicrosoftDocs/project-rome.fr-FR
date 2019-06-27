@@ -1,21 +1,21 @@
 ---
 ms.openlocfilehash: f81fbbffb2ec54f8d9a252a00fc3822f1f3f9582
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59800851"
 ---
-### <a name="associate-the-connected-devices-platform-with-the-native-push-notification-for-each-platform"></a>Associer la plateforme d’appareils connectés à la notification push native pour chaque plateforme. 
+### <a name="associate-the-connected-devices-platform-with-the-native-push-notification-for-each-platform"></a>Associez la Plateforme d’appareils connectés à la notification Push native de chaque plateforme. 
 
-Comme mentionné précédemment, les clients d’application doivent apportent des informations sur le pipeline de notification push natif utilisé pour chaque plateforme pour le Kit de développement côté client et la plateforme d’appareils connectés pendant le processus d’inscription, afin de permettre le graphique service de notification pour les notifications de sortance pour chaque point de terminaison du client d’application lorsque votre serveur d’applications publie une notification utilisateur de multi-ciblage via MS Graph API.
-Dans les étapes ci-dessus, vous avez initialisé la plateforme sans **NotificationProvider** paramètre. Ici, vous devez construire et passez un objet qui implémente **NotificationProvider**. Consultez **GraphNotificationProvider.cs** à partir de l’exemple pour plus d’informations. 
+Comme nous l’avons vu précédemment, les clients d’application doivent faire connaître au kit SDK côté client et à la Plateforme d’appareils connectés au moment de l’inscription le pipeline de notification Push natif qui est utilisé pour chaque plateforme, ceci afin de permettre au service de notification Graph de distribuer les notifications à chaque point de terminaison client d’application quand votre serveur d’applications publie une notification ciblant l’utilisateur via les API MS Graph.
+Dans les étapes précédentes, vous avez initialisé la Plateforme sans paramètre **NotificationProvider**. Ici, vous devez construire et transmettre un objet qui implémente **NotificationProvider**. Pour en savoir plus, consultez **GraphNotificationProvider.cs** dans l’exemple. 
 
 
 
-Fournir cette inscription dans votre implémentation de **NotificationProvider**. Ensuite, le **plateforme** appel d’initialisation doit fournir local **plateforme** avec un accès au service de notifications push, ce qui permet de votre application à recevoir des données à partir de MS Graph Notifications côté serveur. 
+Transmettez cette inscription dans votre implémentation de **NotificationProvider**. Ensuite, l’appel d’initialisation de la **Plateforme** doit fournir à la **Plateforme** locale un accès au service de notification Push, permettant ainsi à votre application de recevoir des données des notifications MS Graph côté serveur. 
 
-### <a name="pass-incoming-push-notifications-to-the-client-sdk"></a>Transmettre des notifications push entrantes pour le SDK du client
-Maintenant, vous pouvez gérer la charge utile UserNotification entrante à l’intérieur de la tâche en arrière-plan natif inscrit avec PushNotificationTrigger ou dans votre d’écoute de Windows le [PushNotificationReceived événement](https://docs.microsoft.com/en-us/uwp/api/windows.networking.pushnotifications.pushnotificationchannel.pushnotificationreceived). 
+### <a name="pass-incoming-push-notifications-to-the-client-sdk"></a>Transmettre les notifications Push entrantes au SDK client
+Maintenant, vous pouvez gérer la charge utile UserNotification entrante à l’intérieur de la tâche en arrière-plan native Windows inscrite auprès de PushNotificationTrigger ou dans votre écouteur de l’[événement PushNotificationReceived](https://docs.microsoft.com/en-us/uwp/api/windows.networking.pushnotifications.pushnotificationchannel.pushnotificationreceived). 
 
-Pour des raisons, y compris la conformité, la sécurité et les optimisations potentielles, la notification brutes WNS entrante en provenance de Notifications de graphique côté serveur peut souvent être un drainage épaule qui ne contient pas toutes les données qui sont initialement publiées par le serveur d’application. La récupération de la notification de contenu réelle publiée par le serveur d’applications est masquée derrière les API du Kit de développement logiciel côté client. Dans ce cas, le SDK demande toujours le client d’application pour passer la charge utile de notification brute WNS entrante pour le Kit de développement. Ainsi, le Kit de développement logiciel déterminer s’il s’agit d’une notification pour les scénarios de Notifications de graphique ou pas (au cas où push brutes WNS peut également être utilisé par le client app à d’autres fins). 
+Pour des raisons notamment de conformité, de sécurité et d’optimisations potentielles, la notification brute WNS entrante en provenance des notifications Graph côté serveur peut souvent être une simple indication, qui ne contient aucune des données initialement publiées par le serveur d’applications. La récupération du contenu de notification effectif publié par le serveur d’applications est occultée par les API du SDK côté client. Dans ce cas, le SDK demande toujours au client d’application de transmettre la charge utile de notification brute WNS entrante au SDK. Cela permet au SDK de déterminer s’il s’agit d’une notification pour des scénarios de notifications Graph ou pas (dans le cas où des notifications Push brutes WNS peuvent aussi être utilisées par le client d’application à d’autres fins). 

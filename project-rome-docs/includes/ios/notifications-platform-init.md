@@ -1,19 +1,19 @@
 ---
-title: Fichier Include
-description: Fichier Include
+title: Fichier include
+description: Fichier include
 ms.topic: include
 ms.assetid: cf4bc236-1a9c-4192-b3fe-2d78331316c0
 ms.localizationpriority: medium
 ms.openlocfilehash: 6de00cdfd4595f67a655a672dc46fea75806a51f
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59801601"
 ---
-### <a name="add-the-sdk"></a>Ajoutez le kit SDK
+### <a name="add-the-sdk"></a>Ajouter le kit SDK
 
-Le plus simple pour ajouter la plateforme d’appareils connectés à votre application iOS consiste à l’aide de la [CocoaPods](https://cocoapods.org/) Gestionnaire de dépendances. Accédez à votre projet iOS *Podfile* et insérez l’entrée suivante :
+Le moyen le plus simple d’ajouter la Plateforme d’appareils connectés à votre application iOS est d’utiliser le gestionnaire de dépendances [CocoaPods](https://cocoapods.org/). Accédez au fichier *Podfile* de votre projet iOS et insérez l’entrée suivante :
 
 ```ObjectiveC
 platform :ios, "10.0"
@@ -29,21 +29,21 @@ target 'iOSSample' do
 ```
 
 > [!NOTE]
-> Afin de consommer CocoaPod, vous devez utiliser le _.xcworkspace_ fichier dans votre projet.
+> Pour utiliser CocoaPod, vous devez utiliser le fichier _.xcworkspace_ dans votre projet.
 
-## <a name="initialize-the-connected-devices-platform"></a>Initialiser la plateforme d’appareils connectés
+## <a name="initialize-the-connected-devices-platform"></a>Initialiser la Plateforme d’appareils connectés
 
-Avant de pouvoir utiliser les fonctionnalités des appareils connectés, la plateforme doit être initialisée au sein de votre application. 
+Avant de pouvoir utiliser les fonctionnalités d’Appareils connectés, la plateforme doit être initialisée au sein de votre application. 
 
-Vous devez instancier le **MCDPlatform** classe. Le **MCDPlatform**de `platformWithAccountProvider:` méthode accepte deux paramètres : un **MCDUserAccountProvider** et un **MCDNotificationProvider**. Le **MCDNotificationProvider** paramètre n’est nécessaire pour l’hébergement d’applications à distance et les activités de l’utilisateur, qui ne sont pas traités dans ce guide. Il peut être laissée `nil` pour l’instant.
+Vous devez instancier la classe **MCDPlatform**. La méthode `platformWithAccountProvider:` de **MCDPlatform** accepte deux paramètres : **MCDUserAccountProvider** et **MCDNotificationProvider**. Le paramètre **MCDNotificationProvider** est nécessaire uniquement pour l’hébergement d’applications distantes et les activités utilisateur, sujets non abordés dans ce guide. Pour l’instant, il peut rester `nil`.
 
-Le **MCDUserAccountProvider** est nécessaire pour fournir un jeton d’accès OAuth 2.0 pour l’accès de l’utilisateur actuel à la plateforme d’appareils connectés. Elle sera appelée la première fois que l’application est exécutée et le jeton d’actualisation lors de l’expiration d’une plateforme gérée. 
+Le paramètre **MCDUserAccountProvider** est nécessaire pour remettre un jeton d’accès OAuth 2.0 permettant à l’utilisateur actif d’accéder à la Plateforme d’appareils connectés. Il est appelé à la première exécution de l’application et à l’expiration d’un jeton d’actualisation géré par la plateforme. 
 
-Afin d’aider les développeurs à intégrer avec la plateforme plus facilement, nous avons fourni des implémentations de fournisseur pour Android et iOS de compte. Ces implémentations, trouvé dans le [exemple de fournisseur d’authentification](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/account-provider-sample), peut être utilisé pour obtenir le jeton d’accès OAuth 2.0 et actualiser le jeton pour votre application.
+Pour faciliter l’intégration des développeurs dans la plateforme, nous avons fourni des implémentations de fournisseur de compte pour Android et iOS. Ces implémentations, qui se trouvent dans l’[exemple de fournisseur d’authentification](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/account-provider-sample), permettent d’obtenir le jeton d’accès OAuth 2.0 et le jeton d’actualisation pour votre application.
 
 [!INCLUDE [auth-scopes](../auth-scopes.md)]
 
-Le code suivant à partir de l’exemple d’application illustre l’initialisation de la plateforme.
+Le code suivant tiré de l’exemple d’application illustre l’initialisation de la plateforme.
 
 ```ObjectiveC
 - (void)initializePlatform
@@ -67,4 +67,4 @@ Le code suivant à partir de l’exemple d’application illustre l’initialisa
 }
 ```
 
-Arrêter la plateforme quand votre application s’arrête au premier plan en appelant le `shutdownAsync:` (méthode).
+Arrêtez la plateforme au moment où votre application quitte le premier plan en appelant la méthode `shutdownAsync:`.
