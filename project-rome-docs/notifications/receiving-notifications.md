@@ -1,15 +1,15 @@
 ---
 ms.openlocfilehash: 3f5ac416eb651ed6d79d53cb864d201dd2f73db7
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "58907591"
 ---
-# <a name="receiving-notifications-using-the-project-rome-sdk"></a><span data-ttu-id="4af6f-101">Recevoir des notifications à l’aide du Kit de développement logiciel projet Rome</span><span class="sxs-lookup"><span data-stu-id="4af6f-101">Receiving notifications using the Project Rome SDK</span></span>
+# <a name="receiving-notifications-using-the-project-rome-sdk"></a><span data-ttu-id="8c397-101">Réception de notifications avec le SDK Projet Rome</span><span class="sxs-lookup"><span data-stu-id="8c397-101">Receiving notifications using the Project Rome SDK</span></span>
 
-<span data-ttu-id="4af6f-102">Le processus de réception des notifications de MSGraph est aligné sur les plateformes de développement différents.</span><span class="sxs-lookup"><span data-stu-id="4af6f-102">The process of receiving MSGraph notifications is aligned across different development platforms.</span></span> <span data-ttu-id="4af6f-103">En fonction de la différence de langue du Kit de développement logiciel, nous avons des instructions distinctes.</span><span class="sxs-lookup"><span data-stu-id="4af6f-103">Based on the SDK language difference, we have separate guidelines.</span></span> <span data-ttu-id="4af6f-104">Sélectionnez une plateforme ci-dessous pour savoir comment activer la récupération de notification dans votre application.</span><span class="sxs-lookup"><span data-stu-id="4af6f-104">Select a platform below to learn how to enable notification retrieval in your app.</span></span>
+<span data-ttu-id="8c397-102">Le processus de réception de notifications MS Graph est le même sur les différentes plateformes de développement.</span><span class="sxs-lookup"><span data-stu-id="8c397-102">The process of receiving MSGraph notifications is aligned across different development platforms.</span></span> <span data-ttu-id="8c397-103">Compte tenu de la différence de langues du SDK, nous avons des instructions distinctes.</span><span class="sxs-lookup"><span data-stu-id="8c397-103">Based on the SDK language difference, we have separate guidelines.</span></span> <span data-ttu-id="8c397-104">Sélectionnez une plateforme ci-dessous pour savoir comment activer la récupération des notifications dans votre application.</span><span class="sxs-lookup"><span data-stu-id="8c397-104">Select a platform below to learn how to enable notification retrieval in your app.</span></span>
 
-* [<span data-ttu-id="4af6f-105">Windows</span><span class="sxs-lookup"><span data-stu-id="4af6f-105">Windows</span></span>](how-to-guide-for-windows.md)
-* [<span data-ttu-id="4af6f-106">Android</span><span class="sxs-lookup"><span data-stu-id="4af6f-106">Android</span></span>](how-to-guide-for-android.md)
-* [<span data-ttu-id="4af6f-107">iOS</span><span class="sxs-lookup"><span data-stu-id="4af6f-107">iOS</span></span>](how-to-guide-for-ios.md)
+* [<span data-ttu-id="8c397-105">Windows</span><span class="sxs-lookup"><span data-stu-id="8c397-105">Windows</span></span>](how-to-guide-for-windows.md)
+* [<span data-ttu-id="8c397-106">Android</span><span class="sxs-lookup"><span data-stu-id="8c397-106">Android</span></span>](how-to-guide-for-android.md)
+* [<span data-ttu-id="8c397-107">iOS</span><span class="sxs-lookup"><span data-stu-id="8c397-107">iOS</span></span>](how-to-guide-for-ios.md)
