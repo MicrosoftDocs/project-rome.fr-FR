@@ -41,6 +41,7 @@
       "uhfHeaderId": "MSDocsHeader-ProjectRome",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
+      "disable_contribution_on_translation_quality": ["MT"],
       "titleSuffix": "Project Rome",
       "ms.topic": "article",
       "ms.prod": "connected-devices",
@@ -48,15 +49,7 @@
       "ms.author": "nichola",
       "author": "knicholasa"
     },
-    "fileMetadata": {
-       "open_to_public_contributors": {
-	    "/*.md": true,
-            "devicerelay/**.md": true,
-            "user-activities/**.md": true,
-            "nearby-sharing/**.md": true,
-            "remote-sessions/**.md": true
-       }
-    },
+    "fileMetadata": {},
     "template": [],
     "dest": "project-rome",
     "markdownEngineName": "markdig"
