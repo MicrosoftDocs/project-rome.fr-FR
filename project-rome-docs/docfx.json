@@ -41,6 +41,7 @@
       "bilingual_type": "hover over",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/project-rome.fr-fr",
+      "feedback_product_url": "https://github.com/Microsoft/project-rome/issues",
       "uhfHeaderId": "MSDocsHeader-ProjectRome",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "disable_contribution_on_translation_quality": ["MT"],
