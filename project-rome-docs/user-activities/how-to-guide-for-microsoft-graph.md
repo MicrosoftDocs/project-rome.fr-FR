@@ -1,10 +1,11 @@
 ---
-ms.openlocfilehash: 8fd5cb9176bbde99598a95b51c1f2bba513ae187
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+title: Utilisation des API REST Activités de l’utilisateur de Microsoft Graph
+ms.openlocfilehash: efb5b591ca4c1f3024e1fb19dceee783dc75dc8c
+ms.sourcegitcommit: 5670ff536ea9bfcd678cfde54f262a1ec5c8add4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "59801111"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207898"
 ---
 # <a name="using-microsoft-graphs-user-activities-rest-apis"></a>Utilisation des API REST Activités de l’utilisateur de Microsoft Graph
 

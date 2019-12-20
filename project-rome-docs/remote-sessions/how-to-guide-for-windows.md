@@ -1,10 +1,11 @@
 ---
-ms.openlocfilehash: 3815bc468759419437fbddcb4eeb25af942eb124
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+title: Implémentation de sessions distantes pour Windows
+ms.openlocfilehash: 742c18c5178369fdf5016c7a89fb46a70c03b2a9
+ms.sourcegitcommit: 5670ff536ea9bfcd678cfde54f262a1ec5c8add4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "58907361"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207888"
 ---
 # <a name="implementing-remote-sessions-for-windows"></a>Implémentation de sessions distantes pour Windows
 

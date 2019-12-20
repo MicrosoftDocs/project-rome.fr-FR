@@ -1,10 +1,11 @@
 ---
-ms.openlocfilehash: 1d32d509e7c76507626cf0271a28f876f4749ab1
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+title: Utilisation des API REST de relais d’appareils de Microsoft Graph
+ms.openlocfilehash: 887ebff8788ac4300036512761df80c6b8e5e97f
+ms.sourcegitcommit: 5670ff536ea9bfcd678cfde54f262a1ec5c8add4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "59800281"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207818"
 ---
 # <a name="using-microsoft-graphs-device-relay-rest-apis"></a>Utilisation des API REST de relais d’appareils de Microsoft Graph
 

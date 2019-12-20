@@ -1,10 +1,11 @@
 ---
-ms.openlocfilehash: 5133c07ff487b5c437da1ca77e02a2906a856131
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+title: Espace de noms RemoteSystems.Commanding
+ms.openlocfilehash: b881297d32b66f60f882a866c7e775a08cc55f00
+ms.sourcegitcommit: 5670ff536ea9bfcd678cfde54f262a1ec5c8add4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58906651"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207758"
 ---
 # <a name="remotesystemscommanding-namespace"></a>Espace de noms RemoteSystems.Commanding
 ```

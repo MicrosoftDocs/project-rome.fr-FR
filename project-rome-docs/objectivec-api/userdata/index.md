@@ -1,10 +1,11 @@
 ---
-ms.openlocfilehash: 2b3821f8bf4f5b6e3dfd9cc1a6689a51562d90ac
-ms.sourcegitcommit: b0e8013c526b04f4a5667fc7fc744475b7706e12
+title: Espace de noms UserData
+ms.openlocfilehash: 90605ce75896b649b8c9e690d114747f3a85301f
+ms.sourcegitcommit: 5670ff536ea9bfcd678cfde54f262a1ec5c8add4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "64982009"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207658"
 ---
 # <a name="userdata-namespace"></a>Espace de noms UserData
 

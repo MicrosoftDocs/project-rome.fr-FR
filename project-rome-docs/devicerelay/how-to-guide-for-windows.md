@@ -1,10 +1,11 @@
 ---
-ms.openlocfilehash: 534b5d4b1c0eb13282b5efe043d0ae15bde7c7c7
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+title: Implémentation de relais d’appareils pour Windows
+ms.openlocfilehash: 365a21301bee17feac34522667e7ba6a3497ed77
+ms.sourcegitcommit: 5670ff536ea9bfcd678cfde54f262a1ec5c8add4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "58907851"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207588"
 ---
 # <a name="implementing-device-relay-for-windows"></a>Implémentation de relais d’appareils pour Windows
 
