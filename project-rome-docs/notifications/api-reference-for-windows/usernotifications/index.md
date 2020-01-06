@@ -1,20 +1,26 @@
 ---
-ms.openlocfilehash: b5793b84c9a3927e15f11da4d99c653b0e7c7c34
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+title: Espace de noms UserNotifications pour Windows
+ms.openlocfilehash: b92d966b205c1aac31a54848be152eb18078fc6a
+ms.sourcegitcommit: 5670ff536ea9bfcd678cfde54f262a1ec5c8add4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58906751"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207828"
 ---
-# <a name="usernotifications-namespace"></a><span data-ttu-id="109b0-101">Espace de noms UserNotifications</span><span class="sxs-lookup"><span data-stu-id="109b0-101">UserNotifications namespace</span></span>
-<span data-ttu-id="109b0-102">winrt.Microsoft.ConnectedDevices.UserNotifications</span><span class="sxs-lookup"><span data-stu-id="109b0-102">winrt.Microsoft.ConnectedDevices.UserNotifications</span></span>
+# <a name="usernotifications-namespace-for-windows"></a><span data-ttu-id="2c656-102">Espace de noms UserNotifications pour Windows</span><span class="sxs-lookup"><span data-stu-id="2c656-102">UserNotifications namespace for Windows</span></span>
+<span data-ttu-id="2c656-103">winrt.Microsoft.ConnectedDevices.UserNotifications</span><span class="sxs-lookup"><span data-stu-id="2c656-103">winrt.Microsoft.ConnectedDevices.UserNotifications</span></span>
 
-<span data-ttu-id="109b0-103">L’espace de noms UserNotifications contient des API qui permettent à une application de recevoir et de gérer des notifications ciblées sur l’utilisateur publiées par votre serveur d’application via des notifications Microsoft Graph, autorisant des expériences de notification multiappareils centrées sur la personne.</span><span class="sxs-lookup"><span data-stu-id="109b0-103">The UserNotifications namespace contains APIs that allow an app to receive and manage user-targeted notifications published by your app server via Microsoft Graph Notifications to enable human-centric, cross-device notification experiences.</span></span> 
+<span data-ttu-id="2c656-104">L’espace de noms UserNotifications pour Windows contient des API qui permettent à une application de recevoir et de gérer des notifications ciblées sur l’utilisateur publiées par votre serveur d’application via des notifications Microsoft Graph, autorisant des expériences de notification inter-appareils centrées sur la personne.</span><span class="sxs-lookup"><span data-stu-id="2c656-104">The UserNotifications namespace for Windows contains APIs that allow an app to receive and manage user-targeted notifications published by your app server via Microsoft Graph Notifications to enable human-centric, cross-device notification experiences.</span></span> 
 
-## <a name="graph-notifications-apis"></a><span data-ttu-id="109b0-104">API Notifications Graph</span><span class="sxs-lookup"><span data-stu-id="109b0-104">Graph Notifications APIs</span></span>
+## <a name="graph-notifications-apis"></a><span data-ttu-id="2c656-105">API Notifications Graph</span><span class="sxs-lookup"><span data-stu-id="2c656-105">Graph Notifications APIs</span></span>
 
-### <a name="usernotificationusernotificationmd"></a>[<span data-ttu-id="109b0-105">UserNotification</span><span class="sxs-lookup"><span data-stu-id="109b0-105">UserNotification</span></span>](userNotification.md)
-### <a name="usernotificationchannelusernotificationchannelmd"></a>[<span data-ttu-id="109b0-106">UserNotificationChannel</span><span class="sxs-lookup"><span data-stu-id="109b0-106">UserNotificationChannel</span></span>](userNotificationChannel.md)
-### <a name="usernotificationreaderusernotificationreadermd"></a>[<span data-ttu-id="109b0-107">UserNotificationReader</span><span class="sxs-lookup"><span data-stu-id="109b0-107">UserNotificationReader</span></span>](userNotificationReader.md)
-### <a name="usernotificationreaderoptionsusernotificationreaderoptionsmd"></a>[<span data-ttu-id="109b0-108">UserNotificationReaderOptions</span><span class="sxs-lookup"><span data-stu-id="109b0-108">UserNotificationReaderOptions</span></span>](userNotificationReaderOptions.md)
-### <a name="usernotificationupdateresultsusernotificationupdateresultsmd"></a>[<span data-ttu-id="109b0-109">UserNotificationUpdateResults</span><span class="sxs-lookup"><span data-stu-id="109b0-109">UserNotificationUpdateResults</span></span>](userNotificationUpdateResults.md)
+[<span data-ttu-id="2c656-106">UserNotification</span><span class="sxs-lookup"><span data-stu-id="2c656-106">UserNotification</span></span>](userNotification.md)
+
+[<span data-ttu-id="2c656-107">UserNotificationChannel</span><span class="sxs-lookup"><span data-stu-id="2c656-107">UserNotificationChannel</span></span>](userNotificationChannel.md)
+
+[<span data-ttu-id="2c656-108">UserNotificationReader</span><span class="sxs-lookup"><span data-stu-id="2c656-108">UserNotificationReader</span></span>](userNotificationReader.md)
+
+[<span data-ttu-id="2c656-109">UserNotificationReaderOptions</span><span class="sxs-lookup"><span data-stu-id="2c656-109">UserNotificationReaderOptions</span></span>](userNotificationReaderOptions.md)
+
+[<span data-ttu-id="2c656-110">UserNotificationUpdateResults</span><span class="sxs-lookup"><span data-stu-id="2c656-110">UserNotificationUpdateResults</span></span>](userNotificationUpdateResults.md)
+
