@@ -1,20 +1,22 @@
 ---
+title: Informations de référence sur les API pour iOS
 ms.custom: seodec18
-ms.openlocfilehash: ba801109d7262bdd482e81ba63d733c0ddd1ceef
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: cb07557c76f58cbcdd3c43c83adb2fe4344e1544
+ms.sourcegitcommit: 5670ff536ea9bfcd678cfde54f262a1ec5c8add4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58906951"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207768"
 ---
-# <a name="usernotifications-namespace"></a>Espace de noms UserNotifications
+# <a name="api-reference-for-ios"></a>Informations de référence sur les API pour iOS
 ```
 usernotifications.h
 ```
-L’espace de noms UserNotifications contient des API qui permettent à une application de recevoir et de gérer des notifications ciblées sur l’utilisateur publiées par votre serveur d’application via des notifications Microsoft Graph. 
+L’espace de noms UserNotifications pour iOS contient des API qui permettent à une application de recevoir et de gérer des notifications ciblées sur l’utilisateur publiées par votre serveur d’application via des notifications Microsoft Graph. 
 
 ### <a name="api-groups"></a>Groupes d’API
+[ConnectedDevices](../../objectivec-api/connecteddevices/index.md)
 
-#### <a name="connecteddevicesobjectivec-apiconnecteddevicesindexmd"></a>[ConnectedDevices](../../objectivec-api/connecteddevices/index.md)
-#### <a name="userdataobjectivec-apiuserdataindexmd"></a>[UserData](../../objectivec-api/userdata/index.md)
-#### <a name="graph-notification-apisusernotificationsindexmd"></a>[API de notification Graph](usernotifications/index.md)
+[UserData](../../objectivec-api/userdata/index.md)
+
+[API de notification Graph](usernotifications/index.md)
