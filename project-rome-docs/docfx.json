@@ -44,7 +44,12 @@
       "feedback_product_url": "https://github.com/Microsoft/project-rome/issues",
       "uhfHeaderId": "MSDocsHeader-ProjectRome",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
-      "disable_contribution_on_translation_quality": ["MT"],
+      "disable_contribution_on_translation_quality": [
+        "MT",
+        "MTE75",
+        "MTE95",
+        "Blank"
+      ],
       "extendBreadcrumb": true,
       "titleSuffix": "Project Rome",
       "ms.topic": "article",
