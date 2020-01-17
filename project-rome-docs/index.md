@@ -3,16 +3,16 @@ title: Créer des applications multiappareils
 description: Découvrez les fonctionnalités multiappareils et multiplateformes activées pour les applications Windows 10 avec le projet Rome.
 ms.topic: overview
 ms.custom: seodec2018, RS5
-ms.openlocfilehash: 28e76debcb8d3d74333827062e2345e078374b46
-ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
+ms.openlocfilehash: 977d64749544d1991a40eff5d80a1cd6186aba97
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66755731"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115547"
 ---
 # <a name="project-rome"></a>Projet Rome
 
-Le [projet Rome](https://developer.microsoft.com/en-us/windows/project-rome) est la plateforme des expériences multiappareils de Microsoft pour les applications. 
+Le [projet Rome](https://developer.microsoft.com/windows/project-rome) est la plateforme des expériences multiappareils de Microsoft pour les applications. 
 
 Sur ce site, vous trouverez une documentation développeur pour le projet Rome et des liens vers d’autres ressources utiles.
 
@@ -40,7 +40,7 @@ D’autres scénarios sont possibles en utilisant une combinaison des API Micros
 
 Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Suivez les liens pour obtenir des exemples et pour le téléchargement des kits SDK.
 
-[windows-sdk]:             https://developer.microsoft.com/en-us/windows/downloads
+[windows-sdk]:             https://developer.microsoft.com/windows/downloads
 [windows-sdk-badge]:       https://img.shields.io/badge/sdk-April%202018%20Update-brightgreen.svg
 [windows-drsample]:        https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/RemoteSystems
 [windows-afsample]:        https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/UserActivity 
@@ -75,12 +75,12 @@ Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Su
 
 
 
-|   Plateforme                        | Fonctionnalités                                                         |           Package SDK                          |   Exemples                                       |
+|   Plate-forme                        | Fonctionnalités                                                         |           Package du SDK                          |   exemples                                       |
 | :-------------------------------- | :--------------------------------------------------------------- |:---------------------------------------------- | :---------------------------------------------- |
 | **SDK Windows**                   | Relais d’appareils, activités/chronologie                                | [![SDK][windows-sdk-badge]][windows-sdk]       | [Exemple Windows du projet Rome pour les relais d’appareils][windows-drsample] <br> [Exemple Windows du projet Rome pour les activités][windows-afsample]
 | **Windows (préversion)**             |                                    Notifications Microsoft Graph | [![Nuget][winredist-sdk-badge]][winredist-sdk] | [Exemple de notifications Graph pour Windows][winredist-sample] 
 | **Android**             | Relais d’appareils, Activités/chronologie, Notifications Microsoft Graph (préversion) | [![Maven][android-sdk-badge]][android-sdk]     | [Exemples du projet Rome pour Android][android-sample]
-| **iOS**                 | Relais d’appareils, Activités/chronologie, Notifications Microsoft Graph (préversion) | [![CocoaPod][ios-sdk-badge]][ios-sdk]          | [Exemples du projet Rome pour iOS][ios-sample]
+| **iOS**                 | Relais d’appareils, Activités/chronologie, Notifications Microsoft Graph (préversion) | [![CocoaPod][ios-sdk-badge]][ios-sdk]          | [Exemple du projet Rome pour iOS][ios-sample]
 | **Xamarin pour Android (préversion)** | Relais d’appareils                                                     | [![Nuget][xamarin-sdk-badge]][xamarin-sdk]     | [Exemple Xamarin pour Android][xamarin-sample]
 | **MSGraph**                       | Relais d’appareils, Activités/chronologie, Notifications Microsoft Graph | [![REST][graph-relay-badge]][graph-relay]<br> [![REST][graph-activities-badge]][graph-activities]<br>[![REST][graph-notification-badge]][graph-notification]          | [Relais d’appareils][graph-relay-sample]<br>[Activités/chronologie][graph-activities-sample]<br>[Notifications Graph][graph-notification-sample]
 
@@ -89,25 +89,25 @@ Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Su
 
 * [Going social: Project Rome, Maps, & Social Network Integration](https://blogs.windows.com/buildingapps/2016/10/27/going-social-project-rome-maps-social-network-integration-app-dev-on-xbox-series/#SCfoEZ1q8c1yBMei.97)
 
-* [Présentation du kit de développement logiciel (SDK) Android du projet Rome](https://blogs.windows.com/buildingapps/2017/02/08/announcing-project-rome-android-sdk/#obDkvwkXOGa3tcTx.97)
+* [Annonce du kit Android SDK du projet Rome](https://blogs.windows.com/buildingapps/2017/02/08/announcing-project-rome-android-sdk/#obDkvwkXOGa3tcTx.97)
 
 * [Project Rome for Android Update: Now with App Services Support](https://blogs.windows.com/buildingapps/2017/03/23/project-rome-android-update-now-app-services-support/#DBm1Ic4JX8vXv2h0.97)
 
-* [Création d’une application Compagnon de contrôle à distance pour Android avec le projet Rome](https://blog.xamarin.com/building-remote-control-companion-app-android-project-rome/)
+* [Création d’une application Compagnon de contrôle à distance pour Android avec le projet Rome](https://devblogs.microsoft.com/xamarin/building-remote-control-companion-app-android-project-rome/)
 
 * [New Share Experience in Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/06/new-share-experience-windows-10-creators-update/#OGskrWcLLlrCTCSH.97)
 
-* [Liaison application-site web avec les AppUriHandlers](https://blogs.windows.com/buildingapps/2016/10/14/web-to-app-linking-with-appurihandlers/#fIh7USaxBYS8JqfT.97)
+* [Web-to-App Linking with AppUriHandlers](https://blogs.windows.com/buildingapps/2016/10/14/web-to-app-linking-with-appurihandlers/#fIh7USaxBYS8JqfT.97)
 
 ## <a name="other-resources"></a>Autres ressources
 
-* [Liaison web-application](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/web-to-app-linking)
+* [Liaison web-application](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking)
 
 * [//Build 2016 talk](https://channel9.msdn.com/Events/Build/2016/B831)
 
 * [MS Dev Show podcast](http://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
 
-## <a name="give-feedback"></a>Envoyer vos commentaires
+## <a name="give-feedback"></a>Envoyer des commentaires
 
-|[UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/183208-connected-apps-and-devices-project-rome)|[Hub de commentaires](https://support.microsoft.com/en-us/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Nous contacter](mailto:projectrometeam@microsoft.com)|
+|[UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/183208-connected-apps-and-devices-project-rome)|[Hub de commentaires](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Nous contacter](mailto:projectrometeam@microsoft.com)|
 |-----|-----|-----|
