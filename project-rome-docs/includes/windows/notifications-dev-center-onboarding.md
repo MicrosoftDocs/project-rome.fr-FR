@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6c87f1a68699de7852af56d7536f08b1a5f9bc14
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.openlocfilehash: 325f0d041408b301c61648bd5c030ae0c7c4f59c
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "58907561"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76118095"
 ---
 ### <a name="register-your-app-in-microsoft-windows-dev-center-for-cross-device-experiences"></a>Inscrire votre application dans le Centre de développement Microsoft pour des expériences inter-appareils
 Ensuite, vous devez inscrire votre application pour la [fonctionnalité Expériences inter-appareils du tableau de bord Développeur Microsoft](https://developer.microsoft.com/dashboard/crossplatform/web). Il s’agit d’une procédure différente de celle visant à inscrire une application MSA et AA, qui a été abordée dans les étapes précédentes. Le principal objectif principal de ce processus est de mapper les identités d’application propres à la plateforme à une identité d’application multiplateforme qui est reconnue par la Plateforme d’appareils connectés et qui, dans le même temps, autorise la fonctionnalités de notifications Microsoft Graph à envoyer des notifications à l’aide des services de notification Push natifs correspondant à chaque plateforme de système d’exploitation. Dans ce cas, il permet à la fonctionnalité de notifications Graph d’envoyer des notifications aux points de terminaison d’application Windows UWP via le service de notification Windows (WNS). Dans le tableau de bord du Centre de développement, accédez à Expériences inter-appareils à partir du volet de navigation de gauche, puis choisissez de configurer une nouvelle application inter-appareils, comme illustré ci-dessous.
@@ -24,7 +24,7 @@ Le processus d’intégration du Centre de développement comprend les étapes s
 * Les notifications Graph et les autres fonctionnalités de la Plateforme d’appareils connectés tirent parti de chacune des principales plateformes de notification natives pour envoyer des notifications aux points de terminaison clients d’application, à savoir, WNS (pour Windows UWP), GCM (pour Android) et APNS (pour iOS). Fournissez vos informations d’identification pour ces plateformes de notification pour permettre aux notifications Graph de transmettre les notifications pour votre serveur d’applications, dans le cas où vous publiez des notifications ciblant l’utilisateur. Illustré ci-dessous. 
 ![Expériences inter-périphériques – Informations d’identification Push](../../notifications/media/dev_center_portal/dev_center_portal_5_push_credentials.png)
 > [!NOTE] 
-> Pour les applications Windows UWP, l’activation des notifications Push WNS est un prérequis pour l’utilisation des notifications Microsoft Graph. Consultez [Vue d’ensemble de WNS](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview) pour plus d’informations. Une fois que vous avez terminé l’intégration, vous pouvez fournir les informations d’identification Push à la Plateforme d’appareils connectés via le Centre de développement Windows. 
+> Pour les applications Windows UWP, l’activation des notifications Push WNS est un prérequis pour l’utilisation des notifications Microsoft Graph. Consultez [Vue d’ensemble de WNS](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview) pour plus d’informations. Une fois que vous avez terminé l’intégration, vous pouvez fournir les informations d’identification Push à la Plateforme d’appareils connectés via le Centre de développement Windows. 
 * La dernière étape consiste à vérifier votre domaine d’application inter-appareils, qui sert de processus de vérification pour prouver que votre application est propriétaire de ce domaine qui fait office d’identité d’application inter-appareils pour l’application que vous avez inscrite. Illustré ci-dessous.  
 ![Expériences inter-appareils – Vérification de domaine](../../notifications/media/dev_center_portal/dev_center_portal_6_domain_verification.png) Maintenant, vous êtes prêt pour l’intégration ! Passez à la section suivante. 
 
