@@ -5,10 +5,10 @@ ms.assetid: c973d534-08e9-4f6e-8b54-bcae97067961
 ms.localizationpriority: medium
 ms.custom: seodec18
 ms.openlocfilehash: 69084d2a3ac99445c8c1919b7dc4748de865153e
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "59801201"
 ---
 # <a name="how-to-guide-integrating-with-graph-notifications-android"></a>Guides pratique : Intégration à la fonctionnalité Notifications Graph (Android)

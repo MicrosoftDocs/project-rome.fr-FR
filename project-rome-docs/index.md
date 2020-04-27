@@ -7,7 +7,7 @@ ms.openlocfilehash: 977d64749544d1991a40eff5d80a1cd6186aba97
 ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "76115547"
 ---
 # <a name="project-rome"></a>Projet Rome

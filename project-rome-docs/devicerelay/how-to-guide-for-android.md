@@ -9,7 +9,7 @@ ms.openlocfilehash: bb58b8340dcd8158a201ce670ef0b69ba0272b6f
 ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "76115573"
 ---
 # <a name="implementing-device-relay-for-android"></a>Implémentation de relais d’appareils pour Android

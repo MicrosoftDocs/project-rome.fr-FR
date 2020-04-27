@@ -5,10 +5,10 @@ ms.assetid: c973d534-08e9-4f6e-8b54-bcae97067961
 ms.localizationpriority: medium
 ms.custom: seodec18
 ms.openlocfilehash: 09f32a9869343778712449db04f74e9341fbc5a6
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "59801301"
 ---
 # <a name="how-to-guide-integrating-with-ms-graph-notifications-windows-uwp"></a>Guides pratique : Intégration à la fonctionnalité Notifications MS Graph (Windows UWP)

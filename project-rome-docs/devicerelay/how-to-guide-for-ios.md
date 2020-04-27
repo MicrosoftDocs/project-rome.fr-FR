@@ -9,7 +9,7 @@ ms.openlocfilehash: 09479f0caa232215dfce51628432529d0e322536
 ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "76115555"
 ---
 # <a name="implementing-device-relay-for-ios"></a>Implémentation de relais d’appareils pour iOS
