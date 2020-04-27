@@ -4,10 +4,10 @@ description: Utilisez un appareil local pour lancer une action sur un appareil d
 ms.topic: overview
 ms.custom: seodec2018
 ms.openlocfilehash: ac8df447549b643207f796e0eeca05012c210897
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "59801461"
 ---
 # <a name="device-relay"></a>Relais d’appareils

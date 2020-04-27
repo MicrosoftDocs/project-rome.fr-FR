@@ -5,10 +5,10 @@ ms.topic: include
 ms.assetid: 9f679e13-b1b3-40f8-bd44-679e4dffc0d4
 ms.localizationpriority: medium
 ms.openlocfilehash: eafd435f0cd9eabc5aa121cdb5288bd0b522df60
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "59801794"
 ---
 ### <a name="add-the-sdk"></a>Ajouter le kit SDK
@@ -46,7 +46,7 @@ Dans le fichier *AndroidManifest.xml* de votre projet, ajoutez les autorisations
 ```
 
 > [!NOTE]
-> Les autorisations liées à Bluetooth servent uniquement à la découverte Bluetooth ; elles n’ont pas d’utilité pour les autres fonctionnalités de la Plateforme d’appareils connectés. Par ailleurs, `ACCESS_COARSE_LOCATION` est nécessaire uniquement pour les SDK Android version 21 et ultérieures. Sur les SDK Android version 23 et ultérieures, le développeur doit aussi demander à l’utilisateur d’accorder l’accès à l’emplacement au moment de l’exécution.
+> Les autorisations liées à Bluetooth servent uniquement à la découverte Bluetooth ; elles n’ont pas d’utilité pour les autres fonctionnalités de la Plateforme d’appareils connectés. Par ailleurs, `ACCESS_COARSE_LOCATION` est nécessaire uniquement pour les SDK Android version 21 et ultérieure. Sur les SDK Android version 23 et ultérieures, le développeur doit aussi demander à l’utilisateur d’accorder l’accès à l’emplacement au moment de l’exécution.
 
 Ensuite, accédez aux classes d’activité dans lesquelles vous voulez activer la fonctionnalité Appareils connectés. Importez les espaces de noms **connecteddevices**.
 

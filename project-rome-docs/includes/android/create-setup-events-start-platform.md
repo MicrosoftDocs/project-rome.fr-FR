@@ -5,10 +5,10 @@ ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: 0ac6a543cc63be9154e40482e587a8f373f56798
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "66755795"
 ---
 ### <a name="create-the-platform"></a>Créer la plateforme
@@ -53,7 +53,7 @@ Maintenant que la plateforme est initialisée et que les gestionnaires d’évé
 
 `ConnectedDevicesPlatform sPlatform.start();`
 
-### <a name="retrieve-user-accounts-known-to-the-app"></a>Récupérer les comptes d’utilisateur connus de l’application
+### <a name="retrieve-user-accounts-known-to-the-app"></a>Récupérer les comptes d’utilisateurs connus de l’application
 
 Il est important de vérifier que la liste des comptes d’utilisateur connus de l’application est correctement synchronisée avec **ConnectedDevicesAccountManager**.
 

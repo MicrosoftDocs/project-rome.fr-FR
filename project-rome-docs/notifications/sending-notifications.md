@@ -5,10 +5,10 @@ ms.assetid: 8ff9cd93-a48e-4198-927f-3d7bd4b65f29
 ms.localizationpriority: medium
 ms.custom: seodec18
 ms.openlocfilehash: 9c823d4428289cee8e52e37925603aefe8b62b25
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "58908871"
 ---
 # <a name="sending-notifications-using-microsoft-graph-apis"></a>Envoi de notifications avec les API Microsoft Graph

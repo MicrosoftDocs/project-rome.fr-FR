@@ -5,10 +5,10 @@ ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: 60a4e282fc5446e38a80e72979e12daad51b2026
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "59803975"
 ---
 ### <a name="create-an-instance-of-the-platform"></a>Créer une instance de la plateforme
@@ -57,7 +57,7 @@ De la même manière, la plateforme utilise des notifications pour la transmissi
 ```
 
 ### <a name="start-the-platform"></a>Démarrer la plateforme
-Maintenant que la plateforme est initialisée et que les gestionnaires d’événements sont en place, vous êtes prêt à démarrer la découverte de périphériques système distants.  
+Maintenant que la plateforme est initialisée et que les gestionnaires d’événements sont en place, vous êtes prêt à démarrer la découverte d’appareils système distants.  
 
 `[MCDConnectedDevicesPlatform* platform start];`
 

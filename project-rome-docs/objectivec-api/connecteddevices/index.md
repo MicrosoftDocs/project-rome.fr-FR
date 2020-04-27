@@ -1,10 +1,10 @@
 ---
 title: Espace de noms ConnectedDevices
 ms.openlocfilehash: 2f464105ed8aee12971d3ec352ba4e12150573a0
-ms.sourcegitcommit: 5670ff536ea9bfcd678cfde54f262a1ec5c8add4
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "75207858"
 ---
 # <a name="connecteddevices-namespace"></a>Espace de noms ConnectedDevices
@@ -14,22 +14,22 @@ ConnectedDevices.h
 
 L’espace de noms ConnectedDevices contient des API qui permettent à une application cliente de s’inscrire auprès de la plateforme. 
 
-#### <a name="mcdconnecteddevicesaccesstokeninvalidatedeventargsmcdconnecteddevicesaccesstokeninvalidatedeventargsmd"></a>[MCDConnectedDevicesAccessTokenInvalidatedEventArgs](MCDConnectedDevicesAccessTokenInvalidatedEventArgs.md)
-#### <a name="mcdconnecteddevicesaccesstokenrequestmcdconnecteddevicesaccesstokenrequestmd"></a>[MCDConnectedDevicesAccessTokenRequest](MCDConnectedDevicesAccessTokenRequest.md)
-#### <a name="mcdconnecteddevicesaccesstokenrequestedeventargsmcdconnecteddevicesaccesstokenrequestedeventargsmd"></a>[MCDConnectedDevicesAccessTokenRequestedEventArgs](MCDConnectedDevicesAccessTokenRequestedEventArgs.md)
-#### <a name="mcdconnecteddevicesaccountmcdconnecteddevicesaccountmd"></a>[MCDConnectedDevicesAccount](MCDConnectedDevicesAccount.md)
-#### <a name="mcdconnecteddevicesaccountaddedstatusmcdconnecteddevicesaccountaddedstatusmd"></a>[MCDConnectedDevicesAccountAddedStatus](MCDConnectedDevicesAccountAddedStatus.md)
-#### <a name="mcdconnecteddevicesaccountmanagermcdconnecteddevicesaccountmanagermd"></a>[MCDConnectedDevicesAccountManager](MCDConnectedDevicesAccountManager.md)
-#### <a name="mcdconnecteddevicesaccounttypemcdconnecteddevicesaccounttypemd"></a>[MCDConnectedDevicesAccountType](MCDConnectedDevicesAccountType.md)
-#### <a name="mcdconnecteddevicesaddaccountresultmcdconnecteddevicesaddaccountresultmd"></a>[MCDConnectedDevicesAddAccountResult](MCDConnectedDevicesAddAccountResult.md)
-#### <a name="mcdconnecteddevicesnotificationregistrationmcdconnecteddevicesnotificationregistrationmd"></a>[MCDConnectedDevicesNotificationRegistration](MCDConnectedDevicesNotificationRegistration.md)
-#### <a name="mcdconnecteddevicesnotificationregistrationmanagermcdconnecteddevicesnotificationregistrationmanagermd"></a>[MCDConnectedDevicesNotificationRegistrationManager](MCDConnectedDevicesNotificationRegistrationManager.md)
-#### <a name="mcdconnecteddevicesnotificationregistrationstatemcdconnecteddevicesnotificationregistrationstatemd"></a>[MCDConnectedDevicesNotificationRegistrationState](MCDConnectedDevicesNotificationRegistrationState.md)
-#### <a name="mcdconnecteddevicesnotificationregistrationstatechangedeventargsmcdconnecteddevicesnotificationregistrationstatechangedeventargsmd"></a>[MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs](MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs.md)
-#### <a name="mcdconnecteddevicesnotificationtypemcdconnecteddevicesnotificationtypemd"></a>[MCDConnectedDevicesNotificationType](MCDConnectedDevicesNotificationType.md)
-#### <a name="mcdconnecteddevicesplatformmcdconnecteddevicesplatformmd"></a>[MCDConnectedDevicesPlatform](MCDConnectedDevicesPlatform.md)
-#### <a name="mcdconnecteddevicesplatformsettingsmcdconnecteddevicesplatformsettingsmd"></a>[MCDConnectedDevicesPlatformSettings](MCDConnectedDevicesPlatformSettings.md)
-#### <a name="mcdconnecteddevicesprocessnotificationoperationmcdconnecteddevicesprocessnotificationoperationmd"></a>[MCDConnectedDevicesProcessNotificationOperation](MCDConnectedDevicesProcessNotificationOperation.md)
-#### <a name="mcdconnecteddevicesremoveaccountresultmcdconnecteddevicesremoveaccountresultmd"></a>[MCDConnectedDevicesRemoveAccountResult](MCDConnectedDevicesRemoveAccountResult.md)
-#### <a name="mcdeventmcdeventmd"></a>[MCDEvent](MCDEvent.md)
-#### <a name="mcdeventsubscriptionmcdeventsubscriptionmd"></a>[MCDEventSubscription](MCDEventSubscription.md)
+#### <a name="mcdconnecteddevicesaccesstokeninvalidatedeventargs"></a>[MCDConnectedDevicesAccessTokenInvalidatedEventArgs](MCDConnectedDevicesAccessTokenInvalidatedEventArgs.md)
+#### <a name="mcdconnecteddevicesaccesstokenrequest"></a>[MCDConnectedDevicesAccessTokenRequest](MCDConnectedDevicesAccessTokenRequest.md)
+#### <a name="mcdconnecteddevicesaccesstokenrequestedeventargs"></a>[MCDConnectedDevicesAccessTokenRequestedEventArgs](MCDConnectedDevicesAccessTokenRequestedEventArgs.md)
+#### <a name="mcdconnecteddevicesaccount"></a>[MCDConnectedDevicesAccount](MCDConnectedDevicesAccount.md)
+#### <a name="mcdconnecteddevicesaccountaddedstatus"></a>[MCDConnectedDevicesAccountAddedStatus](MCDConnectedDevicesAccountAddedStatus.md)
+#### <a name="mcdconnecteddevicesaccountmanager"></a>[MCDConnectedDevicesAccountManager](MCDConnectedDevicesAccountManager.md)
+#### <a name="mcdconnecteddevicesaccounttype"></a>[MCDConnectedDevicesAccountType](MCDConnectedDevicesAccountType.md)
+#### <a name="mcdconnecteddevicesaddaccountresult"></a>[MCDConnectedDevicesAddAccountResult](MCDConnectedDevicesAddAccountResult.md)
+#### <a name="mcdconnecteddevicesnotificationregistration"></a>[MCDConnectedDevicesNotificationRegistration](MCDConnectedDevicesNotificationRegistration.md)
+#### <a name="mcdconnecteddevicesnotificationregistrationmanager"></a>[MCDConnectedDevicesNotificationRegistrationManager](MCDConnectedDevicesNotificationRegistrationManager.md)
+#### <a name="mcdconnecteddevicesnotificationregistrationstate"></a>[MCDConnectedDevicesNotificationRegistrationState](MCDConnectedDevicesNotificationRegistrationState.md)
+#### <a name="mcdconnecteddevicesnotificationregistrationstatechangedeventargs"></a>[MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs](MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs.md)
+#### <a name="mcdconnecteddevicesnotificationtype"></a>[MCDConnectedDevicesNotificationType](MCDConnectedDevicesNotificationType.md)
+#### <a name="mcdconnecteddevicesplatform"></a>[MCDConnectedDevicesPlatform](MCDConnectedDevicesPlatform.md)
+#### <a name="mcdconnecteddevicesplatformsettings"></a>[MCDConnectedDevicesPlatformSettings](MCDConnectedDevicesPlatformSettings.md)
+#### <a name="mcdconnecteddevicesprocessnotificationoperation"></a>[MCDConnectedDevicesProcessNotificationOperation](MCDConnectedDevicesProcessNotificationOperation.md)
+#### <a name="mcdconnecteddevicesremoveaccountresult"></a>[MCDConnectedDevicesRemoveAccountResult](MCDConnectedDevicesRemoveAccountResult.md)
+#### <a name="mcdevent"></a>[MCDEvent](MCDEvent.md)
+#### <a name="mcdeventsubscription"></a>[MCDEventSubscription](MCDEventSubscription.md)

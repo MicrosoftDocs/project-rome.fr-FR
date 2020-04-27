@@ -4,10 +4,10 @@ description: Fichier include
 ms.assetid: 93f45482-14e4-4aec-8185-ee05b592215f
 ms.localizationpriority: medium
 ms.openlocfilehash: a6e92df6114443827b22dc85cf877d631e5fcfdf
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "66755781"
 ---
 ### <a name="set-up-authentication-and-account-management"></a>Configuration de l’authentification et de la gestion des comptes

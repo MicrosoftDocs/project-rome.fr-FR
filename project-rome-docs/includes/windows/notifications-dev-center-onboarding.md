@@ -3,7 +3,7 @@ ms.openlocfilehash: 325f0d041408b301c61648bd5c030ae0c7c4f59c
 ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "76118095"
 ---
 ### <a name="register-your-app-in-microsoft-windows-dev-center-for-cross-device-experiences"></a>Inscrire votre application dans le Centre de développement Microsoft pour des expériences inter-appareils
@@ -19,10 +19,10 @@ Le processus d’intégration du Centre de développement comprend les étapes s
 > [!NOTE]
 > Vous pouvez ajouter des ID différents (jusqu’à dix) par plateforme. Cela peut être utile si vous disposez de plusieurs versions d’une même application, voire différentes applications, et que vous souhaitez qu’elles puissent recevoir les mêmes notifications envoyées par votre serveur d’applications ciblant le même utilisateur. 
 
-* Fournissez ou sélectionnez les ID d’application à partir des inscriptions d’application MSA et/ou AAD. Ces ID clients correspondant à l’inscription d’application MSA ou AAD ont été obtenus aux étapes précédentes d’inscription d’application MSA/AAD. Illustré ci-dessous. 
-![Expériences inter-périphériques – Inscriptions d’application MSA et AAD](../../notifications/media/dev_center_portal/dev_center_portal_4_msa_aad_connections.png)
+* Fournissez ou sélectionnez les ID d’application des inscriptions d’application MSA et/ou AAD. Ces ID clients correspondant à l’inscription d’application MSA ou AAD ont été obtenus aux étapes précédentes d’inscription d’application MSA/AAD. Illustré ci-dessous. 
+![Expériences inter-appareils – Inscriptions d’application MSA et AAD](../../notifications/media/dev_center_portal/dev_center_portal_4_msa_aad_connections.png)
 * Les notifications Graph et les autres fonctionnalités de la Plateforme d’appareils connectés tirent parti de chacune des principales plateformes de notification natives pour envoyer des notifications aux points de terminaison clients d’application, à savoir, WNS (pour Windows UWP), GCM (pour Android) et APNS (pour iOS). Fournissez vos informations d’identification pour ces plateformes de notification pour permettre aux notifications Graph de transmettre les notifications pour votre serveur d’applications, dans le cas où vous publiez des notifications ciblant l’utilisateur. Illustré ci-dessous. 
-![Expériences inter-périphériques – Informations d’identification Push](../../notifications/media/dev_center_portal/dev_center_portal_5_push_credentials.png)
+![Expériences inter-appareils – Informations d’identification Push](../../notifications/media/dev_center_portal/dev_center_portal_5_push_credentials.png)
 > [!NOTE] 
 > Pour les applications Windows UWP, l’activation des notifications Push WNS est un prérequis pour l’utilisation des notifications Microsoft Graph. Consultez [Vue d’ensemble de WNS](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview) pour plus d’informations. Une fois que vous avez terminé l’intégration, vous pouvez fournir les informations d’identification Push à la Plateforme d’appareils connectés via le Centre de développement Windows. 
 * La dernière étape consiste à vérifier votre domaine d’application inter-appareils, qui sert de processus de vérification pour prouver que votre application est propriétaire de ce domaine qui fait office d’identité d’application inter-appareils pour l’application que vous avez inscrite. Illustré ci-dessous.  

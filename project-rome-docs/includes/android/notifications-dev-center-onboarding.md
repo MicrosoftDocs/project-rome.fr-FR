@@ -5,10 +5,10 @@ ms.topic: include
 ms.assetid: dc4d7bbd-bc87-42b1-9924-52c7bfcd5b5f
 ms.localizationpriority: medium
 ms.openlocfilehash: f085486eece082366dddc00d86f0c4959d09a5cf
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "58907301"
 ---
 ### <a name="register-your-app-for-push-notifications"></a>Inscrire votre application aux notifications Push
@@ -40,11 +40,11 @@ Le processus d’intégration du Centre de développement comprend les étapes s
 * Fournissez des ID d’application pour chaque plateforme sur laquelle votre application est présente. Pour les applications Android, il s’agit du nom de package que vous avez attribué à votre application au moment de créer le projet. Vous trouverez le nom de package dans votre console Firebase sous Project Overview -> General. Vous pouvez ajouter des ID différents (jusqu’à dix) par plateforme. Cela peut être utile si vous disposez de plusieurs versions d’une même application, voire différentes applications, et que vous souhaitez qu’elles puissent recevoir les mêmes notifications envoyées par votre serveur d’applications ciblant le même utilisateur. 
 ![Expériences inter-appareils – ID d’application](../../notifications/media/dev_center_portal/dev_center_portal_3_app_ids.png)
 
-* Fournissez ou sélectionnez les ID d’application à partir des inscriptions d’application MSA et/ou AAD. Ces ID clients correspondant à l’inscription d’application MSA ou AAD ont été obtenus aux étapes précédentes d’inscription d’application MSA/AAD. 
-![Expériences inter-périphériques – Inscriptions d’application MSA et AAD](../../notifications/media/dev_center_portal/dev_center_portal_4_msa_aad_connections.png)
+* Fournissez ou sélectionnez les ID d’application des inscriptions d’application MSA et/ou AAD. Ces ID clients correspondant à l’inscription d’application MSA ou AAD ont été obtenus aux étapes précédentes d’inscription d’application MSA/AAD. 
+![Expériences inter-appareils – Inscriptions d’application MSA et AAD](../../notifications/media/dev_center_portal/dev_center_portal_4_msa_aad_connections.png)
 
 * Les notifications Graph et les autres fonctionnalités de la Plateforme d’appareils connectés tirent parti de chacune des principales plateformes de notification natives pour envoyer des notifications aux points de terminaison clients d’application, à savoir, WNS (pour Windows UWP), FCM (pour Android) et APNS (pour iOS). Fournissez vos informations d’identification pour ces plateformes de notification pour permettre aux notifications Graph de transmettre les notifications pour votre serveur d’applications, dans le cas où vous publiez des notifications ciblant l’utilisateur. Pour Android, l’[activation du service Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/android/client) est un prérequis pour l’utilisation les notifications Microsoft Graph. De même, notez que l’ID d’expéditeur exigé correspond à l’ID d’expéditeur Firebase Cloud Messaging et que la clé d’API correspond à la clé serveur héritée. Vous pouvez trouver ces deux éléments dans Firebase Console -> Project -> Settings, sous l’onglet Cloud Messaging, comme le montre la capture d’écran.
-![Expériences inter-périphériques – Informations d’identification Push](../../notifications/media/dev_center_portal/dev_center_portal_5_push_credentials.png)
+![Expériences inter-appareils – Informations d’identification Push](../../notifications/media/dev_center_portal/dev_center_portal_5_push_credentials.png)
 
-* La dernière étape consiste à vérifier votre domaine application inter-appareils, qui sert de processus de vérification pour prouver que votre application est propriétaire de ce domaine qui fait office d’identité d’application inter-appareils pour l’application que vous avez inscrite.
+* La dernière étape consiste à vérifier votre domaine d’application inter-appareils, qui sert de processus de vérification pour prouver que votre application est propriétaire de ce domaine qui fait office d’identité d’application inter-appareils pour l’application que vous avez inscrite.
 ![Expériences inter-appareils – Vérification de domaine](../../notifications/media/dev_center_portal/dev_center_portal_6_domain_verification.png)
