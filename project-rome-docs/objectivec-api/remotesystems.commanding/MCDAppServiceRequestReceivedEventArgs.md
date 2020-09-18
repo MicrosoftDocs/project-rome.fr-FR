@@ -1,24 +1,24 @@
 ---
 title: MCDAppServiceRequestReceivedEventArgs
-description: Contient les données associées à un événement « demande reçue ».
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
-ms.openlocfilehash: 5fa7a3b2742d5ecacd7c6a90e39e86f4c46f2218
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: En savoir plus sur la classe MCDAppServiceRequestReceivedEventArgs. Cette classe contient des données associées à un événement « Request received ».
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, appareils connectés, projet Rome
+ms.openlocfilehash: 9a4a64ae163a0cc553196914da2f42d8d32e6ade
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59800641"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760763"
 ---
-# <a name="class-mcdappservicerequestreceivedeventargs"></a>Classe `MCDAppServiceRequestReceivedEventArgs` 
+# <a name="class-mcdappservicerequestreceivedeventargs"></a>type `MCDAppServiceRequestReceivedEventArgs` 
 
 ```
 @interface MCDAppServiceRequestReceivedEventArgs : NSObject
 ```  
-Contient les données associées à un événement « demande reçue ».
+Contient les données associées à un événement « Request received ».
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>Propriétés
 
-### <a name="request"></a>demande
+### <a name="request"></a>request
 `@property(nonatomic, readonly, nonnull) MCDAppServiceRequest* request;`
 
-La demande envoyée par le périphérique distant.
+Demande envoyée par le périphérique distant.

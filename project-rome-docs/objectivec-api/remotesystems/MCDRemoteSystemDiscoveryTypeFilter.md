@@ -1,30 +1,30 @@
 ---
 title: MCDRemoteSystemDiscoveryTypeFilter
-description: Une classe utilisée pour filtrer en fonction de type de découverte de systèmes distants.
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
-ms.openlocfilehash: 8054d378f203d5cde29af6b4452cc03e15e24828
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: En savoir plus sur la classe MCDRemoteSystemDiscoveryTypeFilter. Cette classe est utilisée pour filtrer les systèmes distants en fonction du type de découverte.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, appareils connectés, projet Rome
+ms.openlocfilehash: a38036811fda38df944e67e431f864c33d1c335d
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58907521"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760693"
 ---
-# <a name="class-mcdremotesystemdiscoverytypefilter"></a>Classe `MCDRemoteSystemDiscoveryTypeFilter` 
+# <a name="class-mcdremotesystemdiscoverytypefilter"></a>type `MCDRemoteSystemDiscoveryTypeFilter` 
 
 ```
 @interface MCDRemoteSystemDiscoveryTypeFilter : NSObject<MCDRemoteSystemFilter>
 ```  
 
-Une classe utilisée pour filtrer en fonction de type de découverte de systèmes distants.
+Classe utilisée pour filtrer les systèmes distants en fonction du type de découverte.
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>Propriétés
 
-### <a name="type"></a>Type
+### <a name="type"></a>type
 `@property(nonatomic, readonly) MCDRemoteSystemDiscoveryType type;`
 
-Le type de découverte pour filtrer.
+Type de découverte à filtrer.
 
-> Remarque: Sur Android, la plateforme d’appareils connectés peuvent uniquement utiliser Bluetooth sur les systèmes exécutant Android 8.0 (Oreo) ou version ultérieure.
+> Remarque : sur Android, la plateforme appareils connectés peut uniquement utiliser Bluetooth sur les systèmes qui exécutent Android 8,0 (Oreo) ou version ultérieure.
 
 ## <a name="constructors"></a>Constructeurs
 
@@ -32,16 +32,16 @@ Le type de découverte pour filtrer.
 `+ (nullable instancetype)filterWithType:(MCDRemoteSystemDiscoveryType)discoveryType;`
 
 #### <a name="parameters"></a>Paramètres 
-* `discoveryType` Le type de découverte pour filtrer.
+* `discoveryType` Type de découverte à filtrer.
 
-#### <a name="returns"></a>Returns
-Une nouvelle instance de cette classe avec la valeur du type donné. Valeurs peuvent être liées par and ensemble pour appliquer plusieurs filtres à la fois.
+#### <a name="returns"></a>Retours
+Nouvelle instance de cette classe avec la valeur de type donnée. Les valeurs peuvent être AND’ed ensemble pour appliquer plusieurs filtres à la fois.
 
 ### <a name="initwithtype"></a>initWithType
 `- (nullable instancetype)initWithType:(MCDRemoteSystemDiscoveryType)discoveryType;`
 
 #### <a name="parameters"></a>Paramètres 
-* `discoveryType` Le type de découverte pour filtrer.
+* `discoveryType` Type de découverte à filtrer.
 
-#### <a name="returns"></a>Returns
-Une nouvelle instance de cette classe avec la valeur du type donné. Valeurs peuvent être liées par and ensemble pour appliquer plusieurs filtres à la fois.
+#### <a name="returns"></a>Retours
+Nouvelle instance de cette classe avec la valeur de type donnée. Les valeurs peuvent être AND’ed ensemble pour appliquer plusieurs filtres à la fois.

@@ -1,15 +1,15 @@
 ---
 title: Se connecter à un autre appareil via une session à distance
-description: Utilisez une session pour connecter votre application locale à un appareil distant.
+description: Découvrez comment utiliser une session pour connecter votre application locale à un appareil distant. Les sessions à distance peuvent être utilisées pour la messagerie d’application à application explicite.
 ms.localizationpriority: medium
 ms.topic: overview
 ms.custom: seodec2018
-ms.openlocfilehash: 47a2a6caea457c1c552817f219899d2805b52eb4
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: 74c4bcf1aadbf39b18ba8cd1d682e7e6c9696b28
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "59800821"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760163"
 ---
 # <a name="remote-sessions"></a>Sessions à distance
 

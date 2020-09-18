@@ -1,27 +1,27 @@
 ---
 title: MCDLaunchUriProvider
-description: ''
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
-ms.openlocfilehash: 4cbfaa9fd1e88345f4ce35987508b061e479854e
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: En savoir plus sur le protocole MCDLaunchUriProvider. Ce protocole est utilisé pour gérer la gestion d’un URI via le lancement d’une application.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, appareils connectés, projet Rome
+ms.openlocfilehash: 3339f9b5c8ab14dddf519618795c4150b69dfe3e
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58907461"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760753"
 ---
-# <a name="protocol-mcdlaunchuriprovider"></a>Protocole `MCDLaunchUriProvider`
+# <a name="protocol-mcdlaunchuriprovider"></a>No `MCDLaunchUriProvider`
 
 ```
 @protocol MCDLaunchUriProvider <NSObject>
 ```
 
-Cette classe gère la gestion d’un URI via le lancement d’une application.
+Cette classe gère la gestion d’un URI par le biais du lancement d’une application.
 
-## <a name="properties"></a>Properties 
+## <a name="properties"></a>Propriétés 
 ### <a name="supportedurischemes"></a>supportedUriSchemes
 `@property(nonatomic, readonly, strong, nullable) NSArray<NSString*>* supportedUriSchemes;`
 
-Un tableau de chaînes représentant pris en charge les schémas d’URI.
+Tableau de chaînes représentant les schémas d’URI pris en charge.
 
 ## <a name="methods"></a>Méthodes
 
@@ -32,9 +32,9 @@ Un tableau de chaînes représentant pris en charge les schémas d’URI.
               completion:(nonnull void (^)(BOOL, NSError* _Nullable))completionBlock;
 ```
 
-Cette méthode est appelée lorsqu’un périphérique distant tente de lancer un URI sur cet appareil.
+Cette méthode est appelée lorsqu’un appareil distant tente de lancer un URI sur cet appareil.
 
 #### <a name="parameters"></a>Paramètres 
 * `uri` URI à lancer.
-* `options` Un ensemble d’options pour le lancement de l’URI. La procédure de secours URI est uniquement une des options possibles qui peuvent être définies.
-* `completionBlock` Le bloc de code à exécuter en cas de saisie semi-automatique.
+* `options` Ensemble d’options pour lancer l’URI. L’URI de secours n’est qu’une des options possibles qui peuvent être définies.
+* `completionBlock` Bloc de code à exécuter à la fin de l’opération.

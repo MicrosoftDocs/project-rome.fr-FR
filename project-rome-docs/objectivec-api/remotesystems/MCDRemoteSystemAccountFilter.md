@@ -1,53 +1,53 @@
 ---
 title: MCDRemoteSystemAccountFilter
-description: Filtre pour les comptes découvrir des systèmes distants avec.
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
-ms.openlocfilehash: 34721c2dee89adc380b721a027382f81c2ecb751
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: Découvrez comment filtrer les comptes pour découvrir des systèmes distants à l’aide de constructeurs comme « filterwithAccount ».
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, appareils connectés, projet Rome
+ms.openlocfilehash: 3a32c318aba49eff550ccfdf51049fd97a34e2f5
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801551"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760723"
 ---
-# <a name="class-mcdremotesystemaccountfilter"></a>Classe `MCDRemoteSystemAccountFilter` 
+# <a name="class-mcdremotesystemaccountfilter"></a>type `MCDRemoteSystemAccountFilter` 
 
 ```
 @interface MCDRemoteSystemAccountFilter : NSObject<MCDRemoteSystemFilter>
 ```  
 
-Filtre pour les comptes découvrir des systèmes distants avec.
+Filtrez les comptes pour découvrir les systèmes distants.
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>Propriétés
 
-### <a name="account"></a>compte
+### <a name="account"></a>account
 `@property(nonatomic, readonly, strong, nonnull) MCDConnectedDevicesAccount* account;`
 
-Le compte associé à cette MCDRemoteSystemAccountFilter.
+Compte associé à ce MCDRemoteSystemAccountFilter.
 
 ## <a name="constructors"></a>Constructeurs
 
 ### <a name="filterwithaccount"></a>filterWithAccount
 `+ (nullable instancetype)filterWithAccount:(nonnull MCDConnectedDevicesAccount*)account;`
 
-Initialiser la classe avec le compte MCDConnectedDevicesAccount.
+Initialisez la classe avec le compte MCDConnectedDevicesAccount.
 
 #### <a name="parameters"></a>Paramètres 
 * `account` 
 
-Le compte MCDConnectedDevicesAccount utilisé.
+Compte MCDConnectedDevicesAccount utilisé.
 
-#### <a name="returns"></a>Returns
-Retourne un objet MCDRemoteSystemAccountFilter filtré à l’aide du compte.
+#### <a name="returns"></a>Retours
+Retourne un objet MCDRemoteSystemAccountFilter filtré avec le compte.
 
 ### <a name="initwithaccount"></a>initWithAccount
 `- (nullable instancetype)initWithAccount:(nonnull MCDConnectedDevicesAccount*)account;`
 
-Initialiser la classe avec le compte MCDConnectedDevicesAccount.
+Initialisez la classe avec le compte MCDConnectedDevicesAccount.
 
 #### <a name="parameters"></a>Paramètres 
 * `account` 
 
-Le compte MCDConnectedDevicesAccount utilisé.
+Compte MCDConnectedDevicesAccount utilisé.
 
-#### <a name="returns"></a>Returns
-Retourne un objet MCDRemoteSystemAccountFilter initialisé filtrés à l’aide du compte.
+#### <a name="returns"></a>Retours
+Retourne un objet MCDRemoteSystemAccountFilter initialisé par le compte.

@@ -1,25 +1,25 @@
 ---
 title: MCDConnectedDevicesAddAccountResult
-description: Result of MCDConnectedDevicesAccountManager.addAccountAsync().
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
-ms.openlocfilehash: 7f86554d0e59cef894c7bf5b885eea4db7883f27
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: En savoir plus sur la classe MCDConnectedDevicesAddAccountResult. Consultez la propriété pour « ajouter l’état de l’opération de compte ».
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, appareils connectés, projet Rome
+ms.openlocfilehash: 72f03113e85768bcfdf325dab7040b011c9ecb23
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801681"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90761023"
 ---
-# <a name="class-mcdconnecteddevicesaddaccountresult"></a>Classe `MCDConnectedDevicesAddAccountResult` 
+# <a name="class-mcdconnecteddevicesaddaccountresult"></a>type `MCDConnectedDevicesAddAccountResult` 
 
 ```
 @interface MCDConnectedDevicesAddAccountResult : NSObject
 ```  
-Result of MCDConnectedDevicesAccountManager.addAccountAsync().
+Résultat de MCDConnectedDevicesAccountManager. addAccountAsync ().
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>Propriétés
 
 ### <a name="status"></a>status
 
 `@property(nonatomic, readonly) MCDConnectedDevicesAccountAddedStatus status;`
 
-Ajouter un état de l’opération compte.
+Ajouter l’état de l’opération de compte.

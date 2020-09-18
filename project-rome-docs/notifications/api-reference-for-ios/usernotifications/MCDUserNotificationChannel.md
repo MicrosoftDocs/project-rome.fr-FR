@@ -1,15 +1,15 @@
 ---
 title: MCDUserNotificationChannel
-description: Cette classe gère le cycle de vie des notifications utilisateur.
+description: En savoir plus sur la classe MCDUserNotificationChannel. Cette classe gère le cycle de vie des notifications utilisateur.
 keywords: Microsoft, Windows, appareil Relay, procédure iOS, iPhone
-ms.openlocfilehash: 234e1af807ac816918fe1de37a18dc07f73fca09
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: dc7e451494014cdcdebd056b00e57cfdf5f0757f
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801241"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760873"
 ---
-# <a name="class-mcdusernotificationchannel"></a>type`MCDUserNotificationChannel`
+# <a name="class-mcdusernotificationchannel"></a>type `MCDUserNotificationChannel`
 
 ```
 @interface MCDUserNotificationChannel : NSObject
@@ -17,7 +17,7 @@ ms.locfileid: "59801241"
 
 Cette classe fournit le lecteur de modification de notification qui gère la réception et la gestion des notifications de l’utilisateur pour l’application. 
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>Propriétés
 
 ### <a name="syncscope"></a>syncScope
 `@property(class, readonly, nonnull) MCDUserDataFeedSyncScope* syncScope;`

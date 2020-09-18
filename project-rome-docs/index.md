@@ -3,12 +3,12 @@ title: Créer des applications multiappareils
 description: Découvrez les fonctionnalités multiappareils et multiplateformes activées pour les applications Windows 10 avec le projet Rome.
 ms.topic: overview
 ms.custom: seodec2018, RS5
-ms.openlocfilehash: 977d64749544d1991a40eff5d80a1cd6186aba97
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: 0c00816de9111790bf20c98e48293d653490de3c
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76115547"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760923"
 ---
 # <a name="project-rome"></a>Projet Rome
 
@@ -36,7 +36,7 @@ Certains scénarios sont disponibles via *à la fois* les SDK des plateformes na
 
 D’autres scénarios sont possibles en utilisant une combinaison des API Microsoft Graph et des kits SDK des clients. Les notifications en sont un exemple. Dans ce cas, l’API MS Graph est utilisée pour publier des notifications depuis le côté serveur d’application, et les kits SDK des clients de plateforme natifs sont utilisés pour recevoir et gérer les notifications dans chacune des applications natives côté client.
 
-## <a name="sdk"></a>Kit de développement logiciel
+## <a name="sdk"></a>Kit SDK
 
 Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Suivez les liens pour obtenir des exemples et pour le téléchargement des kits SDK.
 
@@ -75,9 +75,9 @@ Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Su
 
 
 
-|   Plate-forme                        | Fonctionnalités                                                         |           Package du SDK                          |   exemples                                       |
+|   Plateforme                        | Fonctionnalités                                                         |           Package du SDK                          |   Exemples                                       |
 | :-------------------------------- | :--------------------------------------------------------------- |:---------------------------------------------- | :---------------------------------------------- |
-| **SDK Windows**                   | Relais d’appareils, activités/chronologie                                | [![SDK][windows-sdk-badge]][windows-sdk]       | [Exemple Windows du projet Rome pour les relais d’appareils][windows-drsample] <br> [Exemple Windows du projet Rome pour les activités][windows-afsample]
+| **SDK Windows**                   | Relais d’appareils, activités/chronologie                                | [![Kit SDK][windows-sdk-badge]][windows-sdk]       | [Exemple Windows du projet Rome pour les relais d’appareils][windows-drsample] <br> [Exemple Windows du projet Rome pour les activités][windows-afsample]
 | **Windows (préversion)**             |                                    Notifications Microsoft Graph | [![Nuget][winredist-sdk-badge]][winredist-sdk] | [Exemple de notifications Graph pour Windows][winredist-sample] 
 | **Android**             | Relais d’appareils, Activités/chronologie, Notifications Microsoft Graph (préversion) | [![Maven][android-sdk-badge]][android-sdk]     | [Exemples du projet Rome pour Android][android-sample]
 | **iOS**                 | Relais d’appareils, Activités/chronologie, Notifications Microsoft Graph (préversion) | [![CocoaPod][ios-sdk-badge]][ios-sdk]          | [Exemple du projet Rome pour iOS][ios-sample]
@@ -105,9 +105,10 @@ Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Su
 
 * [//Build 2016 talk](https://channel9.msdn.com/Events/Build/2016/B831)
 
-* [MS Dev Show podcast](http://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
+* [MS Dev Show podcast](https://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
 
 ## <a name="give-feedback"></a>Envoyer des commentaires
 
-|[UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/183208-connected-apps-and-devices-project-rome)|[Hub de commentaires](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Nous contacter](mailto:projectrometeam@microsoft.com)|
-|-----|-----|-----|
+|[Hub de commentaires](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Nous contacter](mailto:projectrometeam@microsoft.com)|
+|-----|-----|
+

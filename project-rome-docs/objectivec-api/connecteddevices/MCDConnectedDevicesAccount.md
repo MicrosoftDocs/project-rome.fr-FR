@@ -1,68 +1,68 @@
 ---
 title: MCDConnectedDevicesAccount
-description: Cette classe représente un seul compte d’utilisateur connu par une application.
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
-ms.openlocfilehash: e9b43bb76e46f3a027247b1d4d564c6e1571bae4
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: En savoir plus sur la classe MCDConnectedDevicesAccount. Cette classe représente un compte d’utilisateur unique connu par une application.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, appareils connectés, projet Rome
+ms.openlocfilehash: b3004681c2bcbb0ad9d5b1dcb15fe8a711773767
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59800931"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90761043"
 ---
-# <a name="class-mcdconnecteddevicesaccount"></a>Classe `MCDConnectedDevicesAccount`
+# <a name="class-mcdconnecteddevicesaccount"></a>type `MCDConnectedDevicesAccount`
 
 ```
 @interface MCDConnectedDevicesAccount : NSObject
 ```  
 
-Cette classe représente un seul compte d’utilisateur connu par une application.
+Cette classe représente un compte d’utilisateur unique connu par une application.
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>Propriétés
 
 ### <a name="anonymousaccount"></a>anonymousAccount
 `+ (nullable instancetype)anonymousAccount;`
 
-L’instance singleton du compte anonyme.
+Instance singleton du compte anonyme.
 
 ### <a name="accountid"></a>accountId
 `@property(nonatomic, readonly, copy, nonnull) NSString* accountId;`
 
-Identificateur unique pour ce compte d’utilisateur.
+Identificateur unique de ce compte d’utilisateur.
 
-### <a name="type"></a>Type
+### <a name="type"></a>type
 `@property(nonatomic, readonly) MCDConnectedDevicesAccountType type;`
 
-Une valeur MCDConnectedDevicesAccountType décrivant le type de compte.
+Valeur MCDConnectedDevicesAccountType décrivant le type de compte.
 
 ## <a name="constructors"></a>Constructeurs
 
 ### <a name="accountwithaccountid"></a>accountWithAccountId
 `+ (nullable instancetype)accountWithAccountId:(nullable NSString*)accountId type:(MCDConnectedDevicesAccountType)type;`
 
-Une nouvelle instance de cette classe avec l’identificateur unique pour ce compte d’utilisateur.
+Nouvelle instance de cette classe avec l’identificateur unique pour ce compte d’utilisateur.
 
 #### <a name="parameters"></a>Paramètres 
 
 * `accountId` 
 
-Une chaîne d’identificateur unique pour ce compte d’utilisateur.
+Chaîne d’identificateur unique pour ce compte d’utilisateur.
 
 `type` 
 
-Le MCDConnectedDevicesAccountType du compte (repose sur le fournisseur de l’ID du compte provient de).
+MCDConnectedDevicesAccountType du compte (dépend du fournisseur d’ID à partir duquel le compte provient).
 
-#### <a name="returns"></a>Returns
+#### <a name="returns"></a>Retours
 Retourne un objet MCDConnectedDevicesAccount avec l’identificateur de compte.
 
 ### <a name="initwithaccountid"></a>initWithAccountId
 `- (nullable instancetype)initWithAccountId:(nullable NSString*)accountId type:(MCDConnectedDevicesAccountType)type;`
 
-Une nouvelle instance de cette classe avec l’identificateur unique pour ce compte d’utilisateur.
+Nouvelle instance de cette classe avec l’identificateur unique pour ce compte d’utilisateur.
 
 #### <a name="parameters"></a>Paramètres 
 * `type`
 
-Le MCDConnectedDevicesAccountType du compte (repose sur le fournisseur de l’ID du compte provient de).
+MCDConnectedDevicesAccountType du compte (dépend du fournisseur d’ID à partir duquel le compte provient).
 
-#### <a name="returns"></a>Returns
-Retourne un objet MCDConnectedDevicesAccount initialisé avec le compte.
+#### <a name="returns"></a>Retours
+Retourne un objet MCDConnectedDevicesAccount initialisé avec l’identificateur de compte.

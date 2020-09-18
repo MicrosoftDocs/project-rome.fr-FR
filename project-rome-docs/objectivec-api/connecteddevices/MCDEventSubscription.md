@@ -1,25 +1,25 @@
 ---
 title: MCDEventSubscription
-description: Cette interface fournit un abonnement d’événement simple.
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
-ms.openlocfilehash: ce5a5782f80b54e78a6e3890cd68d9e92c52226c
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: En savoir plus sur la classe MCDEventSubscription. Cette interface fournit un moyen simple de gérer un abonnement aux événements.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, appareils connectés, projet Rome
+ms.openlocfilehash: 8f44d1ca75ea247f2cb26fe5b2c136b4db0bd97f
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801613"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90761073"
 ---
-# <a name="class-mcdeventsubscription"></a>Classe `MCDEventSubscription` 
+# <a name="class-mcdeventsubscription"></a>type `MCDEventSubscription` 
 
 ```
 @interface MCDEventSubscription : NSObject
 ```  
-Cette interface fournit un abonnement d’événement simple.
+Cette interface fournit un abonnement aux événements simple.
 
 ## <a name="methods"></a>Méthodes
 
 ### <a name="cancel"></a>annuler
 `- (void)cancel;`
 
-Annule un abonnement aux événements. Après avoir apporté cet appel, le EventListener attaché ne recevra pas de tous les événements plus (Already in événements de vol peut toujours être remis).
-Étant donné que la plupart des fonctionnalités ConnectedDevices s’effectue en code natif, il est important de toujours vérifier Annuler est appelée ou WeakReferences sont utilisés pour garantir la correcte de nettoyage des ressources détenues par le EventListener.
+Annule un abonnement aux événements. Après avoir effectué cet appel, le EventListener attaché ne recevra plus d’événements (les événements de vol peuvent toujours être remis).
+Étant donné que la plupart des fonctionnalités ConnectedDevices sont effectuées en code natif, il est important de toujours s’assurer que Cancel est appelé ou WeakReferences sont utilisés pour garantir un nettoyage correct des ressources détenues par le EventListener.

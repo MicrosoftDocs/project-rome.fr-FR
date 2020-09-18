@@ -1,15 +1,15 @@
 ---
 title: Envoyer des fichiers à des appareils à proximité - Partage de proximité
-description: Envoyer des fichiers ou des sites web à des appareils à proximité avec Bluetooth ou Wi-Fi.
+description: Découvrez le partage de proximité. Le partage de proximité est utilisé pour envoyer des fichiers ou des sites web à des appareils situés à proximité en Bluetooth ou Wi-Fi.
 ms.localizationpriority: medium
 ms.topic: overview
 ms.custom: seodec2018
-ms.openlocfilehash: ab9692f6992d8d5c8d6ee4998f93473b6b13f5c4
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: 675e30b24474e34755833cef564fd56311bbaef4
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "59801471"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760903"
 ---
 # <a name="nearby-sharing"></a>Partage de proximité
 

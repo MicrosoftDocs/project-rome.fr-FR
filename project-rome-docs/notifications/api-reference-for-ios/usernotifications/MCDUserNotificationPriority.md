@@ -1,15 +1,15 @@
 ---
 title: MCDUserNotificationPriority
-description: Contient des valeurs qui décrivent la priorité d’une notification utilisateur.
+description: En savoir plus sur l’énumération MCDUserNotificationPriority. Cette énumération contient des valeurs qui décrivent la priorité d’une notification utilisateur.
 keywords: Microsoft, Windows, notifications de graphiques, procédures iOS, iPhone de savoir-faire
-ms.openlocfilehash: 6fdae63809e8cec2e89184e1e167417ae9a2587e
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: 1f06caa81f55fdc11f1a2c409602b57d1b18e632
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59800781"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760863"
 ---
-# <a name="enum-mcdusernotificationpriority"></a>variables`MCDUserNotificationPriority`
+# <a name="enum-mcdusernotificationpriority"></a>variables `MCDUserNotificationPriority`
 
 ```
 typedef NS_ENUM(NSInteger, MCDUserNotificationPriority)

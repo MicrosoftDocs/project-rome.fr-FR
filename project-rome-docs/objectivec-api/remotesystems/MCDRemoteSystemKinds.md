@@ -1,62 +1,62 @@
 ---
 title: MCDRemoteSystemKinds
-description: Contient des champs de chaîne qui représentent des types d’appareils système distant.
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
-ms.openlocfilehash: 701bc4662fc8d46009889645bab6e4ee83fdb959
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: En savoir plus sur la classe MCDRemoteSystemKinds. Cette classe contient des champs de chaîne qui représentent des types de périphériques système distants.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, appareils connectés, projet Rome
+ms.openlocfilehash: 978188b1a17c1acdd257fdc97c64fd17b3a1f618
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801271"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760663"
 ---
-# <a name="class-mcdremotesystemkinds"></a>Classe `MCDRemoteSystemKinds` 
+# <a name="class-mcdremotesystemkinds"></a>type `MCDRemoteSystemKinds` 
 
 ```
 @interface MCDRemoteSystemKinds : NSObject
 ```
 
-Contient des champs de chaîne qui représentent des types d’appareils système distant.
+Contient des champs de chaîne qui représentent des types de périphériques système distants.
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>Propriétés
 
-### <a name="desktop"></a>bureau
+### <a name="desktop"></a>Bureau
 `@property(class, readonly, readonly, nonnull) NSString* desktop;`
 
-Le nom canonique pour le type d’appareil de bureau.
+Nom canonique du type de périphérique de bureau.
 
 ### <a name="holographic"></a>holographique
 `@property(class, readonly, readonly, nonnull) NSString* holographic;`
 
-Le nom canonique pour le type d’appareil HOLOGRAPHIQUE.
+Nom canonique du type d’appareil holographique.
 
 ### <a name="hub"></a>hub
 `@property(class, readonly, readonly, nonnull) NSString* hub;`
 
-Le nom canonique pour le type de périphérique du hub.
+Nom canonique du type d’appareil Hub.
 
-### <a name="phone"></a>téléphone
+### <a name="phone"></a>phone
 `@property(class, readonly, readonly, nonnull) NSString* phone;`
 
-Le nom canonique pour le type d’appareil téléphonique.
+Nom canonique du type de périphérique téléphonique.
 
 ### <a name="xbox"></a>Xbox
 `@property(class, readonly, readonly, nonnull) NSString* xbox;`
 
-Le nom canonique pour le type d’appareil xbox.
+Nom canonique du type d’appareil Xbox.
 
-### <a name="laptop"></a>portable
+### <a name="laptop"></a>)
 `@property(class, readonly, readonly, nonnull) NSString* laptop;`
 
-Le nom canonique pour le type d’appareil portable.
+Nom canonique du type de périphérique pour ordinateur portable.
 
-> **Remarque :** Tous les appareils Microsoft Surface, y compris la Surface Book, sont considérés comme les tablettes.
+> **Remarque :** Tous les appareils Microsoft surface, y compris le livre surface, sont considérés comme des appareils tablettes.
 
 ### <a name="iot"></a>iot
 `@property(class, readonly, readonly, nonnull) NSString* iot;`
 
-Le nom canonique pour le type d’appareil IoT.
+Nom canonique du type d’appareil IoT.
 
 ### <a name="tablet"></a>tablette
 `@property(class, readonly, readonly, nonnull) NSString* tablet;`
 
-Le nom canonique pour le type de périphérique tablette.
+Nom canonique du type de périphérique tablette.

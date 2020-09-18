@@ -1,14 +1,14 @@
 ---
 title: Lancer des actions à distance - Relais d’appareils
-description: Utilisez un appareil local pour lancer une action sur un appareil distant.
+description: Découvrez comment utiliser un appareil local pour lancer une action sur un appareil distant, tel que le démarrage d’une application à distance.
 ms.topic: overview
 ms.custom: seodec2018
-ms.openlocfilehash: ac8df447549b643207f796e0eeca05012c210897
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: 03de94e48b379758261b4aec887818b5637acdf2
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "59801461"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760783"
 ---
 # <a name="device-relay"></a>Relais d’appareils
 

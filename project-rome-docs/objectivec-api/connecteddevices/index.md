@@ -1,11 +1,12 @@
 ---
 title: Espace de noms ConnectedDevices
-ms.openlocfilehash: 2f464105ed8aee12971d3ec352ba4e12150573a0
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Utilisez les API de l’espace de noms ConnectedDevices pour permettre à une application cliente de s’inscrire auprès de la plateforme.
+ms.openlocfilehash: 468c0d397528d536d6ed0b6e8cde107c4f9be911
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207858"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90761063"
 ---
 # <a name="connecteddevices-namespace"></a>Espace de noms ConnectedDevices
 ```
