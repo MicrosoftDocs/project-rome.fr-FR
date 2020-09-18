@@ -1,37 +1,37 @@
 ---
 title: MCDUserDataFeedNotificationTypes
-description: Cette classe est chargée de fournir les types de notification
-keywords: Microsoft, windows, activités des utilisateurs, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
-ms.openlocfilehash: 49f13fd2dbb13c439993f79a2b7275d4a705826a
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: En savoir plus sur la classe MCDUserDataFeedNotificationTypes. Cette classe est chargée de fournir les types de notifications.
+keywords: Microsoft, Windows, activités utilisateur, iOS, iPhone, objectiveC, appareils connectés, projet Rome
+ms.openlocfilehash: a9bb9b41309e32a429926c52769da9bc767ef5bc
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801141"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760983"
 ---
-# <a name="class-mcduserdatafeednotificationtypes"></a><span data-ttu-id="aea88-104">Classe `MCDUserDataFeedNotificationTypes`</span><span class="sxs-lookup"><span data-stu-id="aea88-104">class `MCDUserDataFeedNotificationTypes`</span></span>
+# <a name="class-mcduserdatafeednotificationtypes"></a><span data-ttu-id="263ba-105">type `MCDUserDataFeedNotificationTypes`</span><span class="sxs-lookup"><span data-stu-id="263ba-105">class `MCDUserDataFeedNotificationTypes`</span></span>
 
 ```
 @interface MCDUserDataFeedNotificationTypes : NSObject
 ```
 
-<span data-ttu-id="aea88-105">Cette classe fournit les types de notification valide pour MCDUserDataFeedSyncScope.notificationType.</span><span class="sxs-lookup"><span data-stu-id="aea88-105">This class provides the valid notification types for MCDUserDataFeedSyncScope.notificationType.</span></span>
+<span data-ttu-id="263ba-106">Cette classe fournit les types de notification valides pour MCDUserDataFeedSyncScope. notificationType.</span><span class="sxs-lookup"><span data-stu-id="263ba-106">This class provides the valid notification types for MCDUserDataFeedSyncScope.notificationType.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="aea88-106">Properties</span><span class="sxs-lookup"><span data-stu-id="aea88-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="263ba-107">Propriétés</span><span class="sxs-lookup"><span data-stu-id="263ba-107">Properties</span></span>
 
-### <a name="notificationwithpayload"></a><span data-ttu-id="aea88-107">notificationWithPayload</span><span class="sxs-lookup"><span data-stu-id="aea88-107">notificationWithPayload</span></span>
+### <a name="notificationwithpayload"></a><span data-ttu-id="263ba-108">notificationWithPayload</span><span class="sxs-lookup"><span data-stu-id="263ba-108">notificationWithPayload</span></span>
 `@property(class, nonatomic, readonly, nonnull) NSString* notificationWithPayload;`
 
-<span data-ttu-id="aea88-108">Représente les notifications push entrantes.</span><span class="sxs-lookup"><span data-stu-id="aea88-108">Represents the incoming push notifications.</span></span>  <span data-ttu-id="aea88-109">Il n’y a aucun rescrictions pour envoyer des notifications autres que des restrictions de domaine/serveur.</span><span class="sxs-lookup"><span data-stu-id="aea88-109">There are no rescrictions to push notifications other than domain/server restrictions.</span></span>
+<span data-ttu-id="263ba-109">Représente les notifications push entrantes.</span><span class="sxs-lookup"><span data-stu-id="263ba-109">Represents the incoming push notifications.</span></span>  <span data-ttu-id="263ba-110">Il n’existe aucun rescrictions pour les notifications push autres que les restrictions de domaine/serveur.</span><span class="sxs-lookup"><span data-stu-id="263ba-110">There are no rescrictions to push notifications other than domain/server restrictions.</span></span>
 
-### <a name="notificationonly"></a><span data-ttu-id="aea88-110">notificationOnly</span><span class="sxs-lookup"><span data-stu-id="aea88-110">notificationOnly</span></span>
+### <a name="notificationonly"></a><span data-ttu-id="263ba-111">notificationOnly</span><span class="sxs-lookup"><span data-stu-id="263ba-111">notificationOnly</span></span>
 `@property(class, nonatomic, readonly, nonnull) NSString* notificationOnly;`
 
-<span data-ttu-id="aea88-111">Rétrograder tous les notifications push à une notification n'indiquant que le système de synchronisation pour recevoir les données, même si les données pourraient être contenues dans les notifications push.</span><span class="sxs-lookup"><span data-stu-id="aea88-111">Demote all push notifications to a notification only telling the system to sync to receive the data, even if the data could be contained in the push notification.</span></span>
+<span data-ttu-id="263ba-112">Rétrograder toutes les notifications push vers une notification uniquement indiquant au système de se synchroniser pour recevoir les données, même si les données peuvent être contenues dans la notification push.</span><span class="sxs-lookup"><span data-stu-id="263ba-112">Demote all push notifications to a notification only telling the system to sync to receive the data, even if the data could be contained in the push notification.</span></span>
 
 
-### <a name="nonotification"></a><span data-ttu-id="aea88-112">noNotification</span><span class="sxs-lookup"><span data-stu-id="aea88-112">noNotification</span></span>
+### <a name="nonotification"></a><span data-ttu-id="263ba-113">nonotification</span><span class="sxs-lookup"><span data-stu-id="263ba-113">noNotification</span></span>
 `@property(class, nonatomic, readonly, nonnull) NSString* noNotification;`
 
-<span data-ttu-id="aea88-113">Empêcher les notifications pour les nouvelles données utilisateur, de recevoir uniquement les nouvelles données lorsque UserDataFeed.startSync est appelée, ou lors de l’interaction avec le serveur par d’autres moyens</span><span class="sxs-lookup"><span data-stu-id="aea88-113">Prevent any notifications for new user data, only receive new data when UserDataFeed.startSync is called, or when interacting with the server in other ways</span></span>
+<span data-ttu-id="263ba-114">Empêcher les notifications pour les nouvelles données utilisateur, recevoir uniquement les nouvelles données lorsque UserDataFeed. startSync est appelé, ou lors de l’interaction avec le serveur d’une autre manière</span><span class="sxs-lookup"><span data-stu-id="263ba-114">Prevent any notifications for new user data, only receive new data when UserDataFeed.startSync is called, or when interacting with the server in other ways</span></span>

@@ -1,15 +1,15 @@
 ---
 title: MCDUserDataFeedPlatforms
-description: Fournit la plateforme valide pour le MCDUserDataFeedSyncScope.
-keywords: Microsoft, windows, activités des utilisateurs, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
-ms.openlocfilehash: 7474c5896fec97a94799423ba0748bd2814d2c7a
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: En savoir plus sur la classe MCDUserDataFeedPlatforms. Cette classe fournit la plateforme valide pour MCDUserDataFeedSyncScope.
+keywords: Microsoft, Windows, activités utilisateur, iOS, iPhone, objectiveC, appareils connectés, projet Rome
+ms.openlocfilehash: 0f11f695e0c9806dc43ac00e5da92f705758d73d
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801213"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760973"
 ---
-# <a name="class-mcduserdatafeedplatforms"></a><span data-ttu-id="e83b7-104">Classe `MCDUserDataFeedPlatforms`</span><span class="sxs-lookup"><span data-stu-id="e83b7-104">class `MCDUserDataFeedPlatforms`</span></span>
+# <a name="class-mcduserdatafeedplatforms"></a><span data-ttu-id="99195-105">type `MCDUserDataFeedPlatforms`</span><span class="sxs-lookup"><span data-stu-id="99195-105">class `MCDUserDataFeedPlatforms`</span></span>
 
 ```
 @interface MCDUserDataFeedPlatforms : NSObject
@@ -17,34 +17,34 @@ ms.locfileid: "59801213"
 This class is responsible for providing the valid platform for the MCDUserDataFeedSyncScope.
 ```
 
-## <a name="properties"></a><span data-ttu-id="e83b7-105">Properties</span><span class="sxs-lookup"><span data-stu-id="e83b7-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="99195-106">Propriétés</span><span class="sxs-lookup"><span data-stu-id="99195-106">Properties</span></span>
 
-### <a name="all"></a><span data-ttu-id="e83b7-106">tous</span><span class="sxs-lookup"><span data-stu-id="e83b7-106">all</span></span>
+### <a name="all"></a><span data-ttu-id="99195-107">all</span><span class="sxs-lookup"><span data-stu-id="99195-107">all</span></span>
 `@property(class, nonatomic, readonly, nonnull) NSString* all;`
 
-<span data-ttu-id="e83b7-107">Tous les objets de la plateforme</span><span class="sxs-lookup"><span data-stu-id="e83b7-107">All platform objects</span></span>
+<span data-ttu-id="99195-108">Tous les objets de plateforme</span><span class="sxs-lookup"><span data-stu-id="99195-108">All platform objects</span></span>
 
-### <a name="android"></a><span data-ttu-id="e83b7-108">android</span><span class="sxs-lookup"><span data-stu-id="e83b7-108">android</span></span>
+### <a name="android"></a><span data-ttu-id="99195-109">android</span><span class="sxs-lookup"><span data-stu-id="99195-109">android</span></span>
 `@property(class, nonatomic, readonly, nonnull) NSString* android;`
 
-<span data-ttu-id="e83b7-109">Objet de la plateforme Android</span><span class="sxs-lookup"><span data-stu-id="e83b7-109">Android platform object</span></span>
+<span data-ttu-id="99195-110">Objet de plateforme Android</span><span class="sxs-lookup"><span data-stu-id="99195-110">Android platform object</span></span>
 
-### <a name="ios"></a><span data-ttu-id="e83b7-110">iOS</span><span class="sxs-lookup"><span data-stu-id="e83b7-110">iOS</span></span>
+### <a name="ios"></a><span data-ttu-id="99195-111">iOS</span><span class="sxs-lookup"><span data-stu-id="99195-111">iOS</span></span>
 `@property(class, nonatomic, readonly, nonnull) NSString* iOS;`
 
-<span data-ttu-id="e83b7-111">objet de la plateforme iOS</span><span class="sxs-lookup"><span data-stu-id="e83b7-111">iOS platform object</span></span>
+<span data-ttu-id="99195-112">objet de plateforme iOS</span><span class="sxs-lookup"><span data-stu-id="99195-112">iOS platform object</span></span>
 
-### <a name="windowsuwp"></a><span data-ttu-id="e83b7-112">windowsUWP</span><span class="sxs-lookup"><span data-stu-id="e83b7-112">windowsUWP</span></span>
+### <a name="windowsuwp"></a><span data-ttu-id="99195-113">windowsUWP</span><span class="sxs-lookup"><span data-stu-id="99195-113">windowsUWP</span></span>
 `@property(class, nonatomic, readonly, nonnull) NSString* windowsUWP;`
 
-<span data-ttu-id="e83b7-113">Objet de la plateforme UWP</span><span class="sxs-lookup"><span data-stu-id="e83b7-113">UWP platform object</span></span>
+<span data-ttu-id="99195-114">Objet de plateforme UWP</span><span class="sxs-lookup"><span data-stu-id="99195-114">UWP platform object</span></span>
 
-### <a name="windows32"></a><span data-ttu-id="e83b7-114">windows32</span><span class="sxs-lookup"><span data-stu-id="e83b7-114">windows32</span></span>
+### <a name="windows32"></a><span data-ttu-id="99195-115">windows32</span><span class="sxs-lookup"><span data-stu-id="99195-115">windows32</span></span>
 `@property(class, nonatomic, readonly, nonnull) NSString* windows32;`
 
-<span data-ttu-id="e83b7-115">Objet de plateforme Windows32 prennent en charge</span><span class="sxs-lookup"><span data-stu-id="e83b7-115">Windows32 platfrom object</span></span>
+<span data-ttu-id="99195-116">Objet windows32 Platfrom</span><span class="sxs-lookup"><span data-stu-id="99195-116">Windows32 platfrom object</span></span>
 
-### <a name="linux"></a><span data-ttu-id="e83b7-116">linux</span><span class="sxs-lookup"><span data-stu-id="e83b7-116">linux</span></span>
+### <a name="linux"></a><span data-ttu-id="99195-117">linux</span><span class="sxs-lookup"><span data-stu-id="99195-117">linux</span></span>
 `@property(class, nonatomic, readonly, nonnull) NSString* linux;`
 
-<span data-ttu-id="e83b7-117">Objet de plateforme Linux</span><span class="sxs-lookup"><span data-stu-id="e83b7-117">Linux platfrom object</span></span>
+<span data-ttu-id="99195-118">Objet Platfrom Linux</span><span class="sxs-lookup"><span data-stu-id="99195-118">Linux platfrom object</span></span>

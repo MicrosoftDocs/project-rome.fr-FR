@@ -1,53 +1,53 @@
 ---
 title: MCDRemoteSystemAuthorizationKindFilter
-description: Une classe utilisée pour filtrer les systèmes distants selon le type d’autorisation.
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, les appareils, Project Rome connectés
-ms.openlocfilehash: da68c7a0eacd2018332d5e2fe5c8e3c906f473f8
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: En savoir plus sur la classe MCDRemoteSystemAuthorizationKindFilter. Cette classe est utilisée pour filtrer les systèmes distants en fonction du type d’autorisation.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, appareils connectés, projet Rome
+ms.openlocfilehash: a48c9aeacf262146a12da6fd691e853cb7dde199
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801251"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760703"
 ---
-# <a name="class-mcdremotesystemauthorizationkindfilter"></a><span data-ttu-id="81723-104">Classe `MCDRemoteSystemAuthorizationKindFilter`</span><span class="sxs-lookup"><span data-stu-id="81723-104">class `MCDRemoteSystemAuthorizationKindFilter`</span></span> 
+# <a name="class-mcdremotesystemauthorizationkindfilter"></a><span data-ttu-id="c7c60-105">type `MCDRemoteSystemAuthorizationKindFilter`</span><span class="sxs-lookup"><span data-stu-id="c7c60-105">class `MCDRemoteSystemAuthorizationKindFilter`</span></span> 
 
 ```
 @interface MCDRemoteSystemAuthorizationKindFilter : NSObject<MCDRemoteSystemFilter>
 ```  
 
-<span data-ttu-id="81723-105">Une classe utilisée pour filtrer les systèmes distants selon le type d’autorisation.</span><span class="sxs-lookup"><span data-stu-id="81723-105">A class used to filter remote systems based on authorization type.</span></span>
+<span data-ttu-id="c7c60-106">Classe utilisée pour filtrer les systèmes distants en fonction du type d’autorisation.</span><span class="sxs-lookup"><span data-stu-id="c7c60-106">A class used to filter remote systems based on authorization type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="81723-106">Properties</span><span class="sxs-lookup"><span data-stu-id="81723-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c7c60-107">Propriétés</span><span class="sxs-lookup"><span data-stu-id="c7c60-107">Properties</span></span>
 
-### <a name="kind"></a><span data-ttu-id="81723-107">Type</span><span class="sxs-lookup"><span data-stu-id="81723-107">kind</span></span>
+### <a name="kind"></a><span data-ttu-id="c7c60-108">kind</span><span class="sxs-lookup"><span data-stu-id="c7c60-108">kind</span></span>
 `@property(nonatomic, readonly) MCDRemoteSystemAuthorizationKind kind;`
 
-<span data-ttu-id="81723-108">Le type d’autorisation pour filtrer.</span><span class="sxs-lookup"><span data-stu-id="81723-108">The authorization type to filter for.</span></span>
+<span data-ttu-id="c7c60-109">Type d’autorisation à filtrer.</span><span class="sxs-lookup"><span data-stu-id="c7c60-109">The authorization type to filter for.</span></span>
 
-## <a name="constructors"></a><span data-ttu-id="81723-109">Constructeurs</span><span class="sxs-lookup"><span data-stu-id="81723-109">Constructors</span></span>
+## <a name="constructors"></a><span data-ttu-id="c7c60-110">Constructeurs</span><span class="sxs-lookup"><span data-stu-id="c7c60-110">Constructors</span></span>
 
-### <a name="filterwithkind"></a><span data-ttu-id="81723-110">filterWithKind</span><span class="sxs-lookup"><span data-stu-id="81723-110">filterWithKind</span></span>
+### <a name="filterwithkind"></a><span data-ttu-id="c7c60-111">filterWithKind</span><span class="sxs-lookup"><span data-stu-id="c7c60-111">filterWithKind</span></span>
 `+ (nullable instancetype)filterWithKind:(MCDRemoteSystemAuthorizationKind)authorizationKind;`
 
-<span data-ttu-id="81723-111">Une nouvelle instance de cette classe filtrée sur MCDRemoteSystemAuthorizationKind.</span><span class="sxs-lookup"><span data-stu-id="81723-111">A new instance of this class filtered on MCDRemoteSystemAuthorizationKind.</span></span>
+<span data-ttu-id="c7c60-112">Nouvelle instance de cette classe filtrée sur MCDRemoteSystemAuthorizationKind.</span><span class="sxs-lookup"><span data-stu-id="c7c60-112">A new instance of this class filtered on MCDRemoteSystemAuthorizationKind.</span></span>
 
-#### <a name="parameters"></a><span data-ttu-id="81723-112">Paramètres</span><span class="sxs-lookup"><span data-stu-id="81723-112">Parameters</span></span> 
+#### <a name="parameters"></a><span data-ttu-id="c7c60-113">Paramètres</span><span class="sxs-lookup"><span data-stu-id="c7c60-113">Parameters</span></span> 
 * `authorizationKind` 
 
-<span data-ttu-id="81723-113">Le type d’autorisation pour filtrer.</span><span class="sxs-lookup"><span data-stu-id="81723-113">The authorization type to filter for.</span></span>
+<span data-ttu-id="c7c60-114">Type d’autorisation à filtrer.</span><span class="sxs-lookup"><span data-stu-id="c7c60-114">The authorization type to filter for.</span></span>
 
-#### <a name="returns"></a><span data-ttu-id="81723-114">Returns</span><span class="sxs-lookup"><span data-stu-id="81723-114">Returns</span></span>
-<span data-ttu-id="81723-115">Retourne un objet MCDRemoteSystemAuthorizationKindFilter avec le filtre d’autorisation fourni.</span><span class="sxs-lookup"><span data-stu-id="81723-115">Returns an MCDRemoteSystemAuthorizationKindFilter object with the provided authorization filter.</span></span>
+#### <a name="returns"></a><span data-ttu-id="c7c60-115">Retours</span><span class="sxs-lookup"><span data-stu-id="c7c60-115">Returns</span></span>
+<span data-ttu-id="c7c60-116">Retourne un objet MCDRemoteSystemAuthorizationKindFilter avec le filtre d’autorisation fourni.</span><span class="sxs-lookup"><span data-stu-id="c7c60-116">Returns an MCDRemoteSystemAuthorizationKindFilter object with the provided authorization filter.</span></span>
 
-### <a name="initwithkind"></a><span data-ttu-id="81723-116">initWithKind</span><span class="sxs-lookup"><span data-stu-id="81723-116">initWithKind</span></span>
+### <a name="initwithkind"></a><span data-ttu-id="c7c60-117">initWithKind</span><span class="sxs-lookup"><span data-stu-id="c7c60-117">initWithKind</span></span>
 `- (nullable instancetype)initWithKind:(MCDRemoteSystemAuthorizationKind)authorizationKind;`
 
-<span data-ttu-id="81723-117">Une nouvelle instance de cette classe avec MCDRemoteSystemAuthorizationKind.</span><span class="sxs-lookup"><span data-stu-id="81723-117">A new instance of this class with MCDRemoteSystemAuthorizationKind.</span></span>
+<span data-ttu-id="c7c60-118">Nouvelle instance de cette classe avec MCDRemoteSystemAuthorizationKind.</span><span class="sxs-lookup"><span data-stu-id="c7c60-118">A new instance of this class with MCDRemoteSystemAuthorizationKind.</span></span>
 
-#### <a name="parameters"></a><span data-ttu-id="81723-118">Paramètres</span><span class="sxs-lookup"><span data-stu-id="81723-118">Parameters</span></span> 
+#### <a name="parameters"></a><span data-ttu-id="c7c60-119">Paramètres</span><span class="sxs-lookup"><span data-stu-id="c7c60-119">Parameters</span></span> 
 * `authorizationKind` 
 
-<span data-ttu-id="81723-119">Le type d’autorisation pour filtrer.</span><span class="sxs-lookup"><span data-stu-id="81723-119">The authorization type to filter for.</span></span>
+<span data-ttu-id="c7c60-120">Type d’autorisation à filtrer.</span><span class="sxs-lookup"><span data-stu-id="c7c60-120">The authorization type to filter for.</span></span>
 
-#### <a name="returns"></a><span data-ttu-id="81723-120">Returns</span><span class="sxs-lookup"><span data-stu-id="81723-120">Returns</span></span>
-<span data-ttu-id="81723-121">Retourne un objet MCDRemoteSystemAuthorizationKindFilter initialisé avec l’authorizationKind.</span><span class="sxs-lookup"><span data-stu-id="81723-121">Returns an MCDRemoteSystemAuthorizationKindFilter object initialized with the authorizationKind.</span></span>
+#### <a name="returns"></a><span data-ttu-id="c7c60-121">Retours</span><span class="sxs-lookup"><span data-stu-id="c7c60-121">Returns</span></span>
+<span data-ttu-id="c7c60-122">Retourne un objet MCDRemoteSystemAuthorizationKindFilter initialisé avec authorizationKind.</span><span class="sxs-lookup"><span data-stu-id="c7c60-122">Returns an MCDRemoteSystemAuthorizationKindFilter object initialized with the authorizationKind.</span></span>
