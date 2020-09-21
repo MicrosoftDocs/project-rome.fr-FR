@@ -1,11 +1,12 @@
 ---
 title: Utilisation des API REST de relais d’appareils de Microsoft Graph
-ms.openlocfilehash: 887ebff8788ac4300036512761df80c6b8e5e97f
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Découvrez comment utiliser les API REST Relais d’appareils de Microsoft Graph pour découvrir vos appareils, lancer des applications et interagir avec des services d’application.
+ms.openlocfilehash: a2433e5a16f36edb9e8283d885f9ebf3d05b64d1
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207818"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760803"
 ---
 # <a name="using-microsoft-graphs-device-relay-rest-apis"></a>Utilisation des API REST de relais d’appareils de Microsoft Graph
 

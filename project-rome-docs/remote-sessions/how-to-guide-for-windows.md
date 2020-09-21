@@ -1,11 +1,12 @@
 ---
 title: Implémentation de sessions distantes pour Windows
-ms.openlocfilehash: 742c18c5178369fdf5016c7a89fb46a70c03b2a9
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Découvrez comment implémenter des sessions distantes pour les applications Windows.
+ms.openlocfilehash: 57509a652ff3c7ee93c9a48b398effe87ded089a
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207888"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760153"
 ---
 # <a name="implementing-remote-sessions-for-windows"></a>Implémentation de sessions distantes pour Windows
 
@@ -13,4 +14,4 @@ Les pages de guide pratique et d’API liées à Windows pour le projet Rome son
 
 [Guide de procédure pour Windows](https://docs.microsoft.com/windows/uwp/launch-resume/remote-sessions)
 
-[Informations de référence sur l’API pour Windows](https://docs.microsoft.com/uwp/api/windows.system.remotesystems.remotesystemsession)
+[Informations de référence sur les API pour Windows](https://docs.microsoft.com/uwp/api/windows.system.remotesystems.remotesystemsession)

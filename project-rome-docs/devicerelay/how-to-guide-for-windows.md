@@ -1,11 +1,12 @@
 ---
 title: Implémentation de relais d’appareils pour Windows
-ms.openlocfilehash: 365a21301bee17feac34522667e7ba6a3497ed77
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Découvrez comment implémenter un relais d’appareils pour les applications Windows.
+ms.openlocfilehash: 03d18904c30e6e867e375a8da8e6f5e020b8989f
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207588"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760793"
 ---
 # <a name="implementing-device-relay-for-windows"></a>Implémentation de relais d’appareils pour Windows
 
@@ -13,4 +14,4 @@ Les pages de guide pratique et d’API liées à Windows pour le projet Rome son
 
 [Guide de procédure pour Windows](https://docs.microsoft.com/windows/uwp/launch-resume/connected-apps-and-devices)
 
-[Informations de référence sur l’API pour Windows](https://docs.microsoft.com/uwp/api/Windows.System.RemoteSystems)
+[Informations de référence sur les API pour Windows](https://docs.microsoft.com/uwp/api/Windows.System.RemoteSystems)

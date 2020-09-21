@@ -1,11 +1,12 @@
 ---
 title: Implémentation d’activités de l’utilisateur pour Windows
-ms.openlocfilehash: 1f164e42fed00f8d738711a04b91ef2209acfab1
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Découvrez comment implémenter les activités de l’utilisateur pour les applications Windows.
+ms.openlocfilehash: 6d866313408cb26289aaa14082a0303d0eefa604
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207908"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760083"
 ---
 # <a name="implementing-user-activities-for-windows"></a>Implémentation d’activités de l’utilisateur pour Windows
 
@@ -13,4 +14,4 @@ Les pages de guide pratique et d’API liées à Windows pour le projet Rome son
 
 [Guide de procédure pour Windows](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities)
 
-[Informations de référence sur l’API pour Windows](https://docs.microsoft.com/uwp/api/windows.applicationmodel.useractivities)
+[Informations de référence sur les API pour Windows](https://docs.microsoft.com/uwp/api/windows.applicationmodel.useractivities)

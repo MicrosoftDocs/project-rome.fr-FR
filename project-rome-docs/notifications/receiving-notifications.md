@@ -1,11 +1,12 @@
 ---
 title: Réception de notifications avec le SDK Projet Rome
-ms.openlocfilehash: ac86a6abb25a46a5f2c758e0bd6caaaaabeae620
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Découvrez comment utiliser le kit SDK Projet Rome pour activer la réception de notifications MSGraph dans votre application.
+ms.openlocfilehash: d3cdd0b562635881e417119eac522ac6a04c3e31
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207808"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760773"
 ---
 # <a name="receiving-notifications-using-the-project-rome-sdk"></a>Réception de notifications avec le SDK Projet Rome
 
