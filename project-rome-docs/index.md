@@ -3,12 +3,12 @@ title: Créer des applications multiappareils
 description: Découvrez les fonctionnalités multiappareils et multiplateformes activées pour les applications Windows 10 avec le projet Rome.
 ms.topic: overview
 ms.custom: seodec2018, RS5
-ms.openlocfilehash: 0c00816de9111790bf20c98e48293d653490de3c
-ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
+ms.openlocfilehash: 13dcef5e158cf0cfd122afaef5f376ed06267790
+ms.sourcegitcommit: 5bf261d8d6ebe89d6d075d851f9255c806f5a649
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90760923"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "91716703"
 ---
 # <a name="project-rome"></a>Projet Rome
 
@@ -85,6 +85,8 @@ Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Su
 | **MSGraph**                       | Relais d’appareils, Activités/chronologie, Notifications Microsoft Graph | [![REST][graph-relay-badge]][graph-relay]<br> [![REST][graph-activities-badge]][graph-activities]<br>[![REST][graph-notification-badge]][graph-notification]          | [Relais d’appareils][graph-relay-sample]<br>[Activités/chronologie][graph-activities-sample]<br>[Notifications Graph][graph-notification-sample]
 
 ## <a name="project-rome-blog-posts"></a>Billets de blog du projet Rome
+* [Annonce du kit SDK Project Rome pour Android et iOS version 1.0 !](https://blogs.windows.com/windowsdeveloper/2019/01/29/announcing-project-rome-sdk-for-android-and-ios-version-1-0/)
+
 * [Expériences multiplateformes avec le projet Rome](https://blogs.windows.com/buildingapps/2016/10/11/cross-device-experience-with-project-rome/#iQTseFlAMJRopU9k.97)
 
 * [Going social: Project Rome, Maps, & Social Network Integration](https://blogs.windows.com/buildingapps/2016/10/27/going-social-project-rome-maps-social-network-integration-app-dev-on-xbox-series/#SCfoEZ1q8c1yBMei.97)
@@ -99,13 +101,31 @@ Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Su
 
 * [Web-to-App Linking with AppUriHandlers](https://blogs.windows.com/buildingapps/2016/10/14/web-to-app-linking-with-appurihandlers/#fIh7USaxBYS8JqfT.97)
 
-## <a name="other-resources"></a>Autres ressources
+* [Project Rome: Driving user engagement across devices, apps and platforms](https://blogs.windows.com/windowsdeveloper/2017/05/16/project-rome-driving-user-engagement-across-devices-apps-platforms/#jsUX3bEM6c8SpkIF.97)
+
+* [Création d'applications connectées à l'aide d'UWP et du projet Rome](https://docs.microsoft.com/archive/msdn-magazine/2018/may/universal-windows-platform-building-connected-apps-with-uwp-and-project-rome)
+
+* [Projet Rome : attirer les utilisateurs sur plusieurs appareils, applications et plateformes](https://blogs.windows.com/windowsdeveloper/2017/05/16/project-rome-driving-user-engagement-across-devices-apps-platforms/#hZYfcfYVCFfBv0pS.97)
+
+* [Activation d’expériences de notification orientées utilisateur avec des notifications Microsoft Graph](https://docs.microsoft.com/graph/notifications-concept-overview)
+
+## <a name="podcasts-and-recordings"></a>Enregistrements et podcasts
+
+* [Projet Rome lors de la conférence Microsoft //Build 2018](https://channel9.msdn.com/Events/Build/2018/BRK2417)
+
+* [Build 2017 : Channel 9 en direct : Q&R sur le projet Rome](https://channel9.msdn.com/Events/Build/2017/C9R11)
+
+* [Build 2017 : MS Dev Show : projet Rome](https://channel9.msdn.com/Shows/msdevshow/Episode-153-Project-Rome-with-Vikas-Bhatia-and-Shawn-Henry)
+
+* [Podcast du MS Dev Show : projet Rome avec Shawn Henry (8 novembre 2016)](https://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
 
 * [Liaison web-application](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking)
 
-* [//Build 2016 talk](https://channel9.msdn.com/Events/Build/2016/B831)
+* [Build 2016 : susciter l'intérêt des utilisateurs avec des applications et des appareils connectés](https://channel9.msdn.com/Events/Build/2016/B831)
 
-* [MS Dev Show podcast](https://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
+* [La minute du développeur : Créer des applications multi-appareils avec Project Rome](https://www.youtube.com/watch?v=7jn-kooKE8U)
+
+* [Bien démarrer avec Microsoft Graph et les notifications](https://www.youtube.com/watch?v=cmpPFhrS8ZA)
 
 ## <a name="give-feedback"></a>Envoyer des commentaires
 
