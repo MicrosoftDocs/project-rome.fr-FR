@@ -3,16 +3,16 @@ title: Créer des applications multiappareils
 description: Découvrez les fonctionnalités multiappareils et multiplateformes activées pour les applications Windows 10 avec le projet Rome.
 ms.topic: overview
 ms.custom: seodec2018, RS5
-ms.openlocfilehash: 13dcef5e158cf0cfd122afaef5f376ed06267790
-ms.sourcegitcommit: 5bf261d8d6ebe89d6d075d851f9255c806f5a649
+ms.openlocfilehash: cecb6f126dd7ec52c0e0f65280392f579a1c173c
+ms.sourcegitcommit: 17c24f7a0d5a9b6ae586dd294d6b073f1b60b580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91716703"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94508195"
 ---
 # <a name="project-rome"></a>Projet Rome
 
-Le [projet Rome](https://developer.microsoft.com/windows/project-rome) est la plateforme des expériences multiappareils de Microsoft pour les applications. 
+Le [projet Rome](https://developer.microsoft.com/windows/project-rome) est la plateforme des expériences multiappareils de Microsoft pour les applications.
 
 Sur ce site, vous trouverez une documentation développeur pour le projet Rome et des liens vers d’autres ressources utiles.
 
@@ -43,7 +43,7 @@ Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Su
 [windows-sdk]:             https://developer.microsoft.com/windows/downloads
 [windows-sdk-badge]:       https://img.shields.io/badge/sdk-April%202018%20Update-brightgreen.svg
 [windows-drsample]:        https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/RemoteSystems
-[windows-afsample]:        https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/UserActivity 
+[windows-afsample]:        https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/UserActivity
 
 [winredist-sdk]:           https://www.nuget.org/packages/Microsoft.ConnectedDevices.UserNotifications
 [winredist-sdk-badge]:     https://img.shields.io/nuget/v/Microsoft.ConnectedDevices.UserNotifications.svg
@@ -57,8 +57,8 @@ Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Su
 [ios-sdk-badge]:           https://img.shields.io/cocoapods/v/ProjectRomeSdk.svg
 [ios-sample]:              https://github.com/microsoft/project-rome/tree/master/iOS/samples
 
-[android-sdk]:             https://bintray.com/connecteddevices/maven/com.microsoft.connecteddevices%3Aconnecteddevices-sdk/_latestVersion
-[android-sdk-badge]:       https://api.bintray.com/packages/connecteddevices/maven/com.microsoft.connecteddevices%3Aconnecteddevices-sdk/images/download.svg
+[android-sdk]:             https://github.com/microsoft/project-rome/tree/mvn-repo/com/microsoft/connecteddevices/connecteddevices-sdk
+[android-sdk-badge]:       https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fraw.github.com%2Fmicrosoft%2Fproject-rome%2Fmvn-repo%2Fcom%2Fmicrosoft%2Fconnecteddevices%2Fconnecteddevices-sdk%2Fmaven-metadata.xml
 [android-sample]:          https://github.com/microsoft/project-rome/tree/master/Android/samples
 
 [graph-relay]:             https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview
@@ -78,7 +78,7 @@ Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Su
 |   Plateforme                        | Fonctionnalités                                                         |           Package du SDK                          |   Exemples                                       |
 | :-------------------------------- | :--------------------------------------------------------------- |:---------------------------------------------- | :---------------------------------------------- |
 | **SDK Windows**                   | Relais d’appareils, activités/chronologie                                | [![Kit SDK][windows-sdk-badge]][windows-sdk]       | [Exemple Windows du projet Rome pour les relais d’appareils][windows-drsample] <br> [Exemple Windows du projet Rome pour les activités][windows-afsample]
-| **Windows (préversion)**             |                                    Notifications Microsoft Graph | [![Nuget][winredist-sdk-badge]][winredist-sdk] | [Exemple de notifications Graph pour Windows][winredist-sample] 
+| **Windows (préversion)**             |                                    Notifications Microsoft Graph | [![Nuget][winredist-sdk-badge]][winredist-sdk] | [Exemple de notifications Graph pour Windows][winredist-sample]
 | **Android**             | Relais d’appareils, Activités/chronologie, Notifications Microsoft Graph (préversion) | [![Maven][android-sdk-badge]][android-sdk]     | [Exemples du projet Rome pour Android][android-sample]
 | **iOS**                 | Relais d’appareils, Activités/chronologie, Notifications Microsoft Graph (préversion) | [![CocoaPod][ios-sdk-badge]][ios-sdk]          | [Exemple du projet Rome pour iOS][ios-sample]
 | **Xamarin pour Android (préversion)** | Relais d’appareils                                                     | [![Nuget][xamarin-sdk-badge]][xamarin-sdk]     | [Exemple Xamarin pour Android][xamarin-sample]
