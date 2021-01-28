@@ -3,12 +3,12 @@ title: Créer des applications multiappareils
 description: Découvrez les fonctionnalités multiappareils et multiplateformes activées pour les applications Windows 10 avec le projet Rome.
 ms.topic: overview
 ms.custom: seodec2018, RS5
-ms.openlocfilehash: cecb6f126dd7ec52c0e0f65280392f579a1c173c
-ms.sourcegitcommit: 17c24f7a0d5a9b6ae586dd294d6b073f1b60b580
+ms.openlocfilehash: dc66e86ea9ed5c5750fc31a2961798b7335d5fb0
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94508195"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98901417"
 ---
 # <a name="project-rome"></a>Projet Rome
 
@@ -61,17 +61,17 @@ Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Su
 [android-sdk-badge]:       https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fraw.github.com%2Fmicrosoft%2Fproject-rome%2Fmvn-repo%2Fcom%2Fmicrosoft%2Fconnecteddevices%2Fconnecteddevices-sdk%2Fmaven-metadata.xml
 [android-sample]:          https://github.com/microsoft/project-rome/tree/master/Android/samples
 
-[graph-relay]:             https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview
-[graph-activities]:        https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/activity-feed-api-overview
-[graph-notification]:      https://developer.microsoft.com/graph/docs/api-reference/beta/resources/notifications-api-overview
+[graph-relay]:             /graph/api/resources/project-rome-overview
+[graph-activities]:        /graph/api/resources/activity-feed-api-overview
+[graph-notification]:      /graph/api/resources/notifications-api-overview
 
 [graph-relay-badge]:       https://img.shields.io/badge/Device_Relay-Beta-orange.svg
 [graph-activities-badge]:  https://img.shields.io/badge/Activities-1.0-brightgreen.svg
 [graph-notification-badge]:https://img.shields.io/badge/Graph_Notifications-Beta-orange.svg
 
-[graph-relay-sample]:        https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview
-[graph-activities-sample]:   https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/activity-feed-api-overview
-[graph-notification-sample]: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/notifications-api-overview
+[graph-relay-sample]:        /graph/api/resources/project-rome-overview
+[graph-activities-sample]:   /graph/api/resources/activity-feed-api-overview
+[graph-notification-sample]: /graph/api/resources/notifications-api-overview
 
 
 
@@ -103,11 +103,11 @@ Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Su
 
 * [Project Rome: Driving user engagement across devices, apps and platforms](https://blogs.windows.com/windowsdeveloper/2017/05/16/project-rome-driving-user-engagement-across-devices-apps-platforms/#jsUX3bEM6c8SpkIF.97)
 
-* [Création d'applications connectées à l'aide d'UWP et du projet Rome](https://docs.microsoft.com/archive/msdn-magazine/2018/may/universal-windows-platform-building-connected-apps-with-uwp-and-project-rome)
+* [Création d'applications connectées à l'aide d'UWP et du projet Rome](/archive/msdn-magazine/2018/may/universal-windows-platform-building-connected-apps-with-uwp-and-project-rome)
 
 * [Projet Rome : attirer les utilisateurs sur plusieurs appareils, applications et plateformes](https://blogs.windows.com/windowsdeveloper/2017/05/16/project-rome-driving-user-engagement-across-devices-apps-platforms/#hZYfcfYVCFfBv0pS.97)
 
-* [Activation d’expériences de notification orientées utilisateur avec des notifications Microsoft Graph](https://docs.microsoft.com/graph/notifications-concept-overview)
+* [Activation d’expériences de notification orientées utilisateur avec des notifications Microsoft Graph](/graph/notifications-concept-overview)
 
 ## <a name="podcasts-and-recordings"></a>Enregistrements et podcasts
 
@@ -119,7 +119,7 @@ Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Su
 
 * [Podcast du MS Dev Show : projet Rome avec Shawn Henry (8 novembre 2016)](https://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
 
-* [Liaison web-application](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking)
+* [Liaison web-application](/windows/uwp/launch-resume/web-to-app-linking)
 
 * [Build 2016 : susciter l'intérêt des utilisateurs avec des applications et des appareils connectés](https://channel9.msdn.com/Events/Build/2016/B831)
 
@@ -131,4 +131,3 @@ Le projet Rome est actuellement implémenté pour les plateformes ci-dessous. Su
 
 |[Hub de commentaires](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Nous contacter](mailto:projectrometeam@microsoft.com)|
 |-----|-----|
-

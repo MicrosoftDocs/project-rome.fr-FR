@@ -4,12 +4,12 @@ description: Incluez des notifications Microsoft Graph dans votre application po
 ms.localizationpriority: medium
 ms.topic: overview
 ms.custom: seodec2018
-ms.openlocfilehash: 23aefb0e9f75721977e3ab9f1002bebf264a5b09
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: 8a44c645a60848c9bc3c92e61675993eb63f3bc1
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "58906761"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98901627"
 ---
 # <a name="microsoft-graph-notifications"></a>Notifications Microsoft Graph
 Les notifications sont le moyen le plus efficace de réengager vos utilisateurs. Elles peuvent attirer l’attention de vos utilisateurs et ramener l’utilisateur à votre application. Dans un monde multiappareil, vos utilisateurs peuvent accéder à vos applications et services depuis n’importe où, à travers différentes plateformes et différents appareils où vos applications sont présentes.
@@ -28,13 +28,13 @@ Vous pouvez utiliser l’API Notifications pour récupérer l’historique des n
 
 ## <a name="integrating-with-microsoft-graph-notifications"></a>Intégration aux notifications Microsoft Graph
 
-### <a name="onboarding"></a>Intégration
+### <a name="onboarding"></a>Mise en route
 Examinez le guide de procédure sous chaque nœud de plateforme (Windows, Android et iOS) pour obtenir des instructions sur l’utilisation des notifications Graph comme solution de notification Push mobile pour vos applications et services. Notez que ces guides de procédure mettent l’accent sur la réception des notifications. Vous trouverez des informations sur l’envoi des notifications dans la page [Envoi de notifications avec les API MS Graph](sending-notifications.md).
 
 Le guide comprend les étapes spécifiques pour l’utilisation des notifications Graph, notamment l’inscription des identités d’application multiplateforme et des informations d’identification d’envoi (push) mobile. Si vous découvrez l’utilisation de Microsoft Graph, des étapes sont incluses pour l’inscription de votre application à un compte Microsoft (MSA) pour les applications destinées aux consommateurs, ou à Azure Active Directory (AAD) pour les comptes professionnels et scolaires. MSA et AAD sont des identités utilisateur qui vous permettent de tirer parti des charges de travail sur Microsoft Graph au-delà des seules notifications, ce qui permet des scénarios métier plus riches. 
 
 ### <a name="microsoft-graph-apis"></a>API Microsoft Graph
-Lors de l’utilisation des notifications Graph, le serveur d’application doit utiliser l’API Microsoft Graph (version bêta) pour envoyer des notifications. Pour plus d’informations sur l’intégration côté serveur d’application, consultez les [documents de référence de l’API](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/notifications-api-overview) concernant son utilisation. 
+Lors de l’utilisation des notifications Graph, le serveur d’application doit utiliser l’API Microsoft Graph (version bêta) pour envoyer des notifications. Pour plus d’informations sur l’intégration côté serveur d’application, consultez les [documents de référence de l’API](/graph/api/resources/notifications-api-overview) concernant son utilisation. 
 
 ### <a name="client-side-sdk"></a>SDK côté client
 Pour démarrer avec l’intégration des notifications Graph côté client et commencer à recevoir et à gérer des notifications avec les kits SDK natifs, sélectionnez votre plateforme de développement préférée dans le volet de navigation gauche. 
