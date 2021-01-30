@@ -5,12 +5,12 @@ ms.topic: article
 keywords: microsoft, windows, projet rome, commandes, android
 ms.assetid: b5d426db-a0ca-4888-b2cb-cb7fdb1c6c0d
 ms.localizationpriority: medium
-ms.openlocfilehash: 09479f0caa232215dfce51628432529d0e322536
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: 33dd7e0148c5c7e4ff9d254b4039b95129ac6c69
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76115555"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98901549"
 ---
 # <a name="implementing-device-relay-for-ios"></a>Implémentation de relais d’appareils pour iOS
 
@@ -185,12 +185,12 @@ Votre application iOS peut utiliser le portail Appareils connectés pour interag
 #### <a name="set-up-the-app-service-on-the-target-device"></a>Configurer le service d’application sur l’appareil cible
 Ce guide utilise l’[application de test Roman pour Windows](https://aka.ms/romeapp) comme service d’application cible. Par conséquent, le code ci-dessous conduit une application iOS à rechercher ce service d’application spécifique sur le système distant donné. Si vous souhaitez tester ce scénario, téléchargez l’application de test Roman sur un appareil Windows et vérifiez que vous êtes connecté avec le même compte MSA que vous avez utilisé dans les étapes préliminaires plus haut.
 
-Pour savoir comment écrire votre propre service d’application UWP, consultez [Créer et utiliser un service d’application (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). Vous devrez apporter quelques modifications pour rendre le service compatible avec Appareils connectés. Consultez le [Guide UWP pour les services d’application distants](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service) pour savoir comment procéder. 
+Pour savoir comment écrire votre propre service d’application UWP, consultez [Créer et utiliser un service d’application (UWP)](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). Vous devrez apporter quelques modifications pour rendre le service compatible avec Appareils connectés. Consultez le [Guide UWP pour les services d’application distants](/windows/uwp/launch-resume/communicate-with-a-remote-app-service) pour savoir comment procéder. 
 
 #### <a name="open-an-app-service-connection-on-the-client-device"></a>Ouvrir une connexion de service d’application sur l’appareil client
 Votre application iOS doit acquérir une référence à un appareil ou application distants. Comme dans la section relative au lancement, ce scénario nécessite l’utilisation d’un objet **MCDRemoteSystemConnectionRequest**, qui peut être construit à partir d’un objet **MCDRemoteSystem** ou **MCDRemoteSystemApp** représentant une application disponible sur le système.
 
-De plus, votre application devra identifier son service d’application cible avec deux chaînes : le *nom du service d’application* et l’*identificateur de package*. Celles-ci se trouvent dans le code source du fournisseur de service d’application (consultez [Créer et utiliser un service d’application (UWP)](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) pour plus d’informations). Ensemble, ces chaînes constituent **MCDAppServiceDescription**, qui est chargé dans une instance de **MCDAppServiceConnection**.
+De plus, votre application devra identifier son service d’application cible avec deux chaînes : le *nom du service d’application* et l’*identificateur de package*. Celles-ci se trouvent dans le code source du fournisseur de service d’application (consultez [Créer et utiliser un service d’application (UWP)](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) pour plus d’informations). Ensemble, ces chaînes constituent **MCDAppServiceDescription**, qui est chargé dans une instance de **MCDAppServiceConnection**.
 
 ```ObjectiveC
 // Step #1:  Establish an app service connection
@@ -244,7 +244,7 @@ De plus, votre application devra identifier son service d’application cible av
 Déclarez une variable pour y stocker le message à envoyer. Sur iOS, les messages que vous envoyez à des services d’application distants sont de type **NSDictionary**.
 
 > [!NOTE]
-> Quand votre application communique avec les services d’application d’autres plateformes, la Plateforme d’appareils connectés traduit l’objet **NSDictionary** en construction équivalente sur la plateforme de réception. Par exemple, un objet **[NSDictionary](https://developer.apple.com/documentation/foundation/nsdictionary)** envoyé à partir de cette application à un service d’application Windows est traduit en objet [**ValueSet**](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.valueset) (du .NET Framework), qui peut ensuite être interprété par le service d’application. Les informations transmises dans l’autre direction font l’objet d’une traduction inverse.
+> Quand votre application communique avec les services d’application d’autres plateformes, la Plateforme d’appareils connectés traduit l’objet **NSDictionary** en construction équivalente sur la plateforme de réception. Par exemple, un objet **[NSDictionary](https://developer.apple.com/documentation/foundation/nsdictionary)** envoyé à partir de cette application à un service d’application Windows est traduit en objet [**ValueSet**](/uwp/api/Windows.Foundation.Collections.ValueSet) (du .NET Framework), qui peut ensuite être interprété par le service d’application. Les informations transmises dans l’autre direction font l’objet d’une traduction inverse.
 
 La méthode suivante façonne un message qui peut être interprété par le service d’application de l’application de test Roman pour Windows.
 
@@ -335,5 +335,5 @@ Une fois que votre application a achevé son interaction avec le service d’app
 ## <a name="related-topics"></a>Rubriques connexes
 * [Page de référence des API](api-reference-for-ios.md) 
 * [Exemple d’application iOS](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) 
-* [Communiquer avec un service d’application distant (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
-* [Créer et utiliser un service d’application (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service)
+* [Communiquer avec un service d’application distant (UWP)](/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
+* [Créer et utiliser un service d’application (UWP)](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service)

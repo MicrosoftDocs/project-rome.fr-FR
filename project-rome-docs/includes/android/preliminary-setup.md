@@ -4,12 +4,12 @@ description: Fichier include
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: b2d1d764c4aae562a1fcafdb490db5a14522cda6
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: aa784c8892e37226602632e6329c15ab483521b3
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "66755811"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98901552"
 ---
 ## <a name="preliminary-setup-for-the-connected-devices-platform-and-notifications"></a>Configuration préliminaire pour la Plateforme d’appareils connectés et les notifications
 
@@ -24,7 +24,7 @@ L’authentification de compte Microsoft (MSA) ou Azure Active Directory (AAD) e
 
 En utilisant la méthode d’authentification de votre choix, vous devez inscrire votre application auprès de Microsoft en suivant les instructions qui se trouvent sur le [portail d’inscription des applications](https://apps.dev.microsoft.com/). Si vous n’avez pas de compte de développeur Microsoft, vous devrez en créer un.
 
-Quand vous inscrivez une application à l’aide d’un compte MSA, vous devez recevoir une chaîne d’ID client. Enregistrez-la pour plus tard. Elle permettra à votre application d’accéder aux ressources de la Plateforme d’appareils connectés de Microsoft. Si vous utilisez AAD, consultez [Bibliothèques d’authentification d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) pour savoir comment obtenir la chaîne d’ID client.
+Quand vous inscrivez une application à l’aide d’un compte MSA, vous devez recevoir une chaîne d’ID client. Enregistrez-la pour plus tard. Elle permettra à votre application d’accéder aux ressources de la Plateforme d’appareils connectés de Microsoft. Si vous utilisez AAD, consultez [Bibliothèques d’authentification d’Azure Active Directory](/azure/active-directory/develop/active-directory-authentication-libraries) pour savoir comment obtenir la chaîne d’ID client.
 
 ### <a name="add-the-sdk"></a>Ajouter le kit SDK
 

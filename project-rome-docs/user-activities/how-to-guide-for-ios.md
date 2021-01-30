@@ -5,16 +5,16 @@ ms.topic: article
 keywords: microsoft, windows, projet rome, activités de l’utilisateur, ios
 ms.assetid: 445f1dd4-f3c7-46e4-a7cd-42a1fb411172
 ms.localizationpriority: medium
-ms.openlocfilehash: 3cc19463a5e036ab76288760aa70d86f1861675b
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: 95345d8fb4d8dd600ec0dc447ea38c29612402d1
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "59801671"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98901677"
 ---
 # <a name="implementing-user-activities-for-ios"></a>Implémentation d’activités de l’utilisateur pour iOS
 
-Les activités de l’utilisateur sont des constructions de données qui représentent les tâches d’un utilisateur dans une application. Elles permettent d’enregistrer une capture instantanée d’une tâche en cours à poursuivre ultérieurement. La fonctionnalité [Chronologie Windows](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) offre aux utilisateurs Windows une liste déroulante de toutes leurs activités récentes, représentées sous forme de cartes comportant du texte et des graphiques. Pour plus d’informations sur les activités de l’utilisateur en général, consultez [Poursuivre l’activité utilisateur, même sur différents appareils](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities). Pour savoir quand créer ou mettre à jour des activités, consultez le guide [Bonnes pratiques concernant les activités de l’utilisateur](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices).
+Les activités de l’utilisateur sont des constructions de données qui représentent les tâches d’un utilisateur dans une application. Elles permettent d’enregistrer une capture instantanée d’une tâche en cours à poursuivre ultérieurement. La fonctionnalité [Chronologie Windows](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) offre aux utilisateurs Windows une liste déroulante de toutes leurs activités récentes, représentées sous forme de cartes comportant du texte et des graphiques. Pour plus d’informations sur les activités de l’utilisateur en général, consultez [Poursuivre l’activité utilisateur, même sur différents appareils](/windows/uwp/launch-resume/useractivities). Pour savoir quand créer ou mettre à jour des activités, consultez le guide [Bonnes pratiques concernant les activités de l’utilisateur](/windows/uwp/launch-resume/useractivities-best-practices).
 
 Avec le SDK Projet Rome, votre application iOS peut non seulement publier des activités de l’utilisateur pour une utilisation dans des fonctionnalités Windows telles que la Chronologie, mais elle peut également agir comme point de terminaison et relire des activités à l’utilisateur comme le fait la Chronologie. Cela permet aux applications inter-appareils de transcender totalement leurs plateformes et de proposer des expériences qui suivent les utilisateurs plutôt que les appareils.
 
@@ -143,7 +143,7 @@ mDisplayText = "Created by OneSDK Sample App";
 mActivationUri = "http://contoso.com");
 ```
 > [!TIP] 
-> Outre les propriétés ci-dessus, il existe de nombreuses autres fonctionnalités qui peuvent être configurées. Pour obtenir une étude complète des différentes façons de personnaliser un UserActivity, consultez les classes **[MCDUserActivity](../objectivec-api/userdata.useractivities/MCDUserActivity.md)** , **[MCDUserActivityVisualElements](../objectivec-api/userdata.useractivities/MCDUserActivityVisualElements.md)** et **[MCDUserActivityAttribution](../objectivec-api/userdata.useractivities/MCDUserActivityAttribution.md)** . Consultez le guide [Bonnes pratiques concernant les activités de l’utilisateur](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) pour obtenir des recommandations détaillées sur la façon de concevoir des activités de l’utilisateur.
+> Outre les propriétés ci-dessus, il existe de nombreuses autres fonctionnalités qui peuvent être configurées. Pour obtenir une étude complète des différentes façons de personnaliser un UserActivity, consultez les classes **[MCDUserActivity](../objectivec-api/userdata.useractivities/MCDUserActivity.md)**, **[MCDUserActivityVisualElements](../objectivec-api/userdata.useractivities/MCDUserActivityVisualElements.md)** et **[MCDUserActivityAttribution](../objectivec-api/userdata.useractivities/MCDUserActivityAttribution.md)**. Consultez le guide [Bonnes pratiques concernant les activités de l’utilisateur](/windows/uwp/launch-resume/useractivities-best-practices) pour obtenir des recommandations détaillées sur la façon de concevoir des activités de l’utilisateur.
 
 ## <a name="update-an-existing-user-activity"></a>Mettre à jour une activité d’utilisateur existante
 

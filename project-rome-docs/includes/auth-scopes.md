@@ -3,18 +3,18 @@ title: Fichier include
 description: Fichier include
 ms.assetid: 93f45482-14e4-4aec-8185-ee05b592215f
 ms.localizationpriority: medium
-ms.openlocfilehash: a6e92df6114443827b22dc85cf877d631e5fcfdf
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: b81da462f97569d322b76ebff36f800c970c06cc
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "66755781"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98901554"
 ---
 ### <a name="set-up-authentication-and-account-management"></a>Configuration de l’authentification et de la gestion des comptes
 
 La Plateforme d’appareils connectés exige l’utilisation d’un jeton OAuth pendant l’inscription.  Vous pouvez générer et gérer les jetons OAuth en employant la méthode qui vous convient le mieux.  Cependant, pour aider les développeurs à commencer à utiliser la plateforme, nous avons inclus un fournisseur d’authentification dans l’[exemple d’application Android](https://github.com/Microsoft/project-rome/tree/master/Android/samples) qui génère et gère des jetons d’actualisation dans votre application pour vous faciliter la tâche.
 
-Si vous souhaitez implémenter l’interface **[ConnectedDevicesAccountManager](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._user_account_provider)** par vous-même, tenez compte des points suivants : 
+Si vous souhaitez implémenter l’interface **[ConnectedDevicesAccountManager](/java/api/com.microsoft.connecteddevices.core._user_account_provider)** par vous-même, tenez compte des points suivants : 
 
 Si vous utilisez un compte MSA, vous devez inclure les étendues suivantes dans votre demande de connexion : `"wl.offline_access"`, `"ccs.ReadWrite"`, `"dds.read"`, `"dds.register"`, `"wns.connect"`, `"asimovrome.telemetry"` et `"https://activity.windows.com/UserActivity.ReadWrite.CreatedByApp"`. 
 

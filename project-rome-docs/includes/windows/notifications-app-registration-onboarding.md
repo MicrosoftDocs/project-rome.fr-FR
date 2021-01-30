@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8e259cf4bd303a51165868fe0aa6d2a062f52c76
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: 3d9119369f538c6d3d3bb7c49058d394d75c8bc2
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "58907391"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98947732"
 ---
 ### <a name="msa-and-aad-authentication-registration"></a>Inscription à l’authentification MSA et AAD
 
@@ -15,7 +15,7 @@ Si vous ne disposez pas déjà d’un compte MSA et que souhaitez en utiliser un
 Ensuite, si vous utilisez MSA comme framework d’authentification et d’identité pour vos utilisateurs, vous devez inscrire votre application auprès de Microsoft en suivant les instructions qui se trouvent sur le [portail d’inscription des applications](https://apps.dev.microsoft.com/) (si vous n’avez pas de compte de développeur Microsoft, vous devez d’abord en créer un). Vous devez recevoir une chaîne d’ID client pour votre application ; veillez à mémoriser son emplacement ou à l’enregistrer. Elle sera utilisée par la suite durant l’intégration des notifications Graph. Notez qu’une application utilisant l’authentification MSA doit être inscrite en tant qu’application SDK Live comme le montre l’illustration ci-dessous.
 ![Portail d’inscription des applications](../../notifications/media/msa_app_registration/app_registration_portal.png)
 
-Si vous écrivez une application qui utilise AAD comme framework d’authentification et d’identité de compte professionnel ou scolaire, vous devez inscrire votre application via les [Bibliothèques d’authentification d’Azure Active Directory Authentication](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) afin d’obtenir l’ID client, comme le montre l’illustration ci-dessous. 
+Si vous écrivez une application qui utilise AAD comme framework d’authentification et d’identité de compte professionnel ou scolaire, vous devez inscrire votre application via les [Bibliothèques d’authentification d’Azure Active Directory Authentication](/azure/active-directory/develop/active-directory-authentication-libraries) afin d’obtenir l’ID client, comme le montre l’illustration ci-dessous. 
  ![Portail d’inscription AAD](../../notifications/media/aad_registration_portal/aad_registration_portal.png) Au moment de créer une inscription d’application, quelques autorisations sont nécessaires pour utiliser les notifications Graph et d’autres fonctionnalités de la Plateforme d’appareils connectés. Voir ci-dessous. 
 ![Portail d’inscription AAD – Paramètres – Autorisations nécessaires](../../notifications/media/aad_registration_portal/aad_registration_portal_permissions.png)
 * Ajoutez une autorisation de connexion utilisateur comme illustré ci-dessous.
