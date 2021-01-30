@@ -5,12 +5,12 @@ ms.topic: article
 keywords: microsoft, windows, projet rome, commandes, android
 ms.assetid: 2fd14dd0-0f1f-49ee-83e3-468737810c81
 ms.localizationpriority: medium
-ms.openlocfilehash: bb58b8340dcd8158a201ce670ef0b69ba0272b6f
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: ce261c6571e4606ddcb8e1c2b75d989db51d8d9f
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76115573"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98901556"
 ---
 # <a name="implementing-device-relay-for-android"></a>Implémentation de relais d’appareils pour Android
 
@@ -209,7 +209,7 @@ Utilisez l’**AsyncOperation** retourné pour traiter le résultat de la tentat
 ```
 Selon l’URI qui est envoyé, vous pouvez lancer une application dans un état ou une configuration spécifiques sur un appareil distant. Cela donne la possibilité de poursuivre une tâche d’utilisateur, comme regarder un film, sur un autre appareil sans interruption. 
 
-Selon votre cas d’utilisation, vous devrez peut-être prévoir les cas où aucune application du système ciblé ne peut gérer l’URI et ceux où plusieurs applications peuvent le gérer. Les classes **[RemoteLauncher](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.commanding._remote_launcher)** et **[RemoteLauncherOptions](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.commanding._remote_launcher_options)** décrivent comment faire.
+Selon votre cas d’utilisation, vous devrez peut-être prévoir les cas où aucune application du système ciblé ne peut gérer l’URI et ceux où plusieurs applications peuvent le gérer. Les classes **[RemoteLauncher](/java/api/com.microsoft.connecteddevices.commanding._remote_launcher)** et **[RemoteLauncherOptions](/java/api/com.microsoft.connecteddevices.commanding._remote_launcher_options)** décrivent comment faire.
 
 ### <a name="b-remote-app-services"></a>B) Services d’application distants
 
@@ -218,7 +218,7 @@ Votre application Android peut utiliser le portail Appareils connectés pour int
 #### <a name="set-up-the-app-service-on-the-target-device"></a>Configurer le service d’application sur l’appareil cible
 Ce guide utilise l’[application de test Roman pour Windows](https://aka.ms/romeapp) comme service d’application cible. Par conséquent, le code ci-dessous conduit une application Android à rechercher ce service d’application spécifique sur le système distant donné. Si vous souhaitez tester ce scénario, téléchargez l’application de test Roman sur un appareil Windows et veillez à vous connecter avec le compte MSA que vous avez utilisé dans les étapes préliminaires décrites plus haut. 
 
-Pour savoir comment écrire votre propre service d’application UWP, consultez [Créer et utiliser un service d’application (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). Vous devrez apporter quelques modifications pour rendre le service compatible avec Appareils connectés. Consultez le [Guide UWP pour les services d’application distants](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service) pour savoir comment procéder. 
+Pour savoir comment écrire votre propre service d’application UWP, consultez [Créer et utiliser un service d’application (UWP)](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). Vous devrez apporter quelques modifications pour rendre le service compatible avec Appareils connectés. Consultez le [Guide UWP pour les services d’application distants](/windows/uwp/launch-resume/communicate-with-a-remote-app-service) pour savoir comment procéder. 
 
 #### <a name="open-an-app-service-connection-on-the-client-device"></a>Ouvrir une connexion de service d’application sur l’appareil client
 Votre application Android doit acquérir une référence à un appareil ou une application distants. Comme dans la section relative au lancement, ce scénario nécessite l’utilisation d’un objet **RemoteSystemConnectionRequest**, qui peut être construit à partir d’un objet **RemoteSystem** ou **RemoteSystemApp** représentant une application disponible sur le système.
@@ -230,7 +230,7 @@ Votre application Android doit acquérir une référence à un appareil ou une a
 // connection is opened.
 private RemoteSystem target = null;
 ```
-De plus, votre application devra identifier son service d’application cible avec deux chaînes : le *nom du service d’application* et l’*identificateur de package*. Celles-ci se trouvent dans le code source du fournisseur de service d’application (consultez [Créer et utiliser un service d’application (UWP)](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) pour savoir comment obtenir ces chaînes pour les services d’application Windows). Ensemble, ces chaînes constituent **AppServiceDescription**, qui est chargé dans une instance de **AppServiceConnection**.
+De plus, votre application devra identifier son service d’application cible avec deux chaînes : le *nom du service d’application* et l’*identificateur de package*. Celles-ci se trouvent dans le code source du fournisseur de service d’application (consultez [Créer et utiliser un service d’application (UWP)](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) pour savoir comment obtenir ces chaînes pour les services d’application Windows). Ensemble, ces chaînes constituent **AppServiceDescription**, qui est chargé dans une instance de **AppServiceConnection**.
 
 ```Java
 // this is defined below
@@ -302,7 +302,7 @@ Déclarez une variable pour y stocker le message à envoyer. Sur Android, les me
 private Map<String, Object> mMessagePayload = null;
 ```
 > [!NOTE]
-> Quand votre application communique avec les services d’application d’autres plateformes, la Plateforme d’appareils connectés traduit l’objet **Map** en construction correspondante sur la plateforme de réception. Par exemple, un objet **[Map](https://developer.android.com/reference/java/util/Map)** envoyé à un service d’application Windows à partir de cette application est traduit en objet [**ValueSet**](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.valueset) (du .NET Framework), qui peut ensuite être interprété par le service d’application. Les informations transmises dans l’autre direction font l’objet de la traduction inverse.
+> Quand votre application communique avec les services d’application d’autres plateformes, la Plateforme d’appareils connectés traduit l’objet **Map** en construction correspondante sur la plateforme de réception. Par exemple, un objet **[Map](https://developer.android.com/reference/java/util/Map)** envoyé à un service d’application Windows à partir de cette application est traduit en objet [**ValueSet**](/uwp/api/Windows.Foundation.Collections.ValueSet) (du .NET Framework), qui peut ensuite être interprété par le service d’application. Les informations transmises dans l’autre direction font l’objet d’une traduction inverse.
 
 La méthode suivante compose un message qui peut être interprété par le service d’application de l’application de test Roman pour Windows.
 
@@ -421,5 +421,5 @@ private void closeAppServiceConnection()
 ### <a name="related-topics"></a>Rubriques connexes
 * [Page de référence des API](api-reference-for-android.md) 
 * [Exemple d’application Android](https://github.com/Microsoft/project-rome/tree/master/Android/samples) 
-* [Communiquer avec un service d’application distant (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
-* [Créer et utiliser un service d’application (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service)
+* [Communiquer avec un service d’application distant (UWP)](/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
+* [Créer et utiliser un service d’application (UWP)](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service)
